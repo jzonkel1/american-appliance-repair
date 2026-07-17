@@ -64,12 +64,28 @@
   .nav .logo .lt{line-height:1;text-shadow:0 1px 10px rgba(0,4,34,.55);}
   .nav .logo .lt b{display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;text-transform:uppercase;font-size:17.5px;color:#fff;letter-spacing:.02em;white-space:nowrap;}
   .nav .logo .lt small{display:block;font-size:10px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#F0B66A;margin-top:4px;}
-  .navlinks{display:flex;gap:26px;font-weight:600;font-size:15px;color:#fff;}
-  .navlinks a{position:relative;padding:6px 0;text-shadow:0 1px 8px rgba(0,4,34,.5);}
-  .navlinks a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2.5px;background:var(--flame);border-radius:2px;transition:.22s;}
-  .navlinks a:hover:after{width:100%;}
+  .navlinks{display:flex;gap:26px;font-weight:600;font-size:15px;color:#fff;align-items:center;}
+  .navlinks > a, .navlinks .has-dd > a{position:relative;padding:6px 0;text-shadow:0 1px 8px rgba(0,4,34,.5);display:inline-flex;align-items:center;gap:5px;white-space:nowrap;}
+  .navlinks > a:after, .navlinks .has-dd > a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2.5px;background:var(--flame);border-radius:2px;transition:.22s;}
+  .navlinks > a:hover:after, .navlinks .has-dd:hover > a:after{width:100%;}
+  .has-dd{position:relative;}
+  .has-dd .car{font-size:9px;opacity:.75;transition:.2s;margin-top:1px;}
+  .has-dd:hover .car{transform:rotate(180deg);}
+  .dd{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(10px);padding-top:16px;opacity:0;pointer-events:none;transition:opacity .22s ease,transform .22s ease;z-index:90;}
+  .has-dd:hover .dd,.has-dd:focus-within .dd{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+  .dd-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 26px 60px -14px rgba(16,30,48,.35);padding:12px;min-width:270px;}
+  .dd-card.two{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px;min-width:470px;}
+  .dd-card a{display:flex;align-items:center;gap:11px;padding:10px 13px;border-radius:10px;color:var(--ink);font-size:14px;font-weight:600;text-shadow:none;white-space:nowrap;transition:.15s;}
+  .dd-card a:hover{background:var(--cool);color:var(--flame-deep);}
+  .dd-card a:after{display:none;}
+  .dd-card .di{width:8px;height:8px;border-radius:50%;background:linear-gradient(150deg,var(--flame),var(--gold));flex:none;}
+  .dd-card img.dc{height:26px;width:auto;flex:none;}
+  .dd-card .sub{display:block;font-size:11px;color:var(--soft);font-weight:600;margin-top:1px;white-space:nowrap;}
+  .dd-card .dd-cta{margin-top:6px;background:var(--flame);color:#fff;justify-content:center;border-radius:10px;}
+  .dd-card .dd-cta:hover{background:var(--flame-deep);color:#fff;}
+  .dd-card.two .dd-cta{grid-column:1/-1;}
   .nav .cta{display:flex;align-items:center;gap:12px;}
-  .nav .cta .btn{padding:12px 22px;font-size:15px;}
+  .nav .cta .btn{padding:12px 22px;font-size:15px;white-space:nowrap;}
   .burger{display:none;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.4);border-radius:10px;width:44px;height:40px;font-size:19px;color:#fff;cursor:pointer;}
   #mnav{display:none;background:var(--ink);padding:10px 24px 18px;}
   #mnav a{display:block;padding:12px 0;font-weight:600;color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
@@ -357,9 +373,38 @@
   <div class="wrap">
     <a class="logo" href="#top"><img src="assets/logo-mark.png" alt="American Appliance Repair, LLC"><span class="lt"><b>American Appliance</b><small>Repair, LLC</small></span></a>
     <nav class="navlinks">
-      <a href="#services">Services</a>
-      <a href="#parts">Parts Store</a>
-      <a href="#divisions">Divisions</a>
+      <div class="has-dd">
+        <a href="#services">Services <span class="car">▼</span></a>
+        <div class="dd"><div class="dd-card two">
+          <a href="#services"><span class="di"></span>Refrigerators &amp; Ice Machines</a>
+          <a href="#services"><span class="di"></span>Washer Repair</a>
+          <a href="#services"><span class="di"></span>Dryer Repair</a>
+          <a href="#services"><span class="di"></span>Dishwasher Repair</a>
+          <a href="#services"><span class="di"></span>Oven &amp; Stove Repair</a>
+          <a href="#services"><span class="di"></span>Vent Hood Repair</a>
+          <a href="#services"><span class="di"></span>Garbage Disposal</a>
+          <a href="#services"><span class="di"></span>Commercial Equipment</a>
+          <a class="dd-cta" href="tel:+13616730937">Same-day service — (361) 673-0937</a>
+        </div></div>
+      </div>
+      <div class="has-dd">
+        <a href="#parts">Parts Store <span class="car">▼</span></a>
+        <div class="dd"><div class="dd-card">
+          <a href="#parts"><span class="di"></span><span>OEM &amp; Aftermarket Parts<span class="sub">Official Marcone SSB</span></span></a>
+          <a href="#parts"><span class="di"></span><span>Walk-In Parts Counter<span class="sub">3701 Apollo Rd</span></span></a>
+          <a href="#parts"><span class="di"></span><span>Trade Accounts<span class="sub">Restaurants, landlords &amp; pros</span></span></a>
+          <a class="dd-cta" href="tel:+13614009513">Parts &amp; Sales — (361) 400-9513</a>
+        </div></div>
+      </div>
+      <div class="has-dd">
+        <a href="#divisions">Divisions <span class="car">▼</span></a>
+        <div class="dd"><div class="dd-card">
+          <a href="#services"><img class="dc" src="assets/div-repair.png" alt=""><span>Appliance Repair<span class="sub">Service &amp; repair division</span></span></a>
+          <a href="#parts"><img class="dc" src="assets/div-parts.png" alt=""><span>Parts Store<span class="sub">Parts &amp; supply division</span></span></a>
+          <a href="#divisions"><img class="dc" src="assets/div-sales.png" alt=""><span>Appliances 4U<span class="sub">New &amp; used appliance sales</span></span></a>
+          <a href="#solar"><img class="dc" src="assets/div-power.png" alt=""><span>American Power<span class="sub">Solar · newest division</span></span></a>
+        </div></div>
+      </div>
       <a href="#reviews">Reviews</a>
       <a href="#area">Service Area</a>
       <a href="#faq">FAQ</a>
