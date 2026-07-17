@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>document.documentElement.className += ' js';</script>
 <title>American Appliance Repair | Same-Day Appliance Repair in Corpus Christi, TX</title>
-<meta name="description" content="Christian veteran-owned appliance repair in Corpus Christi, TX. Same-day refrigerator, washer, dryer, oven & dishwasher repair — plus a parts counter & appliance showroom at 3701 Apollo Rd. Call (361) 673-0937.">
+<meta name="description" content="Christian veteran-owned appliance repair in Corpus Christi, TX. Same-day refrigerator, washer, dryer, oven, dishwasher & ice machine repair — plus a Marcone-partnered parts store and appliance showroom at 3701 Apollo Rd. Call (361) 673-0937.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,500;10..72,600;10..72,700;10..72,800&family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
-  /* NOTE: aggregate rating figures appear in 2 places (trust strip, reviews header) —
-     confirm against the live Google profile once the GBP is reinstated, before launch. */
+  /* NOTE: aggregate rating figures (4.8 / 176) appear in trust strip + reviews header —
+     re-verify against the live Google profile before launch. */
   :root{
     --ink:#101E30; --navy:#16324F; --overlay:#000422; --steel:#3E6C9C; --chrome:#4A7DB5;
     --flame:#E8730C; --flame-deep:#C55E05; --gold:#E8A33D;
@@ -25,14 +27,14 @@
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{font-family:'Public Sans',sans-serif;color:var(--body);background:var(--paper);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;}
-  h1,h2,h3{font-family:'Big Shoulders','Public Sans',sans-serif;color:var(--ink);line-height:1.02;font-weight:700;text-transform:uppercase;letter-spacing:.012em;}
+  h1,h2,h3{font-family:'Archivo',sans-serif;font-stretch:125%;color:var(--ink);line-height:1.04;font-weight:800;text-transform:uppercase;letter-spacing:.005em;}
   img{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
   .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
   section{padding:88px 0;}
-  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--steel);}
-  .eyebrow .fl{color:var(--flame);font-size:14px;line-height:1;}
-  h2.sec{font-size:clamp(38px,4.6vw,58px);margin:12px 0 14px;}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--steel);}
+  .eyebrow img{height:22px;width:auto;}
+  h2.sec{font-size:clamp(30px,3.8vw,46px);margin:12px 0 14px;}
   .lede{font-size:18px;color:var(--soft);max-width:62ch;}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;padding:16px 30px;border-radius:999px;cursor:pointer;border:2px solid transparent;transition:.2s ease;}
   .btn svg{width:18px;height:18px;flex:none;}
@@ -52,14 +54,14 @@
   .rv.in{opacity:1;transform:none;}
   @media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none;}}
 
-  /* ---------- nav (transparent over hero → navy on scroll) ---------- */
+  /* ---------- nav ---------- */
   header.nav{position:fixed;top:0;left:0;right:0;z-index:80;transition:background .3s ease,box-shadow .3s ease;padding-top:30px;}
   header.nav .demo-note{position:absolute;top:0;left:0;right:0;background:var(--flame);color:#fff;text-align:center;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;}
   header.nav.scrolled{background:rgba(16,30,48,.97);backdrop-filter:blur(10px);box-shadow:0 10px 30px -12px rgba(0,0,0,.4);}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:18px;}
   .nav .logo{display:block;}
   .nav .logo img{height:62px;width:auto;filter:drop-shadow(0 0 14px rgba(255,255,255,.3)) drop-shadow(0 2px 10px rgba(0,4,34,.5));}
-  .navlinks{display:flex;gap:28px;font-weight:600;font-size:15px;color:#fff;}
+  .navlinks{display:flex;gap:26px;font-weight:600;font-size:15px;color:#fff;}
   .navlinks a{position:relative;padding:6px 0;text-shadow:0 1px 8px rgba(0,4,34,.5);}
   .navlinks a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2.5px;background:var(--flame);border-radius:2px;transition:.22s;}
   .navlinks a:hover:after{width:100%;}
@@ -78,8 +80,8 @@
       linear-gradient(0deg, rgba(0,4,34,.62) 0%, transparent 34%);}
   .hero .wrap{position:relative;z-index:2;width:100%;}
   .hero .kick{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);border-radius:999px;padding:9px 18px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F4E9DB;}
-  .hero .kick .st{color:var(--gold);}
-  .hero h1{color:#fff;font-size:clamp(58px,8.4vw,116px);font-weight:800;margin:26px 0 20px;max-width:11em;text-shadow:0 4px 30px rgba(0,4,34,.45);}
+  .hero .kick img{height:20px;width:auto;}
+  .hero h1{color:#fff;font-size:clamp(44px,6.6vw,88px);margin:26px 0 20px;max-width:12em;text-shadow:0 4px 30px rgba(0,4,34,.45);}
   .hero h1 .fl{color:#FFB25E;}
   .hero .lede{color:#D9E2EC;font-size:clamp(17px,1.6vw,20px);max-width:54ch;text-shadow:0 1px 12px rgba(0,4,34,.5);}
   .hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;}
@@ -90,19 +92,18 @@
   .float-review p{font-family:'Fraunces',serif;font-style:italic;font-size:14.5px;color:var(--ink);line-height:1.45;margin:7px 0 9px;}
   .float-review .who{font-size:12px;color:var(--soft);font-weight:600;}
   .float-review .who b{color:var(--ink);}
-  /* hero load-in */
   .js .h-in{opacity:0;transform:translateY(26px);animation:hIn 1s cubic-bezier(.2,.65,.25,1) forwards;}
   .js .h-in.d1{animation-delay:.1s;} .js .h-in.d2{animation-delay:.22s;} .js .h-in.d3{animation-delay:.34s;} .js .h-in.d4{animation-delay:.5s;}
   @keyframes hIn{to{opacity:1;transform:none;}}
   @media(prefers-reduced-motion:reduce){.js .h-in{animation:none;opacity:1;transform:none;}}
 
-  /* ---------- trust strip (overlaps hero bottom) ---------- */
+  /* ---------- trust strip ---------- */
   .trust-wrap{position:relative;z-index:5;margin-top:-78px;padding:0 24px;}
   .trust{max-width:1180px;margin:0 auto;background:#fff;border-radius:var(--r-lg);box-shadow:var(--shadow-lg);border:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;}
   .tcell{padding:24px 26px;display:flex;align-items:center;gap:15px;border-right:1px solid var(--line);}
   .tcell:last-child{border-right:none;}
   .tcell img{height:56px;width:auto;flex:none;}
-  .tcell .big{font-family:'Big Shoulders',sans-serif;font-weight:800;font-size:34px;color:var(--ink);line-height:1;flex:none;}
+  .tcell .big{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:32px;color:var(--ink);line-height:1;flex:none;}
   .tcell .t{font-size:12.5px;line-height:1.35;color:var(--soft);font-weight:600;}
   .tcell .t b{display:block;color:var(--ink);font-size:14.5px;font-weight:800;}
   .tcell .t .stars{font-size:12px;}
@@ -122,16 +123,16 @@
 
   /* ---------- services ---------- */
   .services{background:var(--paper);padding-top:64px;}
-  .sec-head{max-width:760px;margin-bottom:46px;}
+  .sec-head{max-width:800px;margin-bottom:46px;}
   .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
   .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:.25s ease;position:relative;}
   .svc:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);}
   .svc .im{aspect-ratio:4/3;overflow:hidden;position:relative;}
   .svc .im img{width:100%;height:100%;object-fit:cover;transition:.5s;}
   .svc:hover .im img{transform:scale(1.05);}
-  .svc .no{position:absolute;top:12px;left:12px;background:rgba(16,30,48,.85);color:#fff;font-family:'Big Shoulders',sans-serif;font-weight:700;font-size:14px;border-radius:8px;padding:4px 10px;letter-spacing:.08em;}
+  .svc .no{position:absolute;top:12px;left:12px;background:rgba(16,30,48,.85);color:#fff;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:700;font-size:13px;border-radius:8px;padding:4px 10px;letter-spacing:.08em;}
   .svc .bd{padding:18px 20px 20px;}
-  .svc h3{font-size:24px;margin-bottom:6px;}
+  .svc h3{font-size:19px;margin-bottom:6px;}
   .svc p{font-size:14px;color:var(--soft);line-height:1.5;}
   .svc a.more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:700;font-size:13.5px;color:var(--flame);}
   .svc a.more:hover{gap:10px;}
@@ -146,64 +147,94 @@
   .quoteband blockquote{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:clamp(21px,2.6vw,29px);line-height:1.45;color:#F2F6FA;}
   .quoteband .who{margin-top:22px;font-size:15px;color:#9FB4C9;font-weight:600;}
   .quoteband .who b{color:#fff;font-weight:800;}
-  .quoteband .gtag{display:inline-flex;align-items:center;gap:7px;margin-top:10px;font-size:12.5px;color:#8AA2BA;font-weight:600;}
+  .quoteband a.gtag{display:inline-flex;align-items:center;gap:7px;margin-top:10px;font-size:12.5px;color:#8AA2BA;font-weight:600;border-bottom:1px dotted #8AA2BA;padding-bottom:1px;transition:.15s;}
+  .quoteband a.gtag:hover{color:#fff;border-color:#fff;}
 
-  /* ---------- why us ---------- */
+  /* ---------- why us (editorial, not cards) ---------- */
   .why .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;}
-  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px;}
-  .wp{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:20px 22px;display:flex;gap:15px;align-items:flex-start;}
-  .wp .ic{width:44px;height:44px;flex:none;border-radius:12px;background:linear-gradient(150deg,#FDF1E4,#FAE3CC);color:var(--flame-deep);display:grid;place-items:center;}
-  .wp .ic svg{width:22px;height:22px;}
-  .wp b{display:block;font-family:'Big Shoulders',sans-serif;text-transform:uppercase;font-size:19px;color:var(--ink);margin-bottom:3px;font-weight:700;letter-spacing:.02em;}
-  .wp span{font-size:13.5px;color:var(--soft);line-height:1.5;}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;margin-top:14px;}
+  .wp{padding:22px 0 20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:6px;}
+  .wp .wt{display:flex;align-items:center;gap:10px;}
+  .wp .wt img{height:20px;width:auto;}
+  .wp b{font-family:'Archivo',sans-serif;font-stretch:125%;text-transform:uppercase;font-size:15.5px;color:var(--ink);font-weight:800;letter-spacing:.03em;}
+  .wp span{font-size:14px;color:var(--soft);line-height:1.55;}
   .badge-rail{background:linear-gradient(165deg,#fff,#F4F7FA);border:1px solid var(--line-cool);border-radius:var(--r-lg);padding:36px 32px;text-align:center;box-shadow:var(--shadow-md);}
-  .badge-rail h3{font-size:26px;margin-bottom:24px;}
+  .badge-rail h3{font-size:22px;margin-bottom:24px;}
   .badge-rail .badges{display:flex;flex-direction:column;gap:26px;align-items:center;}
   .badge-rail img{max-height:130px;width:auto;}
   .badge-rail img.ha{max-height:52px;}
   .badge-rail .cap{font-size:12.5px;color:var(--soft);margin-top:18px;line-height:1.5;}
 
-  /* ---------- parts & showroom ---------- */
+  /* ---------- parts & showroom (with reel) ---------- */
   .parts{background:var(--cool);border-top:1px solid var(--line-cool);border-bottom:1px solid var(--line-cool);}
-  .parts .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:54px;align-items:center;}
-  .parts .ph{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/3;position:relative;}
-  .parts .ph img{width:100%;height:100%;object-fit:cover;}
-  .parts .ph .tag{position:absolute;bottom:16px;left:16px;background:rgba(16,30,48,.88);backdrop-filter:blur(4px);color:#fff;border-radius:11px;padding:9px 15px;font-size:13px;font-weight:700;}
+  .parts .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;align-items:center;}
+  .reel-frame{max-width:300px;margin:0 auto;background:#0f1420;border-radius:26px;padding:10px;box-shadow:var(--shadow-lg);}
+  .reel-frame .rf{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:267/476;background:#000;}
+  .reel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .reel-cap{text-align:center;font-size:12.5px;color:var(--soft);font-weight:600;margin-top:12px;}
   .parts ul{list-style:none;margin:24px 0 30px;}
   .parts li{display:flex;gap:13px;padding:8px 0;font-size:16px;color:var(--body);}
   .parts li .ck{color:var(--flame);font-weight:800;flex:none;}
+  .parts li b{color:var(--ink);}
   .parts .addr{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line-cool);border-radius:999px;padding:10px 20px;font-weight:700;color:var(--ink);font-size:14.5px;margin-bottom:26px;}
   .parts .addr svg{width:17px;height:17px;color:var(--flame);}
 
-  /* ---------- faith band ---------- */
-  .faith{background:var(--paper);text-align:center;padding:82px 0;}
-  .faith .verse{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:clamp(22px,2.8vw,31px);color:var(--ink);max-width:24em;margin:22px auto 14px;line-height:1.45;text-transform:none;}
-  .faith .ref{font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--flame);}
-  .faith p.story{max-width:64ch;margin:26px auto 0;color:var(--soft);font-size:16.5px;}
-  .faith .vet{margin:34px auto 0;display:flex;justify-content:center;}
-  .faith .vet img{height:92px;width:auto;}
+  /* ---------- divisions ---------- */
+  .divisions{background:var(--paper);}
+  .div-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px;}
+  .dv{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;transition:.25s;display:flex;flex-direction:column;}
+  .dv:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);}
+  .dv .im{aspect-ratio:16/10;overflow:hidden;position:relative;}
+  .dv .im img{width:100%;height:100%;object-fit:cover;}
+  .dv .im.solar{background:linear-gradient(150deg,#16324F,#0d1c2e);display:grid;place-items:center;}
+  .dv .im.solar svg{width:64px;height:64px;color:var(--gold);}
+  .dv .im .stamp{position:absolute;top:12px;right:12px;background:var(--gold);color:#1a1305;font-weight:800;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:4px 11px;}
+  .dv .bd{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1;}
+  .dv h3{font-size:17px;line-height:1.15;margin-bottom:3px;}
+  .dv .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--flame);margin-bottom:10px;}
+  .dv ul{list-style:none;flex:1;}
+  .dv li{font-size:13px;color:var(--soft);padding:3px 0;display:flex;gap:8px;}
+  .dv li:before{content:"•";color:var(--flame);font-weight:800;}
+  .dv .ph{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px;font-weight:700;color:var(--ink);}
+  .dv .ph a:hover{color:var(--flame);}
+  .div-note{text-align:center;margin-top:30px;font-size:14px;color:var(--soft);}
 
-  /* ---------- reviews slider ---------- */
-  .reviews{background:var(--cool);border-top:1px solid var(--line-cool);}
+  /* ---------- team band ---------- */
+  .team{background:#fff;border-top:1px solid var(--line);}
+  .team .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;}
+  .team .ph{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);}
+  .team .ph img{width:100%;height:100%;object-fit:cover;}
+  .team .verse{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--ink);margin:24px 0 4px;line-height:1.5;}
+  .team .ref{font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--flame);}
+  .team .phones{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+  .team .pline{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:13px 20px;}
+  .team .pline .k{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);}
+  .team .pline a{display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:19px;color:var(--ink);}
+  .team .pline a:hover{color:var(--flame);}
+  .team .vet{height:64px;width:auto;margin-top:24px;}
+
+  /* ---------- reviews marquee ---------- */
+  .reviews{background:var(--cool);border-top:1px solid var(--line-cool);padding-bottom:96px;}
   .rev-top{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;flex-wrap:wrap;margin-bottom:36px;}
   .rev-score{display:flex;align-items:center;gap:18px;}
-  .rev-score .big{font-family:'Big Shoulders',sans-serif;font-weight:800;font-size:64px;color:var(--ink);line-height:1;}
+  .rev-score .big{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:58px;color:var(--ink);line-height:1;}
   .rev-score .meta{font-size:14px;color:var(--soft);font-weight:600;}
   .rev-score .meta .stars{display:block;font-size:17px;margin-bottom:3px;}
-  .rev-nav{display:flex;gap:10px;}
-  .rev-nav button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line-cool);background:#fff;color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:.2s;}
-  .rev-nav button:hover{background:var(--flame);border-color:var(--flame);color:#fff;}
-  .rev-nav svg{width:18px;height:18px;}
-  .slider{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 22px;scrollbar-width:none;}
-  .slider::-webkit-scrollbar{display:none;}
-  .rev-card{flex:0 0 min(360px,86vw);scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 26px 22px;display:flex;flex-direction:column;box-shadow:0 6px 18px -8px rgba(16,30,48,.08);}
+  .rev-score .meta a{color:var(--steel);border-bottom:1px dotted var(--steel);}
+  .rev-score .meta a:hover{color:var(--flame);border-color:var(--flame);}
+  .rev-marquee{overflow:hidden;display:flex;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);}
+  .rev-track{display:flex;gap:20px;padding-right:20px;flex:none;animation:revmq 80s linear infinite;}
+  .rev-marquee:hover .rev-track{animation-play-state:paused;}
+  @keyframes revmq{to{transform:translateX(-100%);}}
+  @media(prefers-reduced-motion:reduce){.rev-track{animation:none;}}
+  .rev-card{flex:0 0 350px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 24px 20px;display:flex;flex-direction:column;box-shadow:0 6px 18px -8px rgba(16,30,48,.08);}
   .rev-card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
   .rev-card .chip{font-size:11.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;background:#EFF4F9;color:var(--steel);border-radius:999px;padding:4px 11px;}
-  .rev-card p{font-size:14.5px;line-height:1.6;color:var(--body);flex:1;}
-  .rev-card .who{display:flex;align-items:center;gap:12px;margin-top:18px;padding-top:15px;border-top:1px solid var(--line);}
-  .rev-card .av{width:40px;height:40px;border-radius:50%;flex:none;display:grid;place-items:center;font-weight:800;font-size:14px;color:#fff;background:linear-gradient(150deg,var(--chrome),var(--navy));}
-  .rev-card .nm{font-weight:700;color:var(--ink);font-size:14.5px;line-height:1.2;}
-  .rev-card .src{font-size:11.5px;color:var(--soft);font-weight:600;margin-top:2px;}
+  .rev-card p{font-size:14px;line-height:1.6;color:var(--body);flex:1;}
+  .rev-card .who{display:flex;align-items:center;gap:12px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);}
+  .rev-card .av{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;font-weight:800;font-size:13px;color:#fff;background:linear-gradient(150deg,var(--chrome),var(--navy));}
+  .rev-card .nm{font-weight:700;color:var(--ink);font-size:14px;line-height:1.2;}
+  .rev-card .src{font-size:11px;color:var(--soft);font-weight:600;margin-top:2px;}
 
   /* ---------- service area ---------- */
   .area .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
@@ -237,7 +268,7 @@
   .c-line .v{font-weight:700;color:#fff;font-size:17px;}
   .c-line a.v:hover{color:var(--gold);}
   .form{background:#fff;border-radius:var(--r-lg);padding:34px 32px;box-shadow:0 30px 70px -20px rgba(0,0,0,.45);color:var(--body);}
-  .form h3{font-size:28px;margin-bottom:4px;}
+  .form h3{font-size:23px;margin-bottom:4px;}
   .form .sm{font-size:13.5px;color:var(--soft);margin-bottom:20px;}
   .form label{display:block;font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin:15px 0 6px;}
   .form input,.form select,.form textarea{width:100%;border:1.5px solid var(--line-cool);border-radius:11px;padding:13px 15px;font-family:'Public Sans',sans-serif;font-size:15.5px;color:var(--ink);background:var(--paper);outline:none;transition:.2s;}
@@ -260,8 +291,8 @@
 
   /* ---------- responsive ---------- */
   @media(max-width:1020px){
-    .svc-grid{grid-template-columns:1fr 1fr;}
-    .why .wrap,.parts .wrap,.area .wrap,.contact .wrap{grid-template-columns:1fr;}
+    .svc-grid,.div-grid{grid-template-columns:1fr 1fr;}
+    .why .wrap,.parts .wrap,.area .wrap,.contact .wrap,.team .wrap{grid-template-columns:1fr;}
     .navlinks{display:none;} .burger{display:block;}
     footer .wrap{grid-template-columns:1fr 1fr;}
     .trust{grid-template-columns:1fr 1fr;}
@@ -272,10 +303,9 @@
   }
   @media(max-width:640px){
     section{padding:64px 0;}
-    .svc-grid{grid-template-columns:1fr;}
+    .svc-grid,.div-grid{grid-template-columns:1fr;}
     .why-grid,.form .row{grid-template-columns:1fr;}
     footer .wrap{grid-template-columns:1fr;}
-    /* centered hero on mobile */
     .hero{padding:170px 0 150px;text-align:center;}
     .hero .shade{background:linear-gradient(180deg, rgba(0,4,34,.86) 0%, rgba(0,4,34,.68) 55%, rgba(0,4,34,.8) 100%);}
     .hero h1{margin-left:auto;margin-right:auto;}
@@ -289,20 +319,23 @@
     .nav .cta .btn span{display:none;}
     .nav .cta .btn{padding:12px 14px;}
     .nav .logo img{height:42px;}
+    .team .phones{justify-content:center;}
+    .team{text-align:center;}
+    .team .wt{justify-content:center;}
   }
 </style>
 </head>
 <body>
 
-<!-- nav (transparent over hero, navy on scroll) -->
+<!-- nav -->
 <header class="nav" id="nav">
   <div class="demo-note">Website concept by Zonkel Media — prepared for American Appliance Repair, LLC</div>
   <div class="wrap">
     <a class="logo" href="#top"><img src="assets/logo.png" alt="American Appliance Repair, LLC — Philippians 4:13"></a>
     <nav class="navlinks">
       <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
-      <a href="#parts">Parts &amp; Showroom</a>
+      <a href="#parts">Parts Store</a>
+      <a href="#divisions">Divisions</a>
       <a href="#reviews">Reviews</a>
       <a href="#area">Service Area</a>
       <a href="#faq">FAQ</a>
@@ -313,7 +346,7 @@
     </div>
   </div>
   <div id="mnav">
-    <a href="#services">Services</a><a href="#why">Why Us</a><a href="#parts">Parts &amp; Showroom</a><a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#faq">FAQ</a><a href="#contact">Request Service</a>
+    <a href="#services">Services</a><a href="#parts">Parts Store</a><a href="#divisions">Divisions</a><a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#faq">FAQ</a><a href="#contact">Request Service</a>
   </div>
 </header>
 
@@ -322,9 +355,9 @@
   <div class="bg"></div>
   <div class="shade"></div>
   <div class="wrap">
-    <span class="kick h-in"><span class="st">★</span> Christian Veteran-Owned &amp; Operated · Corpus Christi, TX</span>
+    <span class="kick h-in"><img src="assets/insignia.png" alt=""> Christian Veteran-Owned &amp; Operated · Corpus Christi, TX</span>
     <h1 class="h-in d1">Appliance down?<br>Fixed <span class="fl swash">same&nbsp;day.<svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M4 10 C 60 2, 140 2, 196 8"/></svg></span></h1>
-    <p class="lede h-in d2">Dependable fixes for refrigerators, washers, dryers, ovens &amp; more — from the hometown team your neighbors already trust. Up-front pricing, certified technicians, and a warranty on every repair.</p>
+    <p class="lede h-in d2">Dependable fixes for refrigerators, washers, dryers, ovens &amp; more — from the hometown team your neighbors already trust. Up-front pricing, certified technicians, and a warranty on every repair. Open until 8 PM, six days a week.</p>
     <div class="ctas h-in d3">
       <a href="tel:+13616730937" class="btn btn-flame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg>Call (361) 673-0937</a>
       <a href="#contact" class="btn btn-white">Request a Repair</a>
@@ -338,7 +371,7 @@
   </div>
 </section>
 
-<!-- trust strip overlapping hero -->
+<!-- trust strip -->
 <div class="trust-wrap">
   <div class="trust rv in">
     <div class="tcell"><span class="big">4.8</span><div class="t"><b>Google Rating</b><span class="stars">★★★★★</span> 176 reviews</div></div>
@@ -381,12 +414,12 @@
 <section class="services" id="services">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="eyebrow"><span class="fl">🔥</span> What We Fix</span>
+      <span class="eyebrow"><img src="assets/insignia.png" alt=""> What We Fix</span>
       <h2 class="sec">Appliance repair services we offer</h2>
       <p class="lede">Our technicians know every major model and brand — and they'll find the budget-friendly fix that's right for you, residential or commercial.</p>
     </div>
     <div class="svc-grid">
-      <div class="svc rv"><div class="im"><span class="no">01</span><img src="assets/AAR_Appliance_Service_IMG-1.jpg" alt="Refrigerator repair in Corpus Christi" loading="lazy"></div><div class="bd"><h3>Refrigerator Repair</h3><p>Fast, cost-efficient fixes that keep your unit cooling like it should — before the groceries spoil.</p><a class="more" href="tel:+13616730937">Same-day help →</a></div></div>
+      <div class="svc rv"><div class="im"><span class="no">01</span><img src="assets/AAR_Appliance_Service_IMG-1.jpg" alt="Refrigerator and ice machine repair in Corpus Christi" loading="lazy"></div><div class="bd"><h3>Refrigerators &amp; Ice Machines</h3><p>Cooling loss, leaks, ice makers &amp; commercial ice machines — fixed before the groceries spoil.</p><a class="more" href="tel:+13616730937">Same-day help →</a></div></div>
       <div class="svc rv"><div class="im"><span class="no">02</span><img src="assets/AAR_Appliance_Service_IMG-2.jpg" alt="Dryer repair in Corpus Christi" loading="lazy"></div><div class="bd"><h3>Dryer Repair</h3><p>Swift diagnosis for no-heat, drum and vent issues — so laundry day stays on schedule.</p><a class="more" href="tel:+13616730937">Same-day help →</a></div></div>
       <div class="svc rv"><div class="im"><span class="no">03</span><img src="assets/AAR_Appliance_Service_IMG-3.jpg" alt="Washer repair in Corpus Christi" loading="lazy"></div><div class="bd"><h3>Washer Repair</h3><p>Drainage, spin and no-start problems fixed efficiently and affordably.</p><a class="more" href="tel:+13616730937">Same-day help →</a></div></div>
       <div class="svc rv"><div class="im"><span class="no">04</span><img src="assets/AAR_Appliance_Service_IMG-4.jpg" alt="Dishwasher repair in Corpus Christi" loading="lazy"></div><div class="bd"><h3>Dishwasher Repair</h3><p>From cleaning problems to leaks and pumps — enjoy uninterrupted dishwashing again.</p><a class="more" href="tel:+13616730937">Same-day help →</a></div></div>
@@ -397,7 +430,7 @@
     </div>
     <div class="svc-cta rv">
       <a href="tel:+13616730937" class="btn btn-navy">Need urgent repair today? Call (361) 673-0937</a>
-      <div class="note">Residential &amp; commercial · Certified &amp; insured technicians · Warranty on our work</div>
+      <div class="note">Residential &amp; commercial · Certified &amp; insured technicians · Warranty on our work · Open until 8 PM</div>
     </div>
   </div>
 </section>
@@ -408,7 +441,7 @@
     <div class="stars">★★★★★</div>
     <blockquote>“From the impressive answering on my initial call to the completed repair, my experience was excellent. Within 45 minutes the drain was unplugged — and the cost was significantly less than I had previously paid. They will become my appliance repair service from now on.”</blockquote>
     <div class="who"><b>Robert Andelman</b> · Refrigerator repair, Corpus Christi</div>
-    <div class="gtag">Posted on Google Reviews</div>
+    <a class="gtag" href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener">Read all our reviews on Google →</a>
   </div>
 </section>
 
@@ -416,16 +449,16 @@
 <section class="why" id="why">
   <div class="wrap">
     <div>
-      <span class="eyebrow rv"><span class="fl">🔥</span> Why Choose American Appliance Repair</span>
+      <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Why Choose American Appliance Repair</span>
       <h2 class="sec rv">Professional. Efficient.<br>Your peace of mind first.</h2>
-      <p class="lede rv">Guaranteed customer-centric service across Corpus Christi — that's not a slogan, it's how a veteran runs a business.</p>
+      <p class="lede rv" style="margin-bottom:30px;">Guaranteed customer-centric service across Corpus Christi — that's not a slogan, it's how a veteran runs a business.</p>
       <div class="why-grid">
-        <div class="wp rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6l-2.8 2.8-2.2-2.2 2.8-2.8z"/></svg></div><div><b>Skilled Professionals</b><span>Technicians who diagnose fast and fix it right — backed by a master tech on call.</span></div></div>
-        <div class="wp rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><b>Swift Service</b><span>Same-day appointments that keep disruptions out of your daily schedule.</span></div></div>
-        <div class="wp rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6.5c0-2-2.2-3-5-3s-5 1-5 3 1.8 2.7 5 3.5 5 1.7 5 3.5-2.2 3-5 3-5-1-5-3"/></svg></div><div><b>Up-Front, Fair Pricing</b><span>Transparent quotes before the work starts — superior service at honest rates.</span></div></div>
-        <div class="wp rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.7-9.5-9A5.6 5.6 0 0 1 12 6a5.6 5.6 0 0 1 9.5 6c-2 4.3-9.5 9-9.5 9z"/></svg></div><div><b>Customer Satisfaction</b><span>We go the extra mile to meet — and surpass — your expectations, every visit.</span></div></div>
-        <div class="wp rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2M3 13h18"/></svg></div><div><b>Every Appliance Covered</b><span>Refrigerators to disposals, residential and commercial — one call covers it all.</span></div></div>
-        <div class="wp rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.9-.9L3 21l2-5.1a8.4 8.4 0 1 1 16-4.4z"/></svg></div><div><b>Transparent Communication</b><span>Live arrival updates and plain-English explanations at every phase.</span></div></div>
+        <div class="wp rv"><div class="wt"><b>Skilled Professionals</b></div><span>Fast, accurate diagnosis — backed by a master tech on call for the tough ones.</span></div>
+        <div class="wp rv"><div class="wt"><b>Swift, Same-Day Service</b></div><span>Open until 8 PM six days a week, so your schedule doesn't wait on ours.</span></div>
+        <div class="wp rv"><div class="wt"><b>Up-Front, Fair Pricing</b></div><span>Transparent quotes before the work starts. No surprises on the invoice.</span></div>
+        <div class="wp rv"><div class="wt"><b>Warranty On Every Repair</b></div><span>If something isn't right, we make it right. That's the whole policy.</span></div>
+        <div class="wp rv"><div class="wt"><b>Every Appliance Covered</b></div><span>Refrigerators to ice machines, residential and commercial — one call covers it all.</span></div>
+        <div class="wp rv"><div class="wt"><b>You'll Never Wonder</b></div><span>Live arrival updates and plain-English explanations at every step.</span></div>
       </div>
     </div>
     <div class="badge-rail rv">
@@ -443,68 +476,121 @@
 <!-- parts & showroom -->
 <section class="parts" id="parts">
   <div class="wrap">
-    <div class="ph rv">
-      <img src="assets/AAR_BG_IMG-2.jpg" alt="Kitchen appliances — parts and showroom at American Appliance Repair" loading="lazy">
-      <div class="tag">📍 3701 Apollo Rd, Corpus Christi</div>
+    <div class="rv">
+      <div class="reel-frame">
+        <div class="rf">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F848179184659034%2F&show_text=false&width=267&t=0" title="Warehouse tour — American Appliance Repair" scrolling="no" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="reel-cap">▶ Take the warehouse tour with Rafael</div>
     </div>
     <div>
-      <span class="eyebrow rv"><span class="fl">🔥</span> More Than Repairs</span>
-      <h2 class="sec rv">Parts counter &amp; appliance showroom — under one roof</h2>
-      <p class="lede rv">The same shop that fixes your appliance stocks the parts and sells quality, restored units. One-stop solution, Corpus Christi style.</p>
+      <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> The Parts Division</span>
+      <h2 class="sec rv">A real parts store — stocked, staffed &amp; better priced than the big boxes</h2>
+      <p class="lede rv">The same shop that fixes your appliance runs a full parts counter and appliance showroom. Walk in, call, or — soon — order online.</p>
       <ul>
-        <li class="rv"><span class="ck">✓</span> Appliance parts for all major brands — wholesale &amp; retail</li>
-        <li class="rv"><span class="ck">✓</span> Restored refrigerators, ranges, washers &amp; dryers — inspected, cleaned &amp; tested</li>
-        <li class="rv"><span class="ck">✓</span> In-shop repairs available — bring your unit to us</li>
-        <li class="rv"><span class="ck">✓</span> Trade &amp; business accounts for restaurants, landlords &amp; repair pros</li>
+        <li class="rv"><span class="ck">✓</span><span><b>OEM &amp; aftermarket parts</b> for every major brand — retail &amp; wholesale</span></li>
+        <li class="rv"><span class="ck">✓</span><span><b>Marcone partner</b> — more parts in stock, faster availability, quicker repairs</span></li>
+        <li class="rv"><span class="ck">✓</span><span>New, scratch-&amp;-dent &amp; quality used appliances — <b>delivery &amp; installation included</b></span></li>
+        <li class="rv"><span class="ck">✓</span><span>Trade accounts for restaurants, landlords &amp; repair pros</span></li>
       </ul>
       <div class="addr rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 3701 Apollo Rd, Corpus Christi, TX 78413</div>
       <div class="rv" style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="tel:+13616730937" class="btn btn-flame">Call or Text for Parts</a>
+        <a href="tel:+13614009513" class="btn btn-flame">Parts &amp; Sales: (361) 400-9513</a>
         <a href="#contact" class="btn btn-ghost">Ask About an Appliance</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- faith band -->
-<section class="faith rv">
+<!-- divisions -->
+<section class="divisions" id="divisions">
   <div class="wrap">
-    <span class="eyebrow"><span class="fl">🔥</span> The Verse On Our Logo</span>
-    <div class="verse">“For all things I have the strength through the one who gives me power.”</div>
-    <div class="ref">Philippians 4:13</div>
-    <p class="story">American Appliance Repair is owned and operated by a retired military veteran serving Corpus Christi with the same values he served his country by — integrity, hard work, and treating every home like his own. Military discounts proudly honored.</p>
-    <div class="vet"><img src="assets/veteran-badge.png" alt="Military Veteran Owned Business"></div>
+    <div class="sec-head rv" style="text-align:center;margin-left:auto;margin-right:auto;">
+      <span class="eyebrow"><img src="assets/insignia.png" alt=""> The Bigger Picture</span>
+      <h2 class="sec">One company. Four divisions.</h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto;">Everything your home runs on — repaired, supplied, replaced, and soon, powered.</p>
+    </div>
+    <div class="div-grid">
+      <div class="dv rv">
+        <div class="im"><img src="assets/companytruck.jpg" alt="American Appliance Repair service truck" loading="lazy"></div>
+        <div class="bd"><h3>American Appliance Repair</h3><div class="k">Service &amp; Repair Division</div>
+          <ul><li>Residential &amp; commercial repair</li><li>In-shop &amp; on-site service</li><li>Same-day appointments</li></ul>
+          <div class="ph"><a href="tel:+13616730937">📞 (361) 673-0937</a></div>
+        </div>
+      </div>
+      <div class="dv rv">
+        <div class="im"><img src="assets/partsinstock.jpg" alt="Appliance parts in stock — parts warehouse" loading="lazy"></div>
+        <div class="bd"><h3>American Appliance Parts Store</h3><div class="k">Parts &amp; Supply Division</div>
+          <ul><li>OEM &amp; aftermarket parts</li><li>Retail &amp; technician support</li><li>Walk-in parts counter</li></ul>
+          <div class="ph"><a href="tel:+13614009513">📞 (361) 400-9513</a></div>
+        </div>
+      </div>
+      <div class="dv rv">
+        <div class="im"><img src="assets/warehouse.jpg" alt="Appliance showroom warehouse — new and used appliances" loading="lazy"></div>
+        <div class="bd"><h3>American Appliances 4U</h3><div class="k">Sales Division</div>
+          <ul><li>New &amp; scratch-&amp;-dent appliances</li><li>Quality used units</li><li>Delivery &amp; installation</li></ul>
+          <div class="ph"><a href="tel:+13614009513">📞 (361) 400-9513</a></div>
+        </div>
+      </div>
+      <div class="dv rv">
+        <div class="im solar"><span class="stamp">Newest Division</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.1 2.1M17.4 17.4l2.1 2.1M4.5 19.5l2.1-2.1M17.4 6.6l2.1-2.1"/></svg></div>
+        <div class="bd"><h3>American Power</h3><div class="k">Renewable Energy Division</div>
+          <ul><li>Residential &amp; commercial solar</li><li>Battery backup systems</li><li>EV charging solutions</li></ul>
+          <div class="ph" style="color:var(--soft);font-weight:600;">Coming to Corpus Christi</div>
+        </div>
+      </div>
+    </div>
+    <div class="div-note rv">One family of companies, one standard: <em style="font-family:'Fraunces';">integrity · service · quality · innovation · faith</em></div>
   </div>
 </section>
 
-<!-- reviews slider -->
+<!-- team band -->
+<section class="team">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Real People, Real Values</span>
+      <h2 class="sec rv">Meet the team behind your peace of mind</h2>
+      <p class="lede rv">Ever wonder who's fixing your fridge or washer? Real people, right here in Corpus Christi. Our founder, Juan, brings Army discipline and faith to every repair — and the whole team works side by side, serving with integrity and pride.</p>
+      <div class="verse rv">“For all things I have the strength through the one who gives me power.”</div>
+      <div class="ref rv">Philippians 4:13</div>
+      <div class="phones rv">
+        <div class="pline"><span class="k">Service</span><a href="tel:+13616730937">(361) 673-0937</a></div>
+        <div class="pline"><span class="k">Parts &amp; Sales</span><a href="tel:+13614009513">(361) 400-9513</a></div>
+      </div>
+      <img class="vet rv" src="assets/veteran-badge.png" alt="Military Veteran Owned Business">
+    </div>
+    <div class="ph rv"><img src="assets/americanappliancerepairteam.jpg" alt="The American Appliance Repair team in a training meeting, Corpus Christi" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- reviews marquee -->
 <section class="reviews" id="reviews">
   <div class="wrap">
     <div class="rev-top rv">
       <div>
-        <span class="eyebrow"><span class="fl">🔥</span> What Your Neighbors Say</span>
+        <span class="eyebrow"><img src="assets/insignia.png" alt=""> What Your Neighbors Say</span>
         <div class="rev-score" style="margin-top:14px;">
           <div class="big">4.8</div>
-          <div class="meta"><span class="stars">★★★★★</span>176 Google reviews · Corpus Christi &amp; the Coastal Bend</div>
+          <div class="meta"><span class="stars">★★★★★</span><a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener">176 Google reviews</a> · Corpus Christi &amp; the Coastal Bend</div>
         </div>
       </div>
-      <div class="rev-nav">
-        <button id="rPrev" aria-label="Previous reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg></button>
-        <button id="rNext" aria-label="More reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></button>
-      </div>
+      <a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:12px 24px;font-size:14.5px;">Read them all on Google</a>
     </div>
-    <div class="slider rv" id="slider">
+  </div>
+  <div class="rev-marquee rv">
+    <div class="rev-track" id="revTrack">
       <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Refrigerator</span></div><p>“The techs were knowledgeable and courteous and in constant contact with the Master Tech by phone. My high-end KitchenAid 42″ built-in is now working like new.”</p><div class="who"><div class="av">RB</div><div><div class="nm">R. B.</div><div class="src">Google review</div></div></div></div>
-      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Refrigerator</span></div><p>“Big shout out to Chris and the office staff for getting out here Saturday. Mariana is an angel for helping arrange it. This company is honest and went above and beyond to help me. HIGHLY RECOMMEND.”</p><div class="who"><div class="av">TD</div><div><div class="nm">Teri Dysarz</div><div class="src">Google review · Rockport</div></div></div></div>
-      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Washer</span></div><p>“This is a veteran-owned company — I received a discount for my service in the military, which was awesome. Chris and his son were very knowledgeable and fixed my washer in no time. Very affordable as well.”</p><div class="who"><div class="av">HH</div><div><div class="nm">Heather Hirst</div><div class="src">Google review</div></div></div></div>
-      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Washer</span></div><p>“My washer started making an awful sound. Chris came and fixed it — the culprit was a tiny rubber ducky from my daughter's pocket! Working just fine now, and it didn't take long at all. 😂”</p><div class="who"><div class="av">JM</div><div><div class="nm">Jackie Mendez</div><div class="src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Refrigerator</span></div><p>“Big shout out to Chris and the office staff for getting out here Saturday. Mariana is an angel for helping arrange it. This company is honest and went above and beyond. HIGHLY RECOMMEND.”</p><div class="who"><div class="av">TD</div><div><div class="nm">Teri Dysarz</div><div class="src">Google review · Rockport</div></div></div></div>
+      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Washer</span></div><p>“This is a veteran-owned company — I received a discount for my service in the military, which was awesome. Chris and his son fixed my washer in no time. Very affordable as well.”</p><div class="who"><div class="av">HH</div><div><div class="nm">Heather Hirst</div><div class="src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Washer</span></div><p>“My washer started making an awful sound. Chris came and fixed it — the culprit was a tiny rubber ducky from my daughter's pocket! Working just fine now. 😂”</p><div class="who"><div class="av">JM</div><div><div class="nm">Jackie Mendez</div><div class="src">Google review</div></div></div></div>
       <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Dishwasher</span></div><p>“No BS — hooked up my dishwasher and found the problem. Wear-and-tear fix for under $150. Respectful, kind, and cleaned up before they left.”</p><div class="who"><div class="av">HP</div><div><div class="nm">Hannah Poe</div><div class="src">Google review</div></div></div></div>
-      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Freezer</span></div><p>“Our freezer was leaking water — the technician found the problem immediately on the first visit. Back on the promised day, installed the part, very reasonable price. We are very satisfied.”</p><div class="who"><div class="av">PD</div><div><div class="nm">Priscilla Diers</div><div class="src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Freezer</span></div><p>“Our freezer was leaking water — the technician found the problem immediately on the first visit. Back on the promised day, installed the part, very reasonable price. Very satisfied.”</p><div class="who"><div class="av">PD</div><div><div class="nm">Priscilla Diers</div><div class="src">Google review</div></div></div></div>
       <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Dryer</span></div><p>“Caesar was an awesome repairman. Correctly diagnosed the problem, ordered parts and completed all repairs on our dryer in a timely fashion. We'll definitely use this company again!”</p><div class="who"><div class="av">AR</div><div><div class="nm">Alice R.</div><div class="src">Google review</div></div></div></div>
-      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Refrigerator</span></div><p>“Greg says what he does and does what he says! Once he's on the way, a text gives you a live map of his arrival. He installed the new part and now my refrigerator works perfectly again.”</p><div class="who"><div class="av">PW</div><div><div class="nm">Peter Wesner</div><div class="src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Refrigerator</span></div><p>“Greg says what he does and does what he says! Once he's on the way, a text gives you a live map of his arrival. Now my refrigerator works perfectly again.”</p><div class="who"><div class="av">PW</div><div><div class="nm">Peter Wesner</div><div class="src">Google review</div></div></div></div>
       <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Scheduling</span></div><p>“Super nice techs and on time too! The office kept me up to date with appointment information from the beginning. Very honest and trustworthy company.”</p><div class="who"><div class="av">CP</div><div><div class="nm">Clay Petsch</div><div class="src">Google review · Port Aransas</div></div></div></div>
       <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Diagnosis</span></div><p>“Very informative! Diagnosed within 5 minutes and had the job done in 30. All up-front pricing with warranty on work!”</p><div class="who"><div class="av">DH</div><div><div class="nm">Domingo Hernandez</div><div class="src">Google review</div></div></div></div>
-      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Honest Advice</span></div><p>“Although my washer wasn't cost-effective to repair, Chris was phenomenal and did all he could. Some things just wear out. Thank you for being so kind and helpful during this process.”</p><div class="who"><div class="av">CP</div><div><div class="nm">Cathy Peterson</div><div class="src">Google review</div></div></div></div>
+      <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Honest Advice</span></div><p>“Although my washer wasn't cost-effective to repair, Chris was phenomenal and did all he could. Thank you for being so kind and helpful during this process.”</p><div class="who"><div class="av">CP</div><div><div class="nm">Cathy Peterson</div><div class="src">Google review</div></div></div></div>
       <div class="rev-card"><div class="top"><span class="stars">★★★★★</span><span class="chip">Samsung Washer</span></div><p>“Chris and Aaron were great! They fixed my Samsung washer very quickly and explained everything they did. I will definitely call them in the future!”</p><div class="who"><div class="av">PC</div><div><div class="nm">Patricia Contreras</div><div class="src">Google review</div></div></div></div>
     </div>
   </div>
@@ -514,7 +600,7 @@
 <section class="area" id="area">
   <div class="wrap">
     <div>
-      <span class="eyebrow rv"><span class="fl">🔥</span> Where We Work</span>
+      <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Where We Work</span>
       <h2 class="sec rv">Serving Corpus Christi &amp; the Coastal Bend</h2>
       <p class="lede rv">From Padre Island to Annaville — and out to the coastal towns — our techs are already in your neighborhood.</p>
       <div class="chips rv">
@@ -531,17 +617,17 @@
 <section class="faq" id="faq">
   <div class="wrap">
     <div class="sec-head rv" style="text-align:center;margin-left:auto;margin-right:auto;">
-      <span class="eyebrow"><span class="fl">🔥</span> Good Questions</span>
+      <span class="eyebrow"><img src="assets/insignia.png" alt=""> Good Questions</span>
       <h2 class="sec">Frequently asked questions</h2>
     </div>
-    <details class="rv" open><summary>What types of appliances do you repair?<span class="pm">+</span></summary><div class="ans">We repair all the household workhorses: refrigerators and freezers, ovens and stoves, dishwashers, washers and dryers, vent hoods, and garbage disposals — for both homes and businesses.</div></details>
-    <details class="rv"><summary>Do you service all appliance brands?<span class="pm">+</span></summary><div class="ans">Yes. Our technicians work on every major brand — Samsung, LG, GE, Whirlpool, Frigidaire, Bosch, Amana, Electrolux, Miele and more. If it's in your kitchen or laundry room, we can service it.</div></details>
-    <details class="rv"><summary>How quickly can you respond to a service request?<span class="pm">+</span></summary><div class="ans">Same-day service is our standard whenever the schedule allows. Call in the morning and in most cases we can have a technician at your door that day.</div></details>
+    <details class="rv" open><summary>What types of appliances do you repair?<span class="pm">+</span></summary><div class="ans">All the household workhorses: refrigerators and freezers, ice machines, ovens and stoves, dishwashers, washers and dryers, vent hoods, and garbage disposals — for both homes and businesses.</div></details>
+    <details class="rv"><summary>Do you service all appliance brands?<span class="pm">+</span></summary><div class="ans">Yes. Our technicians work on every major brand — Samsung, LG, GE, Whirlpool, Frigidaire, Bosch, KitchenAid, Maytag, JennAir, Amana, Electrolux, Miele and more.</div></details>
+    <details class="rv"><summary>How quickly can you respond to a service request?<span class="pm">+</span></summary><div class="ans">Same-day service is our standard whenever the schedule allows — and we're open until 8 PM Monday through Friday, plus Saturdays. Call in the morning and in most cases we can have a technician at your door that day.</div></details>
+    <details class="rv"><summary>Do you sell appliance parts too?<span class="pm">+</span></summary><div class="ans">Yes — we run a full parts store at 3701 Apollo Rd with OEM and aftermarket parts for every major brand, backed by our Marcone partnership for fast availability. Call the parts counter directly at <a href="tel:+13614009513" style="color:var(--flame);font-weight:700;">(361) 400-9513</a>.</div></details>
     <details class="rv"><summary>Are your technicians certified and insured?<span class="pm">+</span></summary><div class="ans">Yes — every technician is certified and fully insured, and our field techs stay in contact with a master technician for tougher diagnoses.</div></details>
     <details class="rv"><summary>Do you offer a warranty on your repairs?<span class="pm">+</span></summary><div class="ans">We stand behind our work with a warranty on every repair. If something isn't right, we make it right.</div></details>
-    <details class="rv"><summary>Are your repair services affordable?<span class="pm">+</span></summary><div class="ans">You get up-front, transparent pricing before any work begins — no surprises. Customers regularly tell us the bill came in under what they expected to pay.</div></details>
-    <details class="rv"><summary>Can you handle both residential and commercial repairs?<span class="pm">+</span></summary><div class="ans">Yes — we service homes as well as businesses across the Coastal Bend, and we stock parts for both at our Apollo Rd shop.</div></details>
-    <details class="rv"><summary>How can I schedule a service appointment?<span class="pm">+</span></summary><div class="ans">Call or text <a href="tel:+13616730937" style="color:var(--flame);font-weight:700;">(361) 673-0937</a>, or send the request form below — we'll confirm your appointment right away.</div></details>
+    <details class="rv"><summary>Can you handle both residential and commercial repairs?<span class="pm">+</span></summary><div class="ans">Yes — we service homes as well as restaurants and businesses across the Coastal Bend, including commercial refrigeration and ice machines.</div></details>
+    <details class="rv"><summary>How can I schedule a service appointment?<span class="pm">+</span></summary><div class="ans">Call or text <a href="tel:+13616730937" style="color:var(--flame);font-weight:700;">(361) 673-0937</a>, or send the request form below — we'll confirm your appointment right away. Open Mon–Fri 8 AM–8 PM, Sat 9 AM–4 PM.</div></details>
   </div>
 </section>
 
@@ -549,13 +635,14 @@
 <section class="contact" id="contact">
   <div class="wrap">
     <div>
-      <span class="eyebrow rv" style="color:var(--gold);"><span class="fl">🔥</span> Swift Solutions</span>
+      <span class="eyebrow rv" style="color:var(--gold);"><img src="assets/insignia.png" alt=""> Swift Solutions</span>
       <h2 class="sec rv">Your fix could be one call away</h2>
       <p class="lede rv">Don't wait on a broken appliance. Call now for same-day service, or send a request and we'll get right back to you.</p>
       <div class="c-lines">
-        <div class="c-line rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div><div><div class="k">Call or Text</div><a class="v" href="tel:+13616730937">(361) 673-0937</a></div></div>
+        <div class="c-line rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div><div><div class="k">Service — Call or Text</div><a class="v" href="tel:+13616730937">(361) 673-0937</a></div></div>
+        <div class="c-line rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/></svg></div><div><div class="k">Parts &amp; Sales</div><a class="v" href="tel:+13614009513">(361) 400-9513</a></div></div>
         <div class="c-line rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><div class="k">Shop, Parts &amp; Showroom</div><div class="v">3701 Apollo Rd, Corpus Christi, TX 78413</div></div></div>
-        <div class="c-line rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><div class="k">Hours</div><div class="v">Monday – Friday · 9:00 AM – 5:00 PM</div></div></div>
+        <div class="c-line rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><div class="k">Hours</div><div class="v">Mon–Fri 8 AM–8 PM · Sat 9 AM–4 PM · Sun closed</div></div></div>
       </div>
     </div>
     <form class="form rv" onsubmit="event.preventDefault();var b=this.querySelector('.btn');b.textContent='✓ Request Sent — Demo Only';b.style.background='#1E9E54';">
@@ -567,10 +654,10 @@
       </div>
       <label>Email</label><input type="email" placeholder="you@email.com">
       <label>Appliance</label>
-      <select><option>Refrigerator / Freezer</option><option>Washer</option><option>Dryer</option><option>Dishwasher</option><option>Oven / Stove</option><option>Vent Hood</option><option>Garbage Disposal</option><option>Parts / Buying an appliance</option><option>Commercial equipment</option></select>
+      <select><option>Refrigerator / Freezer</option><option>Ice machine</option><option>Washer</option><option>Dryer</option><option>Dishwasher</option><option>Oven / Stove</option><option>Vent Hood</option><option>Garbage Disposal</option><option>Parts / Buying an appliance</option><option>Commercial equipment</option></select>
       <label>What's it doing?</label><textarea rows="3" placeholder="e.g. Samsung fridge not cooling, water on the floor…"></textarea>
       <button type="submit" class="btn btn-flame">Send Request</button>
-      <div class="fine">Prefer to talk? Call or text (361) 673-0937 — Mon–Fri, 9 to 5.</div>
+      <div class="fine">Prefer to talk? Call or text (361) 673-0937 — Mon–Fri 8 to 8, Sat 9 to 4.</div>
     </form>
   </div>
 </section>
@@ -585,15 +672,16 @@
     </div>
     <div>
       <h4>Services</h4>
-      <a href="#services">Refrigerator Repair</a><a href="#services">Washer &amp; Dryer Repair</a><a href="#services">Dishwasher Repair</a><a href="#services">Oven &amp; Stove Repair</a><a href="#services">Vent Hood &amp; Disposal</a>
+      <a href="#services">Refrigerator &amp; Ice Machine</a><a href="#services">Washer &amp; Dryer Repair</a><a href="#services">Dishwasher Repair</a><a href="#services">Oven &amp; Stove Repair</a><a href="#services">Vent Hood &amp; Disposal</a>
     </div>
     <div>
       <h4>Company</h4>
-      <a href="#why">Why Choose Us</a><a href="#parts">Parts &amp; Showroom</a><a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#faq">FAQ</a>
+      <a href="#divisions">Our Four Divisions</a><a href="#parts">Parts Store</a><a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#faq">FAQ</a>
     </div>
     <div>
       <h4>Contact</h4>
-      <a href="tel:+13616730937">(361) 673-0937</a>
+      <a href="tel:+13616730937">Service: (361) 673-0937</a>
+      <a href="tel:+13614009513">Parts &amp; Sales: (361) 400-9513</a>
       <a href="#contact">3701 Apollo Rd, Corpus Christi</a>
       <a href="https://www.facebook.com/p/American-Appliance-Repair-61554373376502/" target="_blank" rel="noopener">Facebook</a>
       <a href="https://www.instagram.com/american__appliance_repair/" target="_blank" rel="noopener">Instagram</a>
@@ -617,11 +705,11 @@ if ('IntersectionObserver' in window) {
   rvs.forEach(el=>io.observe(el));
   window.addEventListener('load',()=>setTimeout(()=>rvs.forEach(el=>el.classList.add('in')),2500));
 } else { rvs.forEach(el=>el.classList.add('in')); }
-// review slider arrows
-const slider = document.getElementById('slider');
-const step = () => Math.min(392, slider.clientWidth * .9);
-document.getElementById('rNext').addEventListener('click',()=>slider.scrollBy({left:step(),behavior:'smooth'}));
-document.getElementById('rPrev').addEventListener('click',()=>slider.scrollBy({left:-step(),behavior:'smooth'}));
+// duplicate the review track for a seamless marquee
+const track = document.getElementById('revTrack');
+const clone = track.cloneNode(true);
+clone.setAttribute('aria-hidden','true');
+track.parentNode.appendChild(clone);
 </script>
 </body>
 </html>
