@@ -200,6 +200,24 @@
   .dv .ph a:hover{color:var(--flame);}
   .div-note{text-align:center;margin-top:30px;font-size:14px;color:var(--soft);}
 
+  /* ---------- American Power / solar band ---------- */
+  .solar-band{background:linear-gradient(160deg,#0d1c30,var(--navy) 70%);color:#fff;position:relative;overflow:hidden;}
+  .solar-band:before{content:"";position:absolute;top:-220px;right:-140px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.16),transparent 65%);}
+  .solar-band .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;position:relative;}
+  .solar-band h2{color:#fff;}
+  .solar-band h2 .fl{color:#FFB25E;}
+  .solar-band .lede{color:#C4D3E2;}
+  .solar-band .ap-logo{height:120px;width:auto;margin-bottom:22px;filter:drop-shadow(0 6px 24px rgba(0,0,0,.4));}
+  .solar-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin:26px 0 30px;}
+  .solar-list .si{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#DCE6EF;line-height:1.45;}
+  .solar-list .si .ck{color:var(--gold);font-weight:800;flex:none;}
+  .solar-list .si b{color:#fff;}
+  .solar-band .ph{border-radius:var(--r-lg);overflow:hidden;box-shadow:0 30px 70px -20px rgba(0,0,0,.55);}
+  .solar-band .ph img{width:100%;height:100%;object-fit:cover;}
+  .solar-band .pw{margin-top:22px;font-size:13px;color:#8AA2BA;font-weight:600;}
+  @media(max-width:1020px){.solar-band .wrap{grid-template-columns:1fr;}}
+  @media(max-width:640px){.solar-list{grid-template-columns:1fr;}.solar-band{text-align:center;}.solar-band .ap-logo{margin-left:auto;margin-right:auto;}.solar-band .ctas{justify-content:center;}}
+
   /* ---------- team band ---------- */
   .team{background:#fff;border-top:1px solid var(--line);}
   .team .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;}
@@ -396,6 +414,7 @@
       <img src="assets/amana-logo-image.png" alt="Amana">
       <img src="assets/logo-electrolux-.jpg" alt="Electrolux">
       <img class="tall" src="assets/Miele-logo.png" alt="Miele">
+      <img src="assets/marcone-logo.png" alt="Marcone — official SSB partner">
     </div>
     <div class="track" aria-hidden="true">
       <img src="assets/samsung-logo.png" alt="">
@@ -407,6 +426,7 @@
       <img src="assets/amana-logo-image.png" alt="">
       <img src="assets/logo-electrolux-.jpg" alt="">
       <img class="tall" src="assets/Miele-logo.png" alt="">
+      <img src="assets/marcone-logo.png" alt="">
     </div>
   </div>
 </div>
@@ -491,7 +511,7 @@
       <p class="lede rv">The same shop that fixes your appliance runs a full parts counter and appliance showroom. Walk in, call, or — soon — order online.</p>
       <ul>
         <li class="rv"><span class="ck">✓</span><span><b>OEM &amp; aftermarket parts</b> for every major brand — retail &amp; wholesale</span></li>
-        <li class="rv"><span class="ck">✓</span><span><b>Marcone partner</b> — more parts in stock, faster availability, quicker repairs</span></li>
+        <li class="rv"><span class="ck">✓</span><span><b>Official Marcone SSB</b> — more parts in stock, faster repairs, better availability</span></li>
         <li class="rv"><span class="ck">✓</span><span>New, scratch-&amp;-dent &amp; quality used appliances — <b>delivery &amp; installation included</b></span></li>
         <li class="rv"><span class="ck">✓</span><span>Trade accounts for restaurants, landlords &amp; repair pros</span></li>
       </ul>
@@ -535,14 +555,39 @@
         </div>
       </div>
       <div class="dv rv">
-        <div class="im solar"><span class="stamp">Newest Division</span><img src="assets/div-power.png" alt="American Power emblem" style="height:96px;width:auto;filter:drop-shadow(0 0 24px rgba(232,163,61,.45));"></div>
+        <div class="im solar"><span class="stamp">Newest Division</span><img src="assets/american-power-logo.png" alt="American Power — Own Your Power" style="height:118px;width:auto;filter:drop-shadow(0 0 22px rgba(232,163,61,.35));"></div>
         <div class="bd"><img class="crest" src="assets/div-power.png" alt=""><h3>American Power</h3><div class="k">Renewable Energy Division</div>
           <ul><li>Residential &amp; commercial solar</li><li>Battery backup systems</li><li>EV charging solutions</li></ul>
-          <div class="ph" style="color:var(--soft);font-weight:600;">Coming to Corpus Christi</div>
+          <div class="ph"><a href="#solar">Free energy analysis →</a></div>
         </div>
       </div>
     </div>
     <div class="div-note rv">One family of companies, one standard: <em style="font-family:'Fraunces';">integrity · service · quality · innovation · faith</em></div>
+  </div>
+</section>
+
+<!-- American Power / solar -->
+<section class="solar-band" id="solar">
+  <div class="wrap">
+    <div>
+      <img class="ap-logo rv" src="assets/american-power-logo.png" alt="American Power — Own Your Power. A division of American Appliance Repair, LLC">
+      <h2 class="sec rv">Stop renting your electricity.<br><span class="fl">Own your power.</span></h2>
+      <p class="lede rv">Solar solutions designed to save you money and protect your future — from the same veteran-owned family you already trust with your appliances.</p>
+      <div class="solar-list">
+        <div class="si rv"><span class="ck">✓</span><span><b>$0 down</b> — go solar and start saving immediately</span></div>
+        <div class="si rv"><span class="ck">✓</span><span><b>No upfront cost</b> — no large payments, no hidden fees</span></div>
+        <div class="si rv"><span class="ck">✓</span><span><b>Protection from rising energy costs</b> — lock in predictable rates</span></div>
+        <div class="si rv"><span class="ck">✓</span><span><b>Free custom energy analysis</b> — built around your home &amp; usage</span></div>
+        <div class="si rv"><span class="ck">✓</span><span><b>Start saving immediately</b> — lower bills from the moment it's on</span></div>
+        <div class="si rv"><span class="ck">✓</span><span><b>Residential &amp; commercial</b> — plus battery backup &amp; EV charging</span></div>
+      </div>
+      <div class="ctas rv" style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="#contact" class="btn btn-flame">Get a Free Energy Analysis</a>
+        <a href="tel:+13616730937" class="btn btn-white">Call (361) 673-0937</a>
+      </div>
+      <div class="pw rv">In partnership with Powur · A division of American Appliance Repair, LLC</div>
+    </div>
+    <div class="ph rv"><img src="assets/solar-home.jpg" alt="Home with rooftop solar panels — American Power solar installation" loading="lazy"></div>
   </div>
 </section>
 
@@ -655,7 +700,7 @@
       </div>
       <label>Email</label><input type="email" placeholder="you@email.com">
       <label>Appliance</label>
-      <select><option>Refrigerator / Freezer</option><option>Ice machine</option><option>Washer</option><option>Dryer</option><option>Dishwasher</option><option>Oven / Stove</option><option>Vent Hood</option><option>Garbage Disposal</option><option>Parts / Buying an appliance</option><option>Commercial equipment</option></select>
+      <select><option>Refrigerator / Freezer</option><option>Ice machine</option><option>Washer</option><option>Dryer</option><option>Dishwasher</option><option>Oven / Stove</option><option>Vent Hood</option><option>Garbage Disposal</option><option>Parts / Buying an appliance</option><option>Commercial equipment</option><option>Solar — free energy analysis (American Power)</option></select>
       <label>What's it doing?</label><textarea rows="3" placeholder="e.g. Samsung fridge not cooling, water on the floor…"></textarea>
       <button type="submit" class="btn btn-flame">Send Request</button>
       <div class="fine">Prefer to talk? Call or text (361) 673-0937 — Mon–Fri 8 to 8, Sat 9 to 4.</div>
