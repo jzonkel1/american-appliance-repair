@@ -42,7 +42,8 @@
 
   /* ---------- nav ---------- */
   header.nav{position:fixed;top:0;left:0;right:0;z-index:80;transition:background .3s ease,box-shadow .3s ease;padding-top:30px;}
-  header.nav .demo-note{position:absolute;top:0;left:0;right:0;background:var(--flame);color:#fff;text-align:center;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;}
+  header.nav .topline{position:absolute;top:0;left:0;right:0;background:#050D1F;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;gap:9px;color:#D9CCA8;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:6px 12px;}
+  header.nav .topline img{height:17px;width:auto;}
   header.nav.scrolled{background:rgba(16,30,48,.97);backdrop-filter:blur(10px);box-shadow:0 10px 30px -12px rgba(0,0,0,.4);}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:18px;}
   .nav .logo{display:flex;align-items:center;gap:13px;}
@@ -79,7 +80,7 @@
 
   /* ---------- FULL-BLEED HERO ---------- */
   .hero{position:relative;min-height:min(86vh,800px);display:flex;align-items:center;padding:175px 0 110px;overflow:hidden;}
-  .hero .bg{position:absolute;inset:0;background:url("assets/american-Appliance-repair-service-website02.png") center/cover no-repeat;}
+  .hero .bg{position:absolute;inset:0;background:url("american-Appliance-repair-service-website02.png") center/cover no-repeat;}
   .hero .shade{position:absolute;inset:0;background:
       linear-gradient(100deg, rgba(0,4,34,.9) 0%, rgba(0,4,34,.78) 34%, rgba(0,4,34,.42) 62%, rgba(0,4,34,.22) 100%),
       linear-gradient(0deg, rgba(0,4,34,.62) 0%, transparent 34%);}
@@ -330,6 +331,19 @@
     .team{text-align:center;}
     .team .wt{justify-content:center;}
   }
+
+  /* ---------- legal / document pages ---------- */
+  .doc-hero{background:linear-gradient(165deg,var(--ink),var(--navy));padding:150px 0 52px;color:#fff;}
+  .doc-hero h1{color:#fff;font-size:clamp(30px,4vw,44px);}
+  .doc-hero .k{color:#9FB4C9;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-top:12px;}
+  .doc{max-width:840px;margin:0 auto;padding:54px 24px 84px;}
+  .doc h2{font-size:20px;margin:36px 0 10px;}
+  .doc h2:first-child{margin-top:0;}
+  .doc p,.doc li{font-size:15px;color:var(--body);line-height:1.75;margin-bottom:11px;}
+  .doc ul{padding-left:22px;margin-bottom:14px;}
+  .doc li{margin-bottom:5px;}
+  .doc a{color:var(--flame-deep);font-weight:600;}
+  .doc a:hover{text-decoration:underline;}
 
   /* ---------- service pages ---------- */
   .page-hero{position:relative;min-height:460px;display:flex;align-items:flex-end;padding:170px 0 128px;overflow:hidden;background:var(--ink);}

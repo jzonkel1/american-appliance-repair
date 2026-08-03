@@ -125,7 +125,7 @@ def nav_html(active_file):
         f'          <a href="{s["file"]}"><span class="di"></span>{s["short"]}</a>'
         for s in SERVICES)
     return f'''<header class="nav" id="nav">
-  <div class="demo-note">Website concept by Zonkel Media — prepared for American Appliance Repair, LLC</div>
+  <div class="topline"><img src="assets/insignia.png" alt=""> Christian Veteran-Owned &amp; Operated · Corpus Christi, TX</div>
   <div class="wrap">
     <a class="logo" href="index.html"><img src="assets/logo-mark.png" alt="American Appliance Repair, LLC"><span class="lt"><b>American Appliance</b><small>Repair, LLC</small></span></a>
     <nav class="navlinks">
@@ -148,7 +148,7 @@ def nav_html(active_file):
       <div class="has-dd">
         <a href="index.html#divisions">Divisions <span class="car">▼</span></a>
         <div class="dd"><div class="dd-card">
-          <a href="index.html#services"><img class="dc" src="assets/div-repair.png" alt=""><span>Appliance Repair<span class="sub">Service &amp; repair division</span></span></a>
+          <a href="index.html#services"><img class="dc" src="assets/logo-mark.png" alt=""><span>Appliance Repair<span class="sub">Service &amp; repair division</span></span></a>
           <a href="index.html#parts"><img class="dc" src="assets/div-parts.png" alt=""><span>Parts Store<span class="sub">Parts &amp; supply division</span></span></a>
           <a href="index.html#divisions"><img class="dc" src="assets/div-sales.png" alt=""><span>Appliances 4U<span class="sub">New &amp; used appliance sales</span></span></a>
         </div></div>
@@ -193,6 +193,7 @@ FOOTER = '''<footer>
   </div>
   <div class="wrap fbot">
     <span>© 2026 American Appliance Repair, LLC · Corpus Christi, TX</span>
+    <span><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a></span>
     <span>Website by <a href="#">Zonkel Media</a></span>
   </div>
 </footer>'''
