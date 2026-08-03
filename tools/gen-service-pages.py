@@ -149,8 +149,8 @@ def nav_html(active_file):
         <a href="index.html#divisions">Divisions <span class="car">▼</span></a>
         <div class="dd"><div class="dd-card">
           <a href="index.html#services"><img class="dc" src="assets/logo-mark.png" alt=""><span>Appliance Repair<span class="sub">Service &amp; repair division</span></span></a>
-          <a href="index.html#parts"><img class="dc" src="assets/div-parts.png" alt=""><span>Parts Store<span class="sub">Parts &amp; supply division</span></span></a>
-          <a href="index.html#divisions"><img class="dc" src="assets/div-sales.png" alt=""><span>Appliances 4U<span class="sub">New &amp; used appliance sales</span></span></a>
+          <a href="index.html#parts"><img class="dc" src="assets/div-parts.png?v=2" alt=""><span>Parts Store<span class="sub">Parts &amp; supply division</span></span></a>
+          <a href="index.html#divisions"><img class="dc" src="assets/div-sales.png?v=2" alt=""><span>Appliances 4U<span class="sub">New &amp; used appliance sales</span></span></a>
         </div></div>
       </div>
       <a href="index.html#reviews">Reviews</a>
