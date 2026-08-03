@@ -125,7 +125,7 @@ def nav_html(active_file):
         f'          <a href="{s["file"]}"><span class="di"></span>{s["short"]}</a>'
         for s in SERVICES)
     return f'''<header class="nav" id="nav">
-  <div class="topline"><img src="assets/insignia.png" alt=""> Christian Veteran-Owned &amp; Operated · Corpus Christi, TX</div>
+  <div class="topline"><img src="assets/insignia.png" alt=""> Christian Veteran-Owned &amp; Operated<span class="tl-loc">&nbsp;· Corpus Christi, TX</span></div>
   <div class="wrap">
     <a class="logo" href="index.html"><img src="assets/logo-mark.png" alt="American Appliance Repair, LLC"><span class="lt"><b>American Appliance</b><small>Repair, LLC</small></span></a>
     <nav class="navlinks">

@@ -312,21 +312,29 @@
     .svc-grid,.div-grid{grid-template-columns:1fr;}
     .why-grid,.form .row{grid-template-columns:1fr;}
     footer .wrap{grid-template-columns:1fr;}
-    .hero{padding:170px 0 150px;text-align:center;}
+    .hero{padding:132px 0 138px;text-align:center;}
     .hero .shade{background:linear-gradient(180deg, rgba(0,4,34,.86) 0%, rgba(0,4,34,.68) 55%, rgba(0,4,34,.8) 100%);}
     .hero h1{margin-left:auto;margin-right:auto;}
     .hero .lede{margin-left:auto;margin-right:auto;}
     .hero .ctas{justify-content:center;}
+    .hero .verse-chip{flex-direction:column;gap:5px;text-align:center;margin-left:auto;margin-right:auto;}
     .trust{grid-template-columns:1fr;}
     .tcell{border-right:none;border-bottom:1px solid var(--line);justify-content:center;text-align:left;}
     .tcell:last-child{border-bottom:none;}
     .sec-head{text-align:center;margin-left:auto;margin-right:auto;}
     .sec-head .lede{margin-left:auto;margin-right:auto;}
+    .topline{font-size:9.5px;letter-spacing:.15em;padding:5px 10px;gap:7px;}
+    .topline img{height:14px;}
+    .topline .tl-loc{display:none;}
+    .nav .wrap{height:70px;gap:10px;}
+    .nav .cta{gap:8px;}
     .nav .cta .btn span{display:none;}
-    .nav .cta .btn{padding:12px 14px;}
-    .nav .logo img{height:42px;}
-    .nav .logo .lt b{font-size:14px;}
-    .nav .logo .lt small{font-size:8.5px;letter-spacing:.2em;}
+    .nav .cta .btn{padding:10px 12px;}
+    .burger{width:40px;height:38px;font-size:17px;}
+    .nav .logo{gap:9px;}
+    .nav .logo img{height:36px;}
+    .nav .logo .lt b{font-size:12px;}
+    .nav .logo .lt small{font-size:7.5px;letter-spacing:.16em;margin-top:3px;}
     .team .phones{justify-content:center;}
     .team{text-align:center;}
     .team .wt{justify-content:center;}
@@ -390,7 +398,7 @@
   }
   @media(max-width:640px){
     .sympt-grid,.steps{grid-template-columns:1fr;}
-    .page-hero{text-align:center;padding-top:150px;}
+    .page-hero{text-align:center;padding-top:128px;}
     .page-hero h1,.page-hero .lede{margin-left:auto;margin-right:auto;}
     .page-hero .ctas{justify-content:center;}
     .crumb{justify-content:center;}
