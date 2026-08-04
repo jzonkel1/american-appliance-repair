@@ -30,7 +30,7 @@ PAGES = []
 # ---------------- ABOUT ----------------
 PAGES.append(dict(file="about.html",
  title="About Us | American Appliance Repair, Corpus Christi TX",
- meta="Christian veteran-owned appliance company in Corpus Christi — founder Juan served 13 years in the U.S. Army. Repair, parts store and appliance showroom under one roof at 3701 Apollo Rd.",
+ meta="Christian veteran-owned appliance company in Corpus Christi — founder Rafael served 13 years in the U.S. Army. Repair, parts store and appliance showroom under one roof at 3701 Apollo Rd.",
  noindex=False,
  hero_img="americanappliancerepairteam.jpg",
  crumb="About Us",
@@ -43,7 +43,7 @@ PAGES.append(dict(file="about.html",
     <div>
       <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Our Story</span>
       <h2 class="sec rv">13 years in the Army.<br>One standard of service.</h2>
-      <p class="lede rv" style="margin-bottom:18px;">American Appliance Repair was founded in 2021 by Juan, a U.S. Army veteran who served our country for 13 years — and runs his company the way the Army taught him: show up, do it right, and stand behind your work.</p>
+      <p class="lede rv" style="margin-bottom:18px;">American Appliance Repair was founded in 2021 by Rafael, a U.S. Army veteran who served our country for 13 years — and runs his company the way the Army taught him: show up, do it right, and stand behind your work.</p>
       <p class="rv" style="margin-bottom:14px;">What started as a repair service has grown into a family of companies under one roof at 3701 Apollo Rd: a full <b>repair division</b> for homes and businesses, a stocked <b>parts store</b> backed by our Marcone partnership, and the <b>Appliances 4U</b> showroom with new, scratch-&amp;-dent and quality used appliances.</p>
       <p class="rv">Faith is at the center of how we work. It's on our logo, it's in how we treat people, and it's why your neighbors call us honest before they call us anything else.</p>
       <div class="verse rv" style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--ink);margin:22px 0 4px;line-height:1.5;">“For all things I have the strength through the one who gives me power.”</div>
