@@ -48,7 +48,7 @@ PAGES.append(dict(file="about.html",
       <p class="rv">Faith is at the center of how we work. It's on our logo, it's in how we treat people, and it's why your neighbors call us honest before they call us anything else.</p>
       <div class="verse rv" style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--ink);margin:22px 0 4px;line-height:1.5;">“For all things I have the strength through the one who gives me power.”</div>
       <div class="ref rv" style="font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--flame);">Philippians 4:13</div>
-      <img class="rv" src="assets/veteran-badge.png" alt="Military Veteran Owned Business" style="height:64px;width:auto;margin-top:24px;">
+      <div class="rv" style="display:flex;gap:18px;align-items:center;margin-top:24px;flex-wrap:wrap;"><img src="assets/veteran-badge.png" alt="Military Veteran Owned Business" style="height:64px;width:auto;"><img src="assets/businessrate-award.jpg" alt="Rafael receiving the BusinessRate Best of 2026 award" style="height:110px;width:auto;border-radius:12px;box-shadow:var(--shadow-md);"></div>
     </div>
     <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);"><img src="assets/americanappliancerepairteam.jpg" alt="The American Appliance Repair team in a training meeting"></div>
   </div>
