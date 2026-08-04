@@ -209,7 +209,7 @@
     </div>
     <div class="rv" style="background:#fff;border-radius:var(--r-lg);padding:34px 32px;text-align:center;box-shadow:0 30px 70px -20px rgba(0,0,0,.5);color:var(--body);">
       <div style="font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--flame);">Starting at</div>
-      <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:64px;color:var(--ink);line-height:1;margin:10px 0 2px;">$19.95<span style="font-size:18px;color:var(--soft);">/mo</span></div>
+      <div class="mem-price" style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:64px;color:var(--ink);line-height:1;margin:10px 0 2px;">$19.95<span style="font-size:18px;color:var(--soft);">/mo</span></div>
       <div style="font-size:14px;color:var(--soft);">first appliance · each additional <b style="color:var(--ink);">+$5.95/mo</b></div>
       <div style="border-top:1px solid var(--line);margin:20px 0 16px;"></div>
       <div style="font-size:14px;color:var(--body);line-height:1.6;">Cancel anytime. Preventive maintenance costs far less than replacing an appliance — or repairing fire damage.</div>
@@ -325,10 +325,13 @@
 <!-- team band -->
 <section class="team">
   <div class="wrap">
-    <div>
+    <div class="t-intro">
       <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Real People, Real Values</span>
       <h2 class="sec rv">Meet the team behind your peace of mind</h2>
       <p class="lede rv">Ever wonder who's fixing your fridge or washer? Real people, right here in Corpus Christi. Our founder, Rafael, served 13 years in the U.S. Army — and brings that discipline and his faith to every repair — and the whole team works side by side, serving with integrity and pride.</p>
+    </div>
+    <div class="ph rv"><img src="assets/americanappliancerepairteam.jpg" alt="The American Appliance Repair team in a training meeting, Corpus Christi" loading="lazy"></div>
+    <div class="t-rest">
       <div class="verse rv">“For all things I have the strength through the one who gives me power.”</div>
       <div class="ref rv">Philippians 4:13</div>
       <div class="phones rv">
@@ -337,7 +340,6 @@
       </div>
       <img class="vet rv" src="assets/veteran-badge.png" alt="Military Veteran Owned Business">
     </div>
-    <div class="ph rv"><img src="assets/americanappliancerepairteam.jpg" alt="The American Appliance Repair team in a training meeting, Corpus Christi" loading="lazy"></div>
   </div>
 </section>
 
@@ -424,18 +426,57 @@
       </div>
       <div class="rv" style="margin-top:26px;"><button class="btn btn-flame hcp-button" onClick="HCPWidget.openModal()">Book Online — Pick Your Time</button></div>
     </div>
-    <form class="form rv" onsubmit="event.preventDefault();var b=this.querySelector('.btn');b.textContent='✓ Request Sent — Demo Only';b.style.background='#1E9E54';">
+    <form class="form qw rv" id="qw" onsubmit="event.preventDefault();var b=this.querySelector('button[type=submit]');b.textContent='✓ Request Sent — Demo Only';b.style.background='#1E9E54';">
       <h3>Request an appliance repair</h3>
-      <div class="sm">Tell us what's acting up — we'll call you back to confirm a time.</div>
-      <div class="row">
-        <div><label>Name</label><input type="text" placeholder="Your full name" required></div>
-        <div><label>Phone</label><input type="tel" placeholder="(361) 000-0000" required></div>
+      <div class="sm">A few quick taps — we'll call you back to confirm a time.</div>
+      <div class="qw-prog"><span class="bar" id="qwBar"></span></div>
+      <input type="hidden" name="appliance"><input type="hidden" name="issue"><input type="hidden" name="timing">
+      <div class="qw-step on">
+        <div class="qw-q">What needs fixing?</div>
+        <div class="qw-opts" data-field="appliance">
+          <button type="button">Refrigerator / Freezer</button>
+          <button type="button">Ice Machine</button>
+          <button type="button">Washer</button>
+          <button type="button">Dryer</button>
+          <button type="button">Dishwasher</button>
+          <button type="button">Oven / Stove</button>
+          <button type="button">Vent Hood / Disposal</button>
+          <button type="button">Commercial Equipment</button>
+          <button type="button" class="wide">Parts / Buying an Appliance</button>
+        </div>
       </div>
-      <label>Email</label><input type="email" placeholder="you@email.com">
-      <label>Appliance</label>
-      <select><option>Refrigerator / Freezer</option><option>Ice machine</option><option>Washer</option><option>Dryer</option><option>Dishwasher</option><option>Oven / Stove</option><option>Vent Hood</option><option>Garbage Disposal</option><option>Parts / Buying an appliance</option><option>Commercial equipment</option></select>
-      <label>What's it doing?</label><textarea rows="3" placeholder="e.g. Samsung fridge not cooling, water on the floor…"></textarea>
-      <button type="submit" class="btn btn-flame">Send Request</button>
+      <div class="qw-step">
+        <div class="qw-q">What's going on with it?</div>
+        <div class="qw-opts" data-field="issue">
+          <button type="button">Not cooling / not heating</button>
+          <button type="button">Leaking water</button>
+          <button type="button">Won't start / no power</button>
+          <button type="button">Loud noise or vibration</button>
+          <button type="button">Not draining / not spinning</button>
+          <button type="button">Something else</button>
+        </div>
+      </div>
+      <div class="qw-step">
+        <div class="qw-q">How soon do you need us?</div>
+        <div class="qw-opts" data-field="timing">
+          <button type="button">Today if possible</button>
+          <button type="button">Tomorrow</button>
+          <button type="button">This week</button>
+          <button type="button">Just planning ahead</button>
+        </div>
+      </div>
+      <div class="qw-step">
+        <div class="qw-sum" id="qwSum"></div>
+        <div class="row">
+          <div><label>Name</label><input type="text" name="name" placeholder="Your full name" required></div>
+          <div><label>Phone</label><input type="tel" name="phone" placeholder="(361) 000-0000" required></div>
+        </div>
+        <label>Details <span style="text-transform:none;letter-spacing:0;">(optional)</span></label>
+        <textarea name="details" rows="2" placeholder="e.g. Samsung french-door, water on the floor…"></textarea>
+        <button type="submit" class="btn btn-flame">Send My Request</button>
+        <div class="fine">Got photos of the problem? Feel free to text them to (361) 673-0937.</div>
+      </div>
+      <button type="button" class="qw-back" id="qwBack" hidden>← Back</button>
       <div class="fine">Prefer to talk? Call or text (361) 673-0937 — Mon–Fri 8 to 8, Sat 9 to 4.</div>
     </form>
   </div>

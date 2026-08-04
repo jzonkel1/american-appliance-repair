@@ -4,17 +4,55 @@ const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 60);
 window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 // reveal on scroll — never leaves content hidden
 const rvs = document.querySelectorAll('.rv');
+const revealAll = () => rvs.forEach(el=>el.classList.add('in'));
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -36px 0px'});
   rvs.forEach(el=>io.observe(el));
-  window.addEventListener('load',()=>setTimeout(()=>rvs.forEach(el=>el.classList.add('in')),2500));
-} else { rvs.forEach(el=>el.classList.add('in')); }
+  window.addEventListener('load',()=>setTimeout(revealAll,2000));
+  // safety net: reveal even if window load never fires (slow embeds on mobile)
+  setTimeout(revealAll, 4000);
+  // iOS back-forward cache restores the page without re-running scripts
+  window.addEventListener('pageshow',(e)=>{ if (e.persisted) revealAll(); });
+} else { revealAll(); }
 // duplicate the review track for a seamless marquee
 const track = document.getElementById('revTrack');
 if (track) {
   const clone = track.cloneNode(true);
   clone.setAttribute('aria-hidden','true');
   track.parentNode.appendChild(clone);
+}
+
+// quote wizard — tap-first multi-step request form
+const qw = document.getElementById('qw');
+if (qw) {
+  const steps = [...qw.querySelectorAll('.qw-step')];
+  const bar = document.getElementById('qwBar');
+  const back = document.getElementById('qwBack');
+  const sum = document.getElementById('qwSum');
+  let cur = 0;
+  const show = (i) => {
+    cur = i;
+    steps.forEach((s, j) => s.classList.toggle('on', j === i));
+    back.hidden = (i === 0);
+    bar.style.width = (((i + 1) / steps.length) * 100) + '%';
+    if (sum && i === steps.length - 1) {
+      sum.textContent = ['appliance','issue','timing']
+        .map(n => qw.querySelector('input[name=' + n + ']').value)
+        .filter(Boolean).join('  ·  ');
+    }
+  };
+  qw.querySelectorAll('.qw-opts').forEach(g => {
+    g.addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      g.querySelectorAll('button').forEach(x => x.classList.remove('sel'));
+      b.classList.add('sel');
+      qw.querySelector('input[name=' + g.dataset.field + ']').value = b.textContent.trim();
+      setTimeout(() => show(Math.min(cur + 1, steps.length - 1)), 160);
+    });
+  });
+  back.addEventListener('click', () => show(Math.max(cur - 1, 0)));
+  show(0);
 }
 
 // mobile menu accordions — one group open at a time
