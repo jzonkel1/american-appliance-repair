@@ -135,10 +135,29 @@ SERVICES = [
 ]
 
 # ---------------- template pieces ----------------
+NAV_CITIES = [
+    ("appliance-repair-corpus-christi.html", "Corpus Christi"),
+    ("appliance-repair-portland.html", "Portland"),
+    ("appliance-repair-port-aransas.html", "Port Aransas"),
+    ("appliance-repair-rockport.html", "Rockport"),
+    ("appliance-repair-ingleside.html", "Ingleside"),
+    ("appliance-repair-aransas-pass.html", "Aransas Pass"),
+    ("appliance-repair-robstown.html", "Robstown"),
+    ("appliance-repair-kingsville.html", "Kingsville"),
+    ("appliance-repair-alice.html", "Alice"),
+    ("appliance-repair-sinton.html", "Sinton"),
+    ("appliance-repair-mathis.html", "Mathis"),
+]
+
 def nav_html(active_file):
     dd = "\n".join(
         f'          <a href="{s["file"]}"><span class="di"></span>{s["short"]}</a>'
         for s in SERVICES)
+    dd_areas = "\n".join(
+        f'          <a href="{f}"><span class="di"></span>{n}</a>'
+        for f, n in NAV_CITIES)
+    m_services = "".join(f'<a href="{s["file"]}">{s["short"]}</a>' for s in SERVICES)
+    m_areas = "".join(f'<a href="{f}">{n}</a>' for f, n in NAV_CITIES)
     return f'''<header class="nav" id="nav">
   <div class="topline"><img src="assets/insignia.png" alt=""> Christian Veteran-Owned &amp; Operated<span class="tl-loc">&nbsp;· Corpus Christi, TX</span></div>
   <div class="wrap">
@@ -169,6 +188,13 @@ def nav_html(active_file):
           <a href="appliances-4u.html"><img class="dc" src="assets/div-sales.png?v=2" alt=""><span>Appliances 4U<span class="sub">New &amp; used appliance sales</span></span></a>
         </div></div>
       </div>
+      <div class="has-dd">
+        <a href="service-areas.html">Areas <span class="car">▼</span></a>
+        <div class="dd"><div class="dd-card two">
+{dd_areas}
+          <a class="dd-cta" href="service-areas.html">View Full Coverage Map</a>
+        </div></div>
+      </div>
       <a href="about.html">About</a>
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
@@ -180,7 +206,14 @@ def nav_html(active_file):
     </div>
   </div>
   <div id="mnav">
-    <a href="index.html#services">Services</a><a href="index.html#parts">Parts Store</a><a href="index.html#divisions">Divisions</a><a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="maintenance.html">Care Membership</a><a href="#" onclick="HCPWidget.openModal();return false;">Book Online</a><a href="tel:+13616730937">Call (361) 673-0937</a>
+    <button class="mgroup" type="button">Services<span class="mcar">▼</span></button>
+    <div class="msub">{m_services}<a href="maintenance.html">Care Membership</a></div>
+    <a href="index.html#parts">Parts Store</a>
+    <button class="mgroup" type="button">Divisions<span class="mcar">▼</span></button>
+    <div class="msub msub-div"><a href="index.html#services"><img class="mdc" src="assets/logo-mark.png" alt="">Appliance Repair</a><a href="index.html#parts"><img class="mdc" src="assets/div-parts.png?v=2" alt="">Parts Store</a><a href="appliances-4u.html"><img class="mdc" src="assets/div-sales.png?v=2" alt="">Appliances 4U</a></div>
+    <button class="mgroup" type="button">Service Areas<span class="mcar">▼</span></button>
+    <div class="msub"><a href="service-areas.html">All Service Areas</a>{m_areas}</div>
+    <a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="maintenance.html">Care Membership</a><a href="#" onclick="HCPWidget.openModal();return false;">Book Online</a><a href="tel:+13616730937">Call (361) 673-0937</a>
   </div>
 </header>'''
 

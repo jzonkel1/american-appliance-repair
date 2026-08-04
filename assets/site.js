@@ -17,6 +17,15 @@ if (track) {
   track.parentNode.appendChild(clone);
 }
 
+// mobile menu accordions — one group open at a time
+document.querySelectorAll('#mnav .mgroup').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const wasOpen = btn.classList.contains('open');
+    document.querySelectorAll('#mnav .mgroup.open').forEach(o => o.classList.remove('open'));
+    if (!wasOpen) btn.classList.add('open');
+  });
+});
+
 // mobile sticky call/book bar — appears after scrolling past the hero
 if (window.matchMedia('(max-width:640px)').matches) {
   const bar = document.createElement('div');

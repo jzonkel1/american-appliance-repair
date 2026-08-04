@@ -86,9 +86,19 @@
   .btn.hcp-button.btn-flame:hover{background:var(--flame-deep) !important;}
   .nav .cta .btn.hcp-button{padding:12px 22px !important;font-size:15px !important;}
   .burger{display:none;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.4);border-radius:10px;width:44px;height:40px;font-size:19px;color:#fff;cursor:pointer;}
-  #mnav{display:none;background:var(--ink);padding:10px 24px 18px;}
+  #mnav{display:none;background:var(--ink);padding:10px 24px 18px;max-height:calc(100vh - 110px);max-height:calc(100dvh - 110px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;}
   #mnav a{display:block;padding:12px 0;font-weight:600;color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
   #mnav a:last-child{border:none;}
+  #mnav .mgroup{display:flex;width:100%;align-items:center;justify-content:space-between;background:none;border:none;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;font-family:inherit;font-size:inherit;font-weight:600;padding:12px 0;cursor:pointer;text-align:left;}
+  #mnav .mgroup .mcar{font-size:10px;opacity:.7;transition:transform .2s;}
+  #mnav .mgroup.open .mcar{transform:rotate(180deg);}
+  #mnav .msub{display:none;border-bottom:1px solid rgba(255,255,255,.1);padding:2px 0 6px;}
+  #mnav .mgroup.open + .msub{display:block;}
+  #mnav .msub a{border-bottom:none;padding:9px 0 9px 16px;font-size:14px;font-weight:500;color:rgba(255,255,255,.85);position:relative;}
+  #mnav .msub a:before{content:"";position:absolute;left:2px;top:50%;width:5px;height:5px;margin-top:-2.5px;border-radius:50%;background:linear-gradient(150deg,var(--flame),var(--gold));}
+  #mnav .msub-div a{display:flex;align-items:center;gap:9px;padding-left:2px;}
+  #mnav .msub-div a:before{display:none;}
+  #mnav .msub img.mdc{height:22px;width:auto;flex:none;}
 
   /* ---------- FULL-BLEED HERO ---------- */
   .hero{position:relative;min-height:min(86vh,800px);display:flex;align-items:center;padding:175px 0 110px;overflow:hidden;}
