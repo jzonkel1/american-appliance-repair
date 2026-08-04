@@ -14,8 +14,12 @@ def head_seo(fname, title, desc):
 <meta property="og:title" content="{t}">
 <meta property="og:description" content="{d}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{BASE}/assets/american-Appliance-repair-service-website02.png">
+<meta property="og:image" content="{BASE}/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="American Appliance Repair — appliance repair, parts &amp; sales in Corpus Christi, TX. (361) 673-0937">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{BASE}/assets/og-cover.jpg">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"American Appliance Repair, LLC","image":"{BASE}/assets/logo.png","url":"{BASE}/","telephone":"+13616730937","address":{{"@type":"PostalAddress","streetAddress":"3701 Apollo Rd","addressLocality":"Corpus Christi","addressRegion":"TX","postalCode":"78413","addressCountry":"US"}},"openingHoursSpecification":[{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"}},{{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"16:00"}}],"sameAs":["https://www.facebook.com/p/American-Appliance-Repair-61554373376502/","https://www.instagram.com/american__appliance_repair/"]}}</script>"""
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -269,8 +273,10 @@ def page_html(s):
 <script>document.documentElement.className += ' js';</script>
 <title>{s["title"]} | American Appliance Repair</title>
 <meta name="description" content="{s["meta"]}">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">

@@ -385,6 +385,10 @@
     .nav .cta{gap:8px;}
     .nav .cta .btn span{display:none;}
     .nav .cta .btn{padding:10px 12px;}
+    .nav .cta .btn-flame{width:44px;height:44px;padding:0;border-radius:50%;justify-content:center;gap:0;flex:none;}
+    .nav .cta .btn-flame svg{width:19px;height:19px;}
+    .urgent-btn{flex-direction:column;gap:2px;padding:14px 26px;}
+    .urgent-btn .ub-num{white-space:nowrap;font-size:17.5px;}
     .burger{width:42px;height:40px;font-size:22px;}
     .nav .logo{gap:9px;}
     .nav .logo img{height:36px;}
