@@ -23,19 +23,19 @@ REVIEWS = {
 }
 
 FAQ_QUOTE = ("How much will the repair cost?",
-  "You get an up-front quote after diagnosis, before any work starts — no surprises on the invoice. And if a repair isn't worth it, we'll tell you straight; our Appliances 4U showroom has affordable new, scratch-&-dent and quality used replacements.")
+  "You get an up-front quote after diagnosis, before any work starts — and here's the best part: <b>approve the repair, and your trip and diagnostic fee is on us.</b> If a repair isn't worth it, we'll tell you straight; our Appliances 4U showroom has affordable new, scratch-&-dent and quality used replacements.")
 FAQ_SAMEDAY = ("Can you come out today?",
-  "Same-day service is our standard whenever the schedule allows — we're open until 8 PM Monday through Friday, plus Saturdays 9–4. Call in the morning and in most cases a technician can be at your door that day.")
+  "Often, yes. We're open until 8 PM Monday through Friday plus Saturdays 9–4, and when you call in the morning we can often have a technician out the same day. After-hours and emergency service is available too — just call.")
 FAQ_WARRANTY = ("Is the repair guaranteed?",
-  "Yes — every repair comes with our warranty on parts and labor. If something isn't right, we make it right. That's the whole policy.")
+  "Yes — every repair is backed by our 6-month warranty on parts replaced and labor. If something isn't right, we make it right. Full details on our <a href=\"warranty.html\" style=\"color:var(--flame);font-weight:700;\">warranty page</a>.")
 
 SERVICES = [
  dict(file="refrigerator-ice-machine-repair.html", img="AAR_Appliance_Service_IMG-1.jpg",
   name="Refrigerator & Ice Machine Repair", short="Refrigerators & Ice Machines",
   title="Refrigerator & Ice Machine Repair in Corpus Christi, TX",
-  meta="Same-day refrigerator, freezer & ice machine repair in Corpus Christi — residential & commercial. Veteran-owned, certified techs, warranty on every repair. Call (361) 673-0937.",
+  meta="Often same-day refrigerator, freezer & ice machine repair in Corpus Christi — residential & commercial. Veteran-owned, 6-month warranty on every repair. Call (361) 673-0937.",
   h1="Refrigerator &amp; ice machine repair",
-  lede="Cooling loss, leaks, and ice makers on strike — fixed before the groceries spoil. Residential fridges to commercial ice machines, our certified techs handle every major brand, usually the same day you call.",
+  lede="Cooling loss, leaks, and ice makers on strike — fixed before the groceries spoil. Residential fridges to commercial ice machines, our experienced techs handle every major brand — often the same day you call.",
   sympt_intro="If your fridge or ice machine is doing any of this, it's time to call:",
   symptoms=["<b>Not cooling</b> — or the fridge is cold but the freezer isn't (or vice versa)","<b>Leaking water</b> onto the floor or pooling under the crisper drawers","<b>Ice maker stopped</b> — no ice, hollow cubes, or a frozen-up line","<b>Frost buildup</b> in the freezer or on the back wall","<b>Running loud</b> — clicking, buzzing, or a compressor that never shuts off","<b>Commercial ice machine down</b> — restaurant &amp; bar units serviced too"],
   reviews=["rb","teri","peter"],
@@ -44,7 +44,7 @@ SERVICES = [
  dict(file="washer-repair.html", img="AAR_Appliance_Service_IMG-3.jpg",
   name="Washer Repair", short="Washer Repair",
   title="Washer Repair in Corpus Christi, TX",
-  meta="Same-day washing machine repair in Corpus Christi — drainage, spin, leaks & error codes on every major brand. Veteran-owned, warranty on every repair. Call (361) 673-0937.",
+  meta="Often same-day washing machine repair in Corpus Christi — drainage, spin, leaks & error codes on every major brand. Veteran-owned, warranty on every repair. Call (361) 673-0937.",
   h1="Washing machine repair",
   lede="Drainage, spin and no-start problems fixed efficiently and affordably — on every major brand, from top-load workhorses to high-efficiency front-loaders.",
   sympt_intro="If your washer is doing any of this, it's time to call:",
@@ -55,7 +55,7 @@ SERVICES = [
  dict(file="dryer-repair.html", img="AAR_Appliance_Service_IMG-2.jpg",
   name="Dryer Repair", short="Dryer Repair",
   title="Dryer Repair in Corpus Christi, TX",
-  meta="Same-day dryer repair in Corpus Christi — no-heat, drum & vent issues on gas and electric dryers, every major brand. Veteran-owned, warranty included. Call (361) 673-0937.",
+  meta="Often same-day dryer repair in Corpus Christi — no-heat, drum & vent issues on gas and electric dryers, every major brand. Veteran-owned, warranty included. Call (361) 673-0937.",
   h1="Dryer repair",
   lede="Swift diagnosis for no-heat, drum and vent issues on gas and electric dryers — so laundry day stays on schedule.",
   sympt_intro="If your dryer is doing any of this, it's time to call:",
@@ -66,7 +66,7 @@ SERVICES = [
  dict(file="dishwasher-repair.html", img="AAR_Appliance_Service_IMG-4.jpg",
   name="Dishwasher Repair", short="Dishwasher Repair",
   title="Dishwasher Repair in Corpus Christi, TX",
-  meta="Same-day dishwasher repair in Corpus Christi — cleaning problems, leaks, drainage & pumps on every major brand. Veteran-owned, warranty on every repair. Call (361) 673-0937.",
+  meta="Often same-day dishwasher repair in Corpus Christi — cleaning problems, leaks, drainage & pumps on every major brand. Veteran-owned, warranty on every repair. Call (361) 673-0937.",
   h1="Dishwasher repair",
   lede="From cleaning problems to leaks and failed pumps — enjoy uninterrupted dishwashing again, without paying big-box service-call prices.",
   sympt_intro="If your dishwasher is doing any of this, it's time to call:",
@@ -77,7 +77,7 @@ SERVICES = [
  dict(file="oven-repair.html", img="AAR_Appliance_Service_IMG-5.jpg",
   name="Oven Repair", short="Oven Repair",
   title="Oven Repair in Corpus Christi, TX",
-  meta="Same-day oven repair in Corpus Christi — heating elements, igniters, controls & uneven baking on every major brand. Veteran-owned, warranty included. Call (361) 673-0937.",
+  meta="Often same-day oven repair in Corpus Christi — heating elements, igniters, controls & uneven baking on every major brand. Veteran-owned, warranty included. Call (361) 673-0937.",
   h1="Oven repair",
   lede="Prompt repairs on heating elements, igniters and controls — your kitchen stays functional, whether it's a builder-grade range or a double wall oven.",
   sympt_intro="If your oven is doing any of this, it's time to call:",
@@ -88,7 +88,7 @@ SERVICES = [
  dict(file="stove-repair.html", img="AAR_Appliance_Service_IMG-6.jpg",
   name="Stove & Cooktop Repair", short="Stove Repair",
   title="Stove & Cooktop Repair in Corpus Christi, TX",
-  meta="Same-day stove & cooktop repair in Corpus Christi — burners, elements, switches & controls on gas and electric, every major brand. Warranty included. Call (361) 673-0937.",
+  meta="Often same-day stove & cooktop repair in Corpus Christi — burners, elements, switches & controls on gas and electric, every major brand. Warranty included. Call (361) 673-0937.",
   h1="Stove &amp; cooktop repair",
   lede="Stove malfunctions handled quickly — burners, elements, switches and controls — keeping your kitchen ready to cook again.",
   sympt_intro="If your stove or cooktop is doing any of this, it's time to call:",
@@ -133,7 +133,7 @@ def nav_html(active_file):
         <a href="index.html#services">Services <span class="car">▼</span></a>
         <div class="dd"><div class="dd-card two">
 {dd}
-          <a class="dd-cta" href="tel:+13616730937">Same-day service — (361) 673-0937</a>
+          <a class="dd-cta" href="tel:+13616730937">Often same-day — (361) 673-0937</a>
         </div></div>
       </div>
       <div class="has-dd">
@@ -153,17 +153,18 @@ def nav_html(active_file):
           <a href="index.html#divisions"><img class="dc" src="assets/div-sales.png?v=2" alt=""><span>Appliances 4U<span class="sub">New &amp; used appliance sales</span></span></a>
         </div></div>
       </div>
+      <a href="about.html">About</a>
       <a href="index.html#reviews">Reviews</a>
-      <a href="index.html#area">Service Area</a>
       <a href="index.html#faq">FAQ</a>
     </nav>
     <div class="cta">
+      <button class="btn btn-white book hcp-button" onClick="HCPWidget.openModal()">Book Online</button>
       <a href="tel:+13616730937" class="btn btn-flame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg><span>(361) 673-0937</span></a>
       <button class="burger" aria-label="Menu" onclick="var m=document.getElementById('mnav');m.style.display=m.style.display==='block'?'none':'block';">☰</button>
     </div>
   </div>
   <div id="mnav">
-    <a href="index.html#services">Services</a><a href="index.html#parts">Parts Store</a><a href="index.html#divisions">Divisions</a><a href="index.html#reviews">Reviews</a><a href="index.html#area">Service Area</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Request Service</a>
+    <a href="index.html#services">Services</a><a href="index.html#parts">Parts Store</a><a href="index.html#divisions">Divisions</a><a href="about.html">About</a><a href="index.html#reviews">Reviews</a><a href="index.html#faq">FAQ</a><a href="#" onclick="HCPWidget.openModal();return false;">Book Online</a><a href="tel:+13616730937">Call (361) 673-0937</a>
   </div>
 </header>'''
 
@@ -180,7 +181,7 @@ FOOTER = '''<footer>
     </div>
     <div>
       <h4>Company</h4>
-      <a href="index.html#divisions">Our Divisions</a><a href="index.html#parts">Parts Store</a><a href="index.html#reviews">Reviews</a><a href="index.html#area">Service Area</a><a href="index.html#faq">FAQ</a>
+      <a href="about.html">About Us</a><a href="index.html#divisions">Our Divisions</a><a href="index.html#parts">Parts Store</a><a href="warranty.html">Our Warranty</a><a href="financing.html">Financing</a><a href="emergency-appliance-repair.html">Emergency Service</a><a href="index.html#area">Service Area</a>
     </div>
     <div>
       <h4>Contact</h4>
@@ -241,7 +242,7 @@ def page_html(s):
     <p class="lede h-in d2">{s["lede"]}</p>
     <div class="ctas h-in d3">
       <a href="tel:+13616730937" class="btn btn-flame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg>Call (361) 673-0937</a>
-      <a href="index.html#contact" class="btn btn-white">Request a Repair</a>
+      <button class="btn btn-white hcp-button" onClick="HCPWidget.openModal()">Book Online</button>
     </div>
   </div>
 </section>
@@ -252,7 +253,7 @@ def page_html(s):
     <div class="tcell"><span class="big">4.8</span><div class="t"><b>Google Rating</b><span class="stars">★★★★★</span> 176 reviews</div></div>
     <div class="tcell"><img src="assets/award-best.png" alt="Best of 2026 Award Winner — BusinessRate"><div class="t"><b>Best of 2026</b>BusinessRate · powered by Google Reviews</div></div>
     <div class="tcell"><img src="assets/veteran-badge.png" alt="Military Veteran Owned"><div class="t"><b>Veteran-Owned</b>Military discounts honored</div></div>
-    <div class="tcell"><span class="big" style="color:var(--flame);">✓</span><div class="t"><b>Certified &amp; Insured</b>Warranty on every repair</div></div>
+    <div class="tcell"><span class="big" style="color:var(--flame);">6</span><div class="t"><b>6-Month Warranty</b>Parts &amp; labor, every repair</div></div>
   </div>
 </div>
 
@@ -295,7 +296,7 @@ def page_html(s):
     <div>
       <span class="eyebrow rv" style="color:var(--gold);"><img src="assets/insignia.png" alt=""> The Home-Field Advantage</span>
       <h2 class="sec rv">Why we finish repairs other companies reschedule</h2>
-      <p class="lede rv">Most repair companies diagnose your appliance, then order the part and come back next week. We run our own parts store — an official Marcone SSB — right here in Corpus Christi.</p>
+      <p class="lede rv">Most repair companies diagnose your appliance, then order the part and come back next week. We run our own parts store — backed by our Marcone partnership — right here in Corpus Christi.</p>
       <ul>
         <li class="rv"><span class="ck">✓</span><span><b>Parts in stock locally</b> — repairs finish in one visit more often</span></li>
         <li class="rv"><span class="ck">✓</span><span><b>OEM &amp; aftermarket options</b> — the right part at the right price</span></li>
@@ -351,15 +352,16 @@ def page_html(s):
     <p class="lede rv" style="max-width:52ch;">Call now for same-day {s["short"].lower()} service across Corpus Christi &amp; the Coastal Bend — or send a request and we'll get right back to you.</p>
     <div class="ctas rv">
       <a href="tel:+13616730937" class="btn btn-flame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg>Call (361) 673-0937</a>
-      <a href="index.html#contact" class="btn btn-white">Request a Repair Online</a>
+      <button class="btn btn-white hcp-button" onClick="HCPWidget.openModal()">Book Online</button>
     </div>
-    <div class="fine rv">Mon–Fri 8 AM–8 PM · Sat 9 AM–4 PM · 3701 Apollo Rd, Corpus Christi, TX</div>
+    <div class="fine rv">Approve the repair &amp; the trip + diagnostic fee is on us · Mon–Fri 8–8 · Sat 9–4 · After-hours available</div>
   </div>
 </section>
 
 {FOOTER}
 
 <script src="assets/site.js"></script>
+<script async src="https://online-booking.housecallpro.com/script.js?token=fddc363afc284aaaa03239c46fb59c0b&orgName=American-Appliance-Repair"></script>
 </body>
 </html>
 '''

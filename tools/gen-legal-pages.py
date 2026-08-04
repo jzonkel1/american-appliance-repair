@@ -121,6 +121,7 @@ def build(title, fname, body):
 {gsp.FOOTER}
 
 <script src="assets/site.js"></script>
+<script async src="https://online-booking.housecallpro.com/script.js?token=fddc363afc284aaaa03239c46fb59c0b&orgName=American-Appliance-Repair"></script>
 </body>
 </html>
 '''
