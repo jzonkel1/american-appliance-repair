@@ -16,3 +16,14 @@ if (track) {
   clone.setAttribute('aria-hidden','true');
   track.parentNode.appendChild(clone);
 }
+
+// mobile sticky call/book bar — appears after scrolling past the hero
+if (window.matchMedia('(max-width:640px)').matches) {
+  const bar = document.createElement('div');
+  bar.className = 'mcall';
+  bar.innerHTML = '<a class="mc-call" href="tel:+13616730937">Call (361) 673-0937</a><button class="mc-book" onclick="if(window.HCPWidget)HCPWidget.openModal()">Book Online</button>';
+  document.body.appendChild(bar);
+  const tick = () => bar.classList.toggle('on', window.scrollY > window.innerHeight * 0.7);
+  window.addEventListener('scroll', tick, {passive:true});
+  tick();
+}

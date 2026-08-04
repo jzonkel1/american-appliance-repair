@@ -434,3 +434,36 @@
   .gal figcaption{padding:12px 16px 14px;font-size:13.5px;line-height:1.5;color:var(--soft);}
   @media(max-width:1020px){.gal{columns:2;}}
   @media(max-width:640px){.gal{columns:1;}}
+  /* membership grid */
+  .mem-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;}
+  /* footer logo bigger */
+  footer .flogo img{height:96px;}
+  /* mobile sticky call bar */
+  .mcall{position:fixed;bottom:0;left:0;right:0;z-index:120;display:none;grid-template-columns:1.15fr 1fr;box-shadow:0 -8px 24px rgba(0,4,34,.25);transform:translateY(110%);transition:transform .3s ease;}
+  .mcall.on{transform:none;}
+  .mcall a,.mcall button{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 10px calc(15px + env(safe-area-inset-bottom,0px));font-family:'Public Sans',sans-serif;font-weight:800;font-size:15.5px;border:none;cursor:pointer;}
+  .mcall .mc-call{background:var(--flame);color:#fff;}
+  .mcall .mc-book{background:var(--ink);color:#fff;}
+  @media(max-width:640px){
+    .mcall{display:grid;}
+    .mem-grid{grid-template-columns:1fr;gap:30px;text-align:center;}
+    .mem-grid .eyebrow{justify-content:center;}
+    .mem-grid ul li{text-align:left;}
+    .cta-row{justify-content:center;}
+    .why{text-align:center;}
+    .why .eyebrow{justify-content:center;}
+    .wp .wt{justify-content:center;}
+    .parts{text-align:center;}
+    .parts .eyebrow{justify-content:center;}
+    .parts ul{display:inline-block;text-align:left;}
+    .contact .rv[style*="margin-top:26px"]{text-align:center;}
+    .team .vet{margin-left:auto;margin-right:auto;}
+    .rev-top{flex-direction:column;align-items:center;text-align:center;}
+    .rev-top .eyebrow{justify-content:center;}
+    .rev-top .rev-score{text-align:left;}
+    footer{text-align:center;}
+    footer .flogo img{margin-left:auto;margin-right:auto;height:110px;}
+    footer .verse{margin-left:auto;margin-right:auto;}
+    .soc{justify-content:center;}
+    .fbot{justify-content:center;}
+  }
