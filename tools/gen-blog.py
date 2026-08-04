@@ -52,6 +52,9 @@ def shell(fname, title, meta, hero_img, crumb, h1, lede, body):
 SHOTS = [
  ("gal-washer-rebuild.jpg","Hands-on in the shop: one of our technicians rebuilding a washer drive assembly at 3701 Apollo Rd."),
  ("gal-kitchen-install.jpg","On-site in a Corpus Christi kitchen — appliance and vent work done clean, with the workspace protected."),
+ ("gal-commercial-dryer.jpg","Commercial dryer service — one of our technicians deep inside a laundry-facility machine. Commercial equipment isn't a sideline here; it's a specialty."),
+ ("gal-parts-aisle.jpg","Aisles of factory-certified parts — Whirlpool, FSP and every major brand, stocked deep so repairs finish in one visit."),
+ ("gal-warehouse-shelving.jpg","The parts warehouse keeps growing — new shelving going up to hold even more inventory."),
  ("gal-parts-room.jpg","Inside the parts room: hundreds of labeled bins mean your repair isn't waiting on a shipment from Michigan."),
  ("gal-pallets.jpg","Delivery day — pallets of appliance parts arriving at the shop, headed straight for the shelves."),
  ("gal-new-parts.jpg","New parts arriving weekly — inventory moves fast when the whole Coastal Bend calls one shop."),
