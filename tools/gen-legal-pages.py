@@ -33,8 +33,11 @@ PRIVACY = ("Privacy Policy", "privacy-policy.html", """
 <h2>What we don't do</h2>
 <p>We do not sell, rent, or trade your personal information. We share it only with the service providers that make our business run (such as website hosting, form processing, and scheduling software), with payment processors when you make a purchase, or when the law requires it.</p>
 
+<h2>Online booking</h2>
+<p>When you book an appointment through the "Book Online" button, your information is processed by Housecall Pro, our scheduling platform, under its own privacy policy — we receive it there and use it only to schedule and perform your service.</p>
+
 <h2>Third-party content</h2>
-<p>This site embeds content from third parties — Google Maps, Google Fonts, and Facebook video. Those services may set their own cookies or collect usage data under their own privacy policies when the embedded content loads.</p>
+<p>This site embeds content from third parties — Google Maps, Google Fonts, Facebook video, and the Housecall Pro booking widget. Those services may set their own cookies or collect usage data under their own privacy policies when the embedded content loads.</p>
 
 <h2>Data retention &amp; your choices</h2>
 <p>We keep customer records as long as needed for warranty coverage, bookkeeping, and legal requirements. You can ask us at any time what information we have about you, ask us to correct it, or ask us to delete what we're not legally required to keep — just call or email us using the details below.</p>
@@ -60,7 +63,11 @@ TERMS = ("Terms of Service", "terms-of-service.html", """
 <li><b>Estimates &amp; pricing</b> — repair work is quoted up front after diagnosis, before work begins. The price you approve is the price you pay unless additional problems are discovered and approved by you first.</li>
 <li><b>Repair warranty</b> — our repairs are backed by a warranty on parts and labor as stated on your service invoice. The invoice is the controlling document for warranty terms on any specific job.</li>
 <li><b>Appliance &amp; parts sales</b> — warranty coverage for appliances and parts we sell (including new, scratch-&amp;-dent, and used units) is stated at the time of sale and on your receipt.</li>
-<li><b>Scheduling</b> — same-day service depends on availability. Appointment times are our best good-faith estimate, and we'll keep you informed if the schedule changes.</li>
+<li><b>Scheduling</b> — same-day service depends on availability. Appointment times are our best good-faith estimate, and we'll keep you informed if the schedule changes. After-hours and emergency availability may vary.</li>
+<li><b>Trip &amp; diagnostic fee</b> — a trip/diagnostic fee applies to service calls and varies by location; it is quoted when you book. When you approve the recommended repair, the trip and diagnostic fee is waived.</li>
+<li><b>Home Appliance Care Membership</b> — memberships are billed monthly ($19.95/mo for the first covered appliance, $5.95/mo each additional, pricing subject to change with notice) and include the benefits described at the time of enrollment, such as an annual preventive maintenance visit per covered appliance, discounts on eligible repair labor and parts, and priority scheduling. Memberships may be canceled at any time; benefits end at the close of the billing period.</li>
+<li><b>Financing</b> — financing on appliance purchases is offered through the Appliances 4U showroom; terms, eligibility, and approval are established at the time of purchase.</li>
+<li><b>Parts orders &amp; shipping</b> — parts may be picked up at our counter or shipped; shipping costs and timelines are quoted with your order.</li>
 </ul>
 
 <h2>Website content</h2>
