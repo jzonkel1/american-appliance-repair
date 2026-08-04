@@ -150,7 +150,7 @@ PAGES.append(dict(file="service-areas.html",
 PAGES.append(dict(file="maintenance.html",
  title="Home Appliance Care Membership — from $19.95/mo | American Appliance Repair",
  meta="Home Appliance Care Membership from $19.95/mo: annual preventive maintenance, 25% off repair labor, 10% off parts, priority scheduling. Prevent dryer fires & breakdowns.",
- hero="AAR_Appliance_Service_IMG-2.jpg", crumb="Care Membership",
+ hero="gal-washer-rebuild.jpg", crumb="Care Membership",
  h1='Protect your appliances<br><span style="color:#FFB25E;">before they break</span>',
  lede="The Home Appliance Care Membership: professional preventive maintenance from $19.95/month — because a dryer fire costs a lot more than a checkup.",
  body=f'''

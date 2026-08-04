@@ -180,7 +180,7 @@ def nav_html(active_file):
     </div>
   </div>
   <div id="mnav">
-    <a href="index.html#services">Services</a><a href="index.html#parts">Parts Store</a><a href="index.html#divisions">Divisions</a><a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="faq.html">FAQ</a><a href="maintenance.html">Care Membership</a><a href="#" onclick="HCPWidget.openModal();return false;">Book Online</a><a href="tel:+13616730937">Call (361) 673-0937</a>
+    <a href="index.html#services">Services</a><a href="index.html#parts">Parts Store</a><a href="index.html#divisions">Divisions</a><a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="maintenance.html">Care Membership</a><a href="#" onclick="HCPWidget.openModal();return false;">Book Online</a><a href="tel:+13616730937">Call (361) 673-0937</a>
   </div>
 </header>'''
 
@@ -197,7 +197,7 @@ FOOTER = '''<footer>
     </div>
     <div>
       <h4>Company</h4>
-      <a href="about.html">About Us</a><a href="appliances-4u.html">Appliances 4U Showroom</a><a href="index.html#parts">Parts Store</a><a href="warranty.html">Our Warranty</a><a href="maintenance.html">Care Membership</a><a href="financing.html">Financing</a><a href="emergency-appliance-repair.html">Emergency Service</a><a href="service-areas.html">Service Area</a><a href="reviews.html">Reviews</a><a href="faq.html">FAQ</a>
+      <a href="about.html">About Us</a><a href="appliances-4u.html">Appliances 4U Showroom</a><a href="index.html#parts">Parts Store</a><a href="warranty.html">Our Warranty</a><a href="maintenance.html">Care Membership</a><a href="financing.html">Financing</a><a href="emergency-appliance-repair.html">Emergency Service</a><a href="service-areas.html">Service Area</a><a href="reviews.html">Reviews</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a>
     </div>
     <div>
       <h4>Contact</h4>
@@ -210,7 +210,7 @@ FOOTER = '''<footer>
   <div class="wrap fbot">
     <span>© 2026 American Appliance Repair, LLC · Corpus Christi, TX</span>
     <span><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a></span>
-    <span>Website by <a href="#">Zonkel Media</a></span>
+    <span>Website by <a href="https://zonkelmedia.com" target="_blank" rel="noopener">Zonkel Media</a></span>
   </div>
 </footer>'''
 
