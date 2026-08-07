@@ -1,0 +1,32 @@
+name: Blog drip — publish scheduled posts
+
+# Every Monday at 9 AM Central (14:00 UTC), regenerate the blog. Posts in
+# tools/gen-blog.py whose pub date has arrived get written and pushed live;
+# future-dated posts stay in the queue. Also runnable manually from the
+# Actions tab (workflow_dispatch).
+on:
+  schedule:
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate blog and sitemap
+        run: |
+          python tools/gen-blog.py
+          python tools/gen-more-pages.py
+      - name: Commit and push if a post came due
+        run: |
+          git config user.name "zonkel-blog-bot"
+          git config user.email "jeffrey@zonkelmedia.com"
+          git add -A
+          git diff --cached --quiet || { git commit -m "Blog drip: publish scheduled post(s)"; git push; }
