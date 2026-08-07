@@ -213,6 +213,92 @@ PAGES.append(dict(file="emergency-appliance-repair.html",
 {cta_band("Refrigerators, freezers, ice machines, washers — when it can't wait, call us first.")}
 '''))
 
+# ---------------- AMERICAN POWER ----------------
+PAGES.append(dict(file="american-power.html",
+ title="American Power — Solar, Battery Backup & EV Charging | Corpus Christi, TX",
+ meta="American Power is the renewable energy division of American Appliance Repair — residential & commercial solar, battery backup and EV charging across the Coastal Bend, in partnership with Powur. $0 down. Free energy analysis: (361) 673-0937.",
+ noindex=False,
+ hero_img="solar-home.jpg",
+ crumb="American Power",
+ h1="Stop renting your electricity.<br><span style=\"color:#FFB25E;\">Own your power.</span>",
+ lede="Solar solutions designed to save you money and protect your future — from the same veteran-owned family you already trust with your appliances.",
+ ctas=f'''      <a href="tel:+13616730937" class="btn btn-flame">{PHONE_SVG}Free Energy Analysis — (361) 673-0937</a>''',
+ body='''
+<!-- intro -->
+<section style="background:var(--paper);">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Renewable Energy Division</span>
+      <h2 class="sec rv">The newest member<br>of the family</h2>
+      <p class="lede rv" style="margin-bottom:18px;">American Power brings the same veteran-owned, faith-led standard you know from our repair trucks to your energy bill — solar, battery backup and EV charging for homes and businesses across the Coastal Bend.</p>
+      <p class="rv" style="margin-bottom:14px;">We work in partnership with <b>Powur</b>, one of the nation's leading solar platforms — so you get proven equipment and professional installation, with a local, familiar face handling it from first conversation to switch-on.</p>
+      <p class="rv">It starts with a <b>free custom energy analysis</b> built around your home and your actual usage — no pressure, no obligation, just the honest math on what your roof could be doing for you.</p>
+    </div>
+    <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);"><img src="assets/solar-home.jpg" alt="Home with rooftop solar panels — American Power solar installation"></div>
+  </div>
+</section>
+
+<!-- value props -->
+<section class="solar-band">
+  <div class="wrap" style="display:block;">
+    <img class="ap-logo rv" src="assets/american-power-logo.png" alt="American Power — Own Your Power">
+    <h2 class="sec rv" style="color:#fff;">Why go solar with <span class="fl">American Power</span></h2>
+    <div class="solar-list" style="max-width:900px;">
+      <div class="si rv"><span class="ck">✓</span><span><b>$0 down</b> — go solar and start saving immediately</span></div>
+      <div class="si rv"><span class="ck">✓</span><span><b>No upfront cost</b> — no large payments, no hidden fees</span></div>
+      <div class="si rv"><span class="ck">✓</span><span><b>Protection from rising energy costs</b> — lock in predictable rates</span></div>
+      <div class="si rv"><span class="ck">✓</span><span><b>Free custom energy analysis</b> — built around your home &amp; usage</span></div>
+      <div class="si rv"><span class="ck">✓</span><span><b>Start saving immediately</b> — lower bills from the moment it's on</span></div>
+      <div class="si rv"><span class="ck">✓</span><span><b>Residential &amp; commercial</b> — plus battery backup &amp; EV charging</span></div>
+    </div>
+    <div class="pw rv">In partnership with Powur · A division of American Appliance Repair, LLC</div>
+  </div>
+</section>
+
+<!-- what we offer -->
+<section class="steps-band">
+  <div class="wrap">
+    <div class="sec-head rv" style="text-align:center;margin-left:auto;margin-right:auto;">
+      <span class="eyebrow"><img src="assets/insignia.png" alt=""> What We Offer</span>
+      <h2 class="sec">Power for every part of your life</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="n">☀</div><h3>Solar Systems</h3><p>Residential &amp; commercial rooftop solar — designed around your usage so the numbers actually work.</p></div>
+      <div class="step rv"><div class="n">🔋</div><h3>Battery Backup</h3><p>Keep the lights on when the grid goes down — store your own power for outages and peak hours.</p></div>
+      <div class="step rv"><div class="n">⚡</div><h3>EV Charging</h3><p>Home charging solutions for your electric vehicle — fueled by your own roof.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- how it works -->
+<section style="background:var(--cool);border-top:1px solid var(--line-cool);">
+  <div class="wrap">
+    <div class="sec-head rv" style="text-align:center;margin-left:auto;margin-right:auto;">
+      <span class="eyebrow"><img src="assets/insignia.png" alt=""> How It Works</span>
+      <h2 class="sec">Three steps to owning your power</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="n">1</div><h3>Free Energy Analysis</h3><p>We look at your bill and your usage and give you the honest math — no pressure, no obligation.</p></div>
+      <div class="step rv"><div class="n">2</div><h3>Custom Proposal</h3><p>A system designed around your home — $0 down, no upfront cost, no hidden fees.</p></div>
+      <div class="step rv"><div class="n">3</div><h3>Install &amp; Switch On</h3><p>Professional installation through our Powur partnership — and your savings start the moment it's live.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- cta -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow rv" style="color:var(--gold);"><img src="assets/insignia.png" alt=""> Own Your Power</span>
+    <h2 class="rv">Find out what your roof could be saving you</h2>
+    <p class="lede rv" style="max-width:52ch;">One call gets you a free custom energy analysis — built around your home, your usage and your bill.</p>
+    <div class="ctas rv">
+      <a href="tel:+13616730937" class="btn btn-flame">''' + PHONE_SVG + '''Call (361) 673-0937</a>
+      <a href="index.html#contact" class="btn btn-white">Send a Request</a>
+    </div>
+    <div class="fine rv">Free energy analysis · $0 down · Residential &amp; commercial · A division of American Appliance Repair, LLC</div>
+  </div>
+</section>'''))
+
 # ---------------- template ----------------
 def build(p):
     return f'''<!DOCTYPE html>
@@ -245,8 +331,8 @@ def build(p):
     <h1 class="h-in d1">{p["h1"]}</h1>
     <p class="lede h-in d2">{p["lede"]}</p>
     <div class="ctas h-in d3">
-      <a href="tel:+13616730937" class="btn btn-flame">{PHONE_SVG}Call (361) 673-0937</a>
-      <button class="btn btn-white hcp-button" onClick="HCPWidget.openModal()">Book Online</button>
+{p.get("ctas") or f'''      <a href="tel:+13616730937" class="btn btn-flame">{PHONE_SVG}Call (361) 673-0937</a>
+      <button class="btn btn-white hcp-button" onClick="HCPWidget.openModal()">Book Online</button>'''}
     </div>
   </div>
 </section>

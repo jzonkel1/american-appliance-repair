@@ -241,7 +241,7 @@ urls = []
 for f in pages:
     if f in skip: continue
     loc = gsp.BASE + "/" if f == "index.html" else f"{gsp.BASE}/{f}"
-    pri = "1.0" if f == "index.html" else ("0.8" if "repair" in f or f in ("appliances-4u.html","reviews.html","maintenance.html") else "0.6")
+    pri = "1.0" if f == "index.html" else ("0.8" if "repair" in f or f in ("appliances-4u.html","american-power.html","reviews.html","maintenance.html") else "0.6")
     urls.append(f"  <url><loc>{loc}</loc><priority>{pri}</priority></url>")
 io.open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n")
