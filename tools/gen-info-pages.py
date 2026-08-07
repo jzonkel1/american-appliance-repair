@@ -128,7 +128,7 @@ PAGES.append(dict(file="about.html",
 # ---------------- WARRANTY ----------------
 PAGES.append(dict(file="warranty.html",
  title="Our Warranty | American Appliance Repair, Corpus Christi TX",
- meta="Every American Appliance Repair job is backed by a 6-month warranty on parts replaced and labor. Plus: approve the repair and your trip & diagnostic fee is on us.",
+ meta="Every American Appliance Repair job is backed by a 6-month warranty on parts replaced and labor. Plus: $99/year extended warranties — even on appliances bought somewhere else.",
  noindex=False,
  hero_img="AAR_Appliance_Service_IMG-5.jpg",
  crumb="Our Warranty",
@@ -147,6 +147,13 @@ PAGES.append(dict(file="warranty.html",
       <div class="sy rv"><span class="ck">✓</span><span><b>6-month warranty</b> on the labor for that repair</span></div>
       <div class="sy rv"><span class="ck">✓</span><span><b>Approve the repair, and your trip &amp; diagnostic fee is on us</b></span></div>
       <div class="sy rv"><span class="ck">✓</span><span><b>Honest answers</b> — if it's not worth fixing, we'll tell you</span></div>
+    </div>
+    <div class="rv" style="margin-top:52px;border:2px solid var(--flame);border-radius:var(--r-lg);padding:34px 32px;background:#fff;box-shadow:var(--shadow-md);">
+      <span class="eyebrow"><img src="assets/insignia.png" alt=""> Bought It Somewhere Else?</span>
+      <h2 class="sec" style="font-size:clamp(22px,2.6vw,30px);margin-top:12px;">Extended warranty — $99 for a full year</h2>
+      <p class="lede" style="margin-top:10px;">We offer extended warranty protection <b>even if you bought your appliance somewhere else.</b> Not a problem. A full year of coverage is just <b>$99 — about 27&cent; a day.</b> Have your receipt handy — you may qualify.</p>
+      <div class="ctas" style="margin-top:20px;"><a href="tel:+13614009513" class="btn btn-flame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg>Call (361) 400-9513</a></div>
+      <div style="margin-top:14px;font-size:12.5px;color:var(--soft);">Eligibility, coverage, exclusions, and restrictions may apply.</div>
     </div>
     <div class="sec-head rv" style="margin-top:52px;">
       <h2 class="sec" style="font-size:clamp(22px,2.6vw,30px);">The fine print, honestly stated</h2>

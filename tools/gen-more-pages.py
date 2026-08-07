@@ -43,8 +43,15 @@ PAGES.append(dict(file="appliances-4u.html",
 <div class="step rv"><div class="n">USED</div><h3>Quality pre-owned</h3><p>Inspected and serviced by our own technicians, with a <b>30-day warranty</b> — honest machines at honest prices.</p></div>
 </div>
 <div class="sec-head rv" style="margin-top:48px;"><h2 class="sec" style="font-size:clamp(22px,2.6vw,30px);">Brands you'll find</h2>
-<p class="lede">Samsung · LG · GE · Whirlpool · Frigidaire · Bosch · Amana · Electrolux · Miele · Speed Queen — and more, rotating through the floor weekly.</p></div>
+<p class="lede">Samsung · LG · GE · Whirlpool · Frigidaire · Bosch · Amana · Electrolux · Miele · Speed Queen — and more, rotating through the floor weekly.</p>
+<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:18px;">
+<span style="font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);">Authorized dealer:</span>
+<img src="assets/frigidaire-brand-logo.jpg" alt="Frigidaire authorized dealer" style="height:30px;width:auto;">
+<img src="assets/logo-electrolux-.jpg" alt="Electrolux authorized dealer" style="height:30px;width:auto;">
+</div></div>
 <div class="sympt-grid" style="grid-template-columns:1fr 1fr;">
+<div class="sy rv"><span class="ck">✓</span><span><b>Authorized dealer</b> for Frigidaire &amp; Electrolux</span></div>
+<div class="sy rv"><span class="ck">✓</span><span><b>$99/yr extended warranties</b> — even on appliances bought somewhere else · <a href="warranty.html" style="color:var(--flame-deep);font-weight:700;">details</a></span></div>
 <div class="sy rv"><span class="ck">✓</span><span><b>Financing available</b> — <a href="financing.html" style="color:var(--flame-deep);font-weight:700;">see how it works</a></span></div>
 <div class="sy rv"><span class="ck">✓</span><span><b>Delivery, installation &amp; haul-away</b> — quoted with your purchase</span></div>
 <div class="sy rv"><span class="ck">✓</span><span><b>We buy appliances &amp; take trade-ins</b> — old unit becomes money</span></div>
@@ -102,6 +109,7 @@ FAQ_ITEMS = [
   ("Do you offer financing?","Yes, on appliance purchases at the showroom — <a href='financing.html' style='color:var(--flame);font-weight:700;'>here's how it works</a>."),
   ("Do you deliver?","Yes — delivery, installation and haul-away are available for a fee quoted with your purchase."),
   ("What's the Home Appliance Care Membership?","From $19.95/mo: an annual maintenance visit, 25% off eligible repair labor, 10% off eligible parts, and priority scheduling — <a href='maintenance.html' style='color:var(--flame);font-weight:700;'>full details</a>."),
+  ("Do you offer extended warranties?","Yes — even if you bought your appliance somewhere else. A full year of extended warranty protection is <b>$99</b> (about 27&cent; a day). Have your receipt handy — you may qualify. Call <a href='tel:+13614009513' style='color:var(--flame);font-weight:700;'>(361) 400-9513</a>. Eligibility, coverage, exclusions and restrictions may apply."),
  ]),
 ]
 faq_html = ""
