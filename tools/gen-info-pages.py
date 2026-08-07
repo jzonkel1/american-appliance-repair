@@ -48,7 +48,7 @@ PAGES.append(dict(file="about.html",
       <p class="rv">Faith is at the center of how we work. It's on our logo, it's in how we treat people, and it's why your neighbors call us honest before they call us anything else.</p>
       <div class="verse rv" style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--ink);margin:22px 0 4px;line-height:1.5;">“For all things I have the strength through the one who gives me power.”</div>
       <div class="ref rv" style="font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--flame);">Philippians 4:13</div>
-      <div class="rv" style="display:flex;gap:18px;align-items:center;margin-top:24px;flex-wrap:wrap;"><img src="assets/veteran-badge.png" alt="Military Veteran Owned Business" style="height:64px;width:auto;"><img src="assets/businessrate-award.jpg" alt="Rafael receiving the BusinessRate Best of 2026 award" style="height:110px;width:auto;border-radius:12px;box-shadow:var(--shadow-md);"></div>
+      <div class="rv" style="display:flex;gap:18px;align-items:center;margin-top:24px;flex-wrap:wrap;"><img src="assets/veteran-badge.png" alt="Military Veteran Owned Business" style="height:64px;width:auto;"></div>
     </div>
     <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);"><img src="assets/americanappliancerepairteam.jpg" alt="The American Appliance Repair team in a training meeting"></div>
   </div>
@@ -68,6 +68,25 @@ PAGES.append(dict(file="about.html",
       <div class="step rv"><div class="n">✓</div><h3>Quality</h3><p>We stand behind our work with a 6-month warranty on every repair.</p></div>
       <div class="step rv"><div class="n">⚡</div><h3>Innovation</h3><p>We embrace better solutions — from booking online to parts on demand.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- Best of 2026 award -->
+<section style="background:var(--paper);">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Best of 2026</span>
+      <h2 class="sec rv">&ldquo;Success is my duty.&rdquo;</h2>
+      <p class="lede rv" style="margin-bottom:18px;">The sign on the office wall says it all — and in 2026 it paid off. BusinessRate named American Appliance Repair the <b>Best Appliance Repair Service in Corpus Christi for 2026</b>, an award powered by real Google reviews.</p>
+      <p class="rv">That means it wasn't earned with advertising. It was earned in your neighbors' kitchens and laundry rooms — one honest diagnosis, one clean repair, one kept promise at a time.</p>
+      <div class="rv" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:26px;">
+        <img src="assets/award-best.png" alt="BusinessRate Best of 2026 Award Winner" style="height:84px;width:auto;">
+        <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 20px;"><span style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);">Google Rating</span><span style="display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:19px;color:var(--ink);">4.8 <span style="color:var(--gold);font-size:15px;">★★★★★</span></span></div>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 20px;"><span style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);">Real Reviews</span><span style="display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:19px;color:var(--ink);">176 on Google</span></div>
+      </div>
+      <div class="rv" style="margin-top:26px;"><a class="btn btn-flame" href="reviews.html">Read the Reviews</a></div>
+    </div>
+    <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);"><img src="assets/businessrate-award.jpg" alt="Rafael holding the BusinessRate Best of 2026 award for Best Appliance Repair Service in Corpus Christi, in front of the 'Success is my duty' wall"></div>
   </div>
 </section>
 
