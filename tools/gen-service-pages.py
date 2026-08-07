@@ -202,6 +202,7 @@ def nav_html(active_file):
       </div>
       <a href="about.html">About</a>
       <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
       <a href="faq.html">FAQ</a>
     </nav>
     <div class="cta">
