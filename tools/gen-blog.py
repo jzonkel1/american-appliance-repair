@@ -97,7 +97,7 @@ POSTS = [
  dict(slug="blog-dryer-fire-warning-signs.html", date="August 4, 2026",
   title="Is Your Dryer a Fire Risk? 6 Warning Signs Corpus Christi Homeowners Miss",
   meta="Thousands of home fires each year start in dryers — and lack of maintenance is the leading cause. The warning signs to watch for, from Corpus Christi's appliance pros.",
-  hero="AAR_Appliance_Service_IMG-2.jpg", chip="Safety",
+  hero="gal-commercial-dryer.jpg", chip="Safety",
   excerpt="Most homeowners clean the lint filter and think they're covered. The dangerous buildup is where you can't see it — inside the cabinet and the exhaust vent.",
   body="""
 <p>Thousands of home fires every year trace back to one appliance: the clothes dryer. And the leading cause isn't faulty equipment — it's lack of maintenance.</p>
@@ -119,7 +119,7 @@ POSTS = [
  dict(slug="blog-refrigerator-texas-heat.html", date="August 4, 2026",
   title="Why Refrigerators Fail in the Texas Heat — and How to Keep Yours Alive",
   meta="Corpus Christi summers make refrigerators work overtime. Why fridges fail in August, the early warning signs, and what to do before the groceries spoil.",
-  hero="AAR_Appliance_Service_IMG-1.jpg", chip="Seasonal",
+  hero="gal-kitchen-install.jpg", chip="Seasonal",
   excerpt="August in Corpus Christi is peak season for refrigerator calls. Here's why the heat kills fridges — and the early signs yours is struggling.",
   body="""
 <p>Every August, our phones tell the same story: refrigerator after refrigerator giving up in the Corpus Christi heat. It's not a coincidence — summer is genuinely the hardest season of a fridge's life.</p>
@@ -141,7 +141,7 @@ POSTS = [
  dict(slug="blog-repair-or-replace.html", date="August 4, 2026",
   title="Repair or Replace? The Honest Math We Give Corpus Christi Customers",
   meta="When is an appliance worth repairing, and when should you replace it? The honest framework American Appliance Repair uses — from the company that does both.",
-  hero="AAR_Appliance_Service_IMG-5.jpg", chip="Advice",
+  hero="gal-washer-rebuild.jpg", chip="Advice",
   excerpt="We repair appliances AND sell them — which means we have no reason to steer you wrong. Here's the actual framework we use.",
   body="""
 <p>"Is this thing even worth fixing?" We hear it every day — and because we both <em>repair</em> appliances and <em>sell</em> them, we're one of the few shops with no reason to steer you either direction. Here's the honest framework.</p>
