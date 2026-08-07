@@ -55,6 +55,29 @@ if (qw) {
   show(0);
 }
 
+// mobile menu open/close — locks page scroll behind the menu (iOS-safe)
+const burger = document.querySelector('.burger');
+const mnav = document.getElementById('mnav');
+if (burger && mnav) {
+  let lockY = 0;
+  const isOpen = () => document.body.classList.contains('menu-open');
+  const openMenu = () => {
+    lockY = window.scrollY;
+    mnav.style.display = 'block';
+    document.body.style.top = (-lockY) + 'px';
+    document.body.classList.add('menu-open');
+  };
+  const closeMenu = () => {
+    document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+    mnav.style.display = 'none';
+    window.scrollTo(0, lockY);
+  };
+  burger.addEventListener('click', () => { isOpen() ? closeMenu() : openMenu(); });
+  // tapping any link in the menu closes it (matters for same-page anchors)
+  mnav.addEventListener('click', (e) => { if (e.target.closest('a')) closeMenu(); });
+}
+
 // mobile menu accordions — one group open at a time
 document.querySelectorAll('#mnav .mgroup').forEach(btn => {
   btn.addEventListener('click', () => {

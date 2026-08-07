@@ -87,6 +87,9 @@
   .nav .cta .btn.hcp-button{padding:12px 22px !important;font-size:15px !important;}
   .burger{display:none;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.4);border-radius:10px;width:44px;height:40px;font-size:24px;line-height:1;padding:0;color:#fff;cursor:pointer;}
   #mnav{display:none;background:var(--ink);padding:10px 24px 18px;max-height:calc(100vh - 110px);max-height:calc(100dvh - 110px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;}
+  body.menu-open{position:fixed;left:0;right:0;width:100%;overflow:hidden;}
+  body.menu-open .mcall{display:none !important;}
+  body.menu-open header.nav{background:rgba(16,30,48,.97);}
   #mnav a{display:block;padding:12px 0;font-weight:600;color:#fff;border-bottom:1px solid rgba(255,255,255,.1);}
   #mnav a:last-child{border:none;}
   #mnav .mgroup{display:flex;width:100%;align-items:center;justify-content:space-between;background:none;border:none;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;font-family:inherit;font-size:inherit;font-weight:600;padding:12px 0;cursor:pointer;text-align:left;}
