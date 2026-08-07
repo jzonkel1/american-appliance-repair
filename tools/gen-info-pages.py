@@ -44,7 +44,7 @@ PAGES.append(dict(file="about.html",
       <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Our Story</span>
       <h2 class="sec rv">13 years in the Army.<br>One standard of service.</h2>
       <p class="lede rv" style="margin-bottom:18px;">American Appliance Repair was founded in 2021 by Rafael, a U.S. Army veteran who served our country for 13 years — and runs his company the way the Army taught him: show up, do it right, and stand behind your work.</p>
-      <p class="rv" style="margin-bottom:14px;">What started as a repair service has grown into a family of companies under one roof at 3701 Apollo Rd: a full <b>repair division</b> for homes and businesses, a stocked <b>parts store</b> backed by our Marcone partnership, and the <b>Appliances 4U</b> showroom with new, scratch-&amp;-dent and quality used appliances.</p>
+      <p class="rv" style="margin-bottom:14px;">What started as a repair service has grown into a family of companies under one roof at 3701 Apollo Rd: a full <b>repair division</b> for homes and businesses, a stocked <b>parts store</b> backed by our Marcone partnership, the <b>Appliances 4U</b> showroom with new, scratch-&amp;-dent and quality used appliances — and now <b><a href="american-power.html" style="color:var(--flame);">American Power</a></b>, our renewable energy division.</p>
       <p class="rv">Faith is at the center of how we work. It's on our logo, it's in how we treat people, and it's why your neighbors call us honest before they call us anything else.</p>
       <div class="verse rv" style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--ink);margin:22px 0 4px;line-height:1.5;">“For all things I have the strength through the one who gives me power.”</div>
       <div class="ref rv" style="font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--flame);">Philippians 4:13</div>
@@ -85,6 +85,21 @@ PAGES.append(dict(file="about.html",
         <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 20px;"><span style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);">Parts &amp; Sales</span><a href="tel:+13614009513" style="display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:19px;color:var(--ink);">(361) 400-9513</a></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Kingdom Business Live -->
+<section style="background:linear-gradient(165deg,var(--ink),var(--navy));color:#fff;">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow rv" style="color:var(--gold);"><img src="assets/insignia.png" alt=""> Kingdom Business Live</span>
+      <h2 class="sec rv" style="color:#fff;">Faith and business,<br><span style="color:#FFB25E;">live every Tuesday</span></h2>
+      <p class="lede rv" style="color:#C4D3E2;">Rafael hosts <b style="color:#fff;">Kingdom Business Live</b> — a weekly show about running a business on Kingdom principles, stewardship and serving people well — live on Facebook every Tuesday at 6&nbsp;PM.</p>
+      <div class="rv" style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:17px;color:#F4E9DB;margin:22px 0 4px;line-height:1.5;">&ldquo;Whoever can be trusted with very little can also be trusted with much.&rdquo;</div>
+      <div class="rv" style="font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);">Luke 16:10</div>
+      <div class="rv" style="margin-top:26px;"><a class="btn btn-flame" href="https://www.facebook.com/juan.colon.9883739/videos/2240320903383618/" target="_blank" rel="noopener">Watch on Facebook</a></div>
+    </div>
+    <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:0 30px 70px -20px rgba(0,0,0,.5);"><img src="assets/rafaelcordero.jpg" alt="Rafael, founder of American Appliance Repair and host of Kingdom Business Live"></div>
   </div>
 </section>
 
@@ -241,7 +256,7 @@ PAGES.append(dict(file="american-power.html",
 <!-- value props -->
 <section class="solar-band">
   <div class="wrap" style="display:block;">
-    <img class="ap-logo rv" src="assets/american-power-logo.png" alt="American Power — Own Your Power">
+    <img class="ap-logo rv" src="assets/american-power-logo.png?v=2" alt="American Power — Own Your Power">
     <h2 class="sec rv" style="color:#fff;">Why go solar with <span class="fl">American Power</span></h2>
     <div class="solar-list" style="max-width:900px;">
       <div class="si rv"><span class="ck">✓</span><span><b>$0 down</b> — go solar and start saving immediately</span></div>

@@ -190,7 +190,7 @@ def nav_html(active_file):
           <a href="index.html#services"><img class="dc" src="assets/logo-mark.png" alt=""><span>Appliance Repair<span class="sub">Service &amp; repair division</span></span></a>
           <a href="index.html#parts"><img class="dc" src="assets/div-parts.png?v=2" alt=""><span>Parts Store<span class="sub">Parts &amp; supply division</span></span></a>
           <a href="appliances-4u.html"><img class="dc" src="assets/div-sales.png?v=2" alt=""><span>Appliances 4U<span class="sub">New &amp; used appliance sales</span></span></a>
-          <a href="american-power.html"><img class="dc" src="assets/div-power.png" alt=""><span>American Power<span class="sub">Solar, battery &amp; EV charging</span></span></a>
+          <a href="american-power.html"><img class="dc" src="assets/div-power.png?v=3" alt=""><span>American Power<span class="sub">Solar, battery &amp; EV charging</span></span></a>
         </div></div>
       </div>
       <div class="has-dd">
@@ -215,7 +215,7 @@ def nav_html(active_file):
     <div class="msub">{m_services}<a href="maintenance.html">Care Membership</a></div>
     <a href="index.html#parts">Parts Store</a>
     <button class="mgroup" type="button">Divisions<span class="mcar">▼</span></button>
-    <div class="msub msub-div"><a href="index.html#services"><img class="mdc" src="assets/logo-mark.png" alt="">Appliance Repair</a><a href="index.html#parts"><img class="mdc" src="assets/div-parts.png?v=2" alt="">Parts Store</a><a href="appliances-4u.html"><img class="mdc" src="assets/div-sales.png?v=2" alt="">Appliances 4U</a><a href="american-power.html"><img class="mdc" src="assets/div-power.png" alt="">American Power</a></div>
+    <div class="msub msub-div"><a href="index.html#services"><img class="mdc" src="assets/logo-mark.png" alt="">Appliance Repair</a><a href="index.html#parts"><img class="mdc" src="assets/div-parts.png?v=2" alt="">Parts Store</a><a href="appliances-4u.html"><img class="mdc" src="assets/div-sales.png?v=2" alt="">Appliances 4U</a><a href="american-power.html"><img class="mdc" src="assets/div-power.png?v=3" alt="">American Power</a></div>
     <button class="mgroup" type="button">Service Areas<span class="mcar">▼</span></button>
     <div class="msub"><a href="service-areas.html">All Service Areas</a>{m_areas}</div>
     <a href="about.html">About</a><a href="reviews.html">Reviews</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="maintenance.html">Care Membership</a><a href="#" onclick="HCPWidget.openModal();return false;">Book Online</a><a href="tel:+13616730937">Call (361) 673-0937</a>
