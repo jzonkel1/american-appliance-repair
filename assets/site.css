@@ -553,6 +553,17 @@
     .parts{text-align:center;}
     .parts .eyebrow{justify-content:center;}
     .parts ul{display:inline-block;text-align:left;}
+    /* read what the division is, then watch the tour: on phones the video drops
+       below the intro copy instead of leading the section with no context */
+    .parts .wrap{gap:0;}
+    .parts .wrap > div:last-child{display:contents;}
+    .parts .eyebrow{order:1;}
+    .parts .sec{order:2;}
+    .parts .lede{order:3;}
+    .parts .reel-col{order:4;margin:26px 0 4px;}
+    .parts ul{order:5;justify-self:center;}
+    .parts .addr{order:6;justify-self:center;}
+    .parts .cta-row{order:7;justify-self:center;}
     .area{text-align:center;}
     .area .eyebrow{justify-content:center;}
     .area .lede{margin-left:auto;margin-right:auto;}
