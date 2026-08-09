@@ -273,8 +273,9 @@
   <div class="wrap">
     <div class="rv">
       <div class="reel-frame">
-        <div class="rf">
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F848179184659034%2F&show_text=false&width=267&t=0" title="Warehouse tour — American Appliance Repair" scrolling="no" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+        <div class="rf" id="reelFrame">
+          <div class="rf-load"><span class="rf-spin" aria-hidden="true"></span><span class="rf-txt">Loading video</span></div>
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F848179184659034%2F&show_text=false&width=267&t=0" title="Warehouse tour — American Appliance Repair" scrolling="no" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy" onload="this.parentNode.classList.add('rf-ready')"></iframe>
         </div>
       </div>
       <div class="reel-cap">▶ Take the warehouse tour with Rafael</div>

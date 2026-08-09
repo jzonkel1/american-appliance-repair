@@ -22,6 +22,19 @@ if (track) {
   track.parentNode.appendChild(clone);
 }
 
+// facebook reel: if the embed never arrives (content blocker, slow network),
+// stop spinning and hand the visitor a working link instead
+const reel = document.getElementById('reelFrame');
+if (reel) {
+  setTimeout(() => {
+    if (reel.classList.contains('rf-ready')) return;
+    const spin = reel.querySelector('.rf-spin');
+    const txt = reel.querySelector('.rf-txt');
+    if (spin) spin.style.display = 'none';
+    if (txt) txt.innerHTML = 'Video won\'t load?<br><a href="https://www.facebook.com/reel/848179184659034/" target="_blank" rel="noopener">Watch it on Facebook</a>';
+  }, 12000);
+}
+
 // marquees: hold the scroll animation until the logos have real dimensions AND
 // the strip is on screen. An undecoded image measures 0 wide, so a track that
 // animates to translateX(-100%) sprints through a collapsed width and snaps back.
