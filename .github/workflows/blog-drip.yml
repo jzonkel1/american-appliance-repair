@@ -24,6 +24,7 @@ jobs:
         run: |
           python tools/gen-blog.py
           python tools/gen-more-pages.py
+          python tools/stamp-assets.py
       - name: Commit and push if a post came due
         run: |
           git config user.name "zonkel-blog-bot"
