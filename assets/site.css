@@ -171,7 +171,11 @@
   .svc .bd{padding:18px 20px 20px;}
   .svc h3{font-size:19px;margin-bottom:6px;}
   .svc p{font-size:14px;color:var(--soft);line-height:1.5;}
-  .svc a.more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:700;font-size:13.5px;color:var(--flame);}
+  .svc .more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:700;font-size:13.5px;color:var(--flame);}
+  /* whole card is the link — keep the card's own type colors, not link colors */
+  a.svc{display:block;color:inherit;text-decoration:none;}
+  a.svc:hover .more{color:var(--flame-deep);gap:9px;}
+  a.svc .more{transition:gap .2s ease,color .2s ease;}
   .svc a.more:hover{gap:10px;}
   .svc-cta{text-align:center;margin-top:42px;}
   .svc-cta .note{font-size:14px;color:var(--soft);margin-top:12px;}
