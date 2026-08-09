@@ -22,6 +22,30 @@ if (track) {
   track.parentNode.appendChild(clone);
 }
 
+// marquees: hold the scroll animation until the logos have real dimensions AND
+// the strip is on screen. An undecoded image measures 0 wide, so a track that
+// animates to translateX(-100%) sprints through a collapsed width and snaps back.
+document.querySelectorAll('.marquee, .rev-marquee').forEach(m => {
+  let imgsReady = false, onScreen = false;
+  const go = () => { if (imgsReady && onScreen) m.classList.add('mq-go'); };
+  const pending = [...m.querySelectorAll('img')].filter(i => !i.complete);
+  if (!pending.length) { imgsReady = true; }
+  else {
+    let left = pending.length;
+    const done = () => { if (--left <= 0) { imgsReady = true; go(); } };
+    pending.forEach(i => { i.addEventListener('load', done, {once:true}); i.addEventListener('error', done, {once:true}); });
+  }
+  // never leave a strip frozen because one logo never resolves
+  setTimeout(() => { imgsReady = true; go(); }, 3000);
+  if ('IntersectionObserver' in window) {
+    const mio = new IntersectionObserver((es) => {
+      es.forEach(e => { if (e.isIntersecting) { onScreen = true; mio.disconnect(); go(); } });
+    }, {threshold:.05});
+    mio.observe(m);
+  } else { onScreen = true; }
+  go();
+});
+
 // quote wizard — tap-first multi-step request form
 const qw = document.getElementById('qw');
 if (qw) {

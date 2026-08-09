@@ -146,8 +146,12 @@
   .brandbar .lbl{text-align:center;font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin-bottom:24px;}
   .brandbar .lbl b{color:var(--flame);}
   .marquee{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
-  .marquee .track{display:flex;align-items:center;gap:66px;padding-right:66px;flex:none;animation:mq 36s linear infinite;}
-  .marquee:hover .track{animation-play-state:paused;}
+  /* animation stays paused until site.js confirms the logos have loaded and the
+     strip is on screen — an undecoded <img> measures 0 wide, so translateX(-100%)
+     would sprint through a collapsed track and snap back */
+  .marquee .track{display:flex;align-items:center;gap:66px;padding-right:66px;flex:none;animation:mq 36s linear infinite;animation-play-state:paused;}
+  .marquee.mq-go .track{animation-play-state:running;}
+  .marquee.mq-go:hover .track{animation-play-state:paused;}
   @keyframes mq{to{transform:translateX(-100%);}}
   @media(prefers-reduced-motion:reduce){.marquee .track{animation:none;}}
   .marquee img{height:30px;width:auto;filter:grayscale(1) opacity(.6);transition:.25s;}
@@ -286,8 +290,9 @@
   .rev-score .meta a{color:var(--steel);border-bottom:1px dotted var(--steel);}
   .rev-score .meta a:hover{color:var(--flame);border-color:var(--flame);}
   .rev-marquee{overflow:hidden;display:flex;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);}
-  .rev-track{display:flex;gap:20px;padding-right:20px;flex:none;animation:revmq 80s linear infinite;}
-  .rev-marquee:hover .rev-track{animation-play-state:paused;}
+  .rev-track{display:flex;gap:20px;padding-right:20px;flex:none;animation:revmq 80s linear infinite;animation-play-state:paused;}
+  .rev-marquee.mq-go .rev-track{animation-play-state:running;}
+  .rev-marquee.mq-go:hover .rev-track{animation-play-state:paused;}
   @keyframes revmq{to{transform:translateX(-100%);}}
   @media(prefers-reduced-motion:reduce){.rev-track{animation:none;}}
   .rev-card{flex:0 0 350px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 24px 20px;display:flex;flex-direction:column;box-shadow:0 6px 18px -8px rgba(16,30,48,.08);}
@@ -391,6 +396,9 @@
   }
   @media(max-width:640px){
     section{padding:64px 0;}
+    /* iOS Safari paints a masked layer unreliably while a transform animation
+       runs inside it — the edge fade isn't worth a blank strip on a phone */
+    .marquee,.rev-marquee{-webkit-mask-image:none;mask-image:none;}
     .svc-grid,.div-grid{grid-template-columns:1fr;}
     .why-grid,.form .row{grid-template-columns:1fr;}
     footer .wrap{grid-template-columns:1fr;}
