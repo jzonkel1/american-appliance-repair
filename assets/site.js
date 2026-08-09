@@ -84,7 +84,8 @@ if (qw) {
       if (!b) return;
       g.querySelectorAll('button').forEach(x => x.classList.remove('sel'));
       b.classList.add('sel');
-      qw.querySelector('input[name=' + g.dataset.field + ']').value = b.textContent.trim();
+      const label = b.querySelector('span') || b;
+      qw.querySelector('input[name=' + g.dataset.field + ']').value = label.textContent.trim();
       setTimeout(() => show(Math.min(cur + 1, steps.length - 1)), 160);
     });
   });

@@ -74,11 +74,11 @@ PAGES.append(dict(file="reviews.html",
 <div class="rev-top rv"><div><span class="eyebrow"><img src="assets/insignia.png" alt=""> What Your Neighbors Say</span>
 <div class="rev-score" style="margin-top:14px;"><div class="big">4.8</div>
 <div class="meta"><span class="stars">★★★★★</span><a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener">176 Google reviews</a> · Corpus Christi &amp; the Coastal Bend</div></div></div>
-<a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:12px 24px;font-size:14.5px;">Read them all on Google</a></div>
+<div class="rev-acts"><a href="https://search.google.com/local/writereview?placeid=ChIJsdAL8HFfaIYRbToTbtoxJ_k" target="_blank" rel="noopener" class="btn btn-flame" style="padding:12px 24px;font-size:14.5px;">Leave us a review</a><a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:12px 24px;font-size:14.5px;">Read them all on Google</a></div></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;">
 {"".join(rev(k) for k in gsp.REVIEWS)}
 </div>
-<div class="svc-cta rv" style="margin-top:34px;"><a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener" class="btn btn-navy">Leave us a review on Google</a>
+<div class="svc-cta rv" style="margin-top:34px;"><a href="https://search.google.com/local/writereview?placeid=ChIJsdAL8HFfaIYRbToTbtoxJ_k" target="_blank" rel="noopener" class="btn btn-navy">Leave us a review on Google</a>
 <div class="note">Had us out recently? Two minutes of your time helps your neighbors find honest service.</div></div>
 </div></section>
 {cta("Ready when you are", "Join a few hundred Coastal Bend families who found their appliance people.")}
