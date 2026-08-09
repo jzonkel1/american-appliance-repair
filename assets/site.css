@@ -306,6 +306,21 @@
   .rev-score .meta .stars{display:block;font-size:17px;margin-bottom:3px;}
   .rev-score .meta a{color:var(--steel);border-bottom:1px dotted var(--steel);}
   .rev-score .meta a:hover{color:var(--flame);border-color:var(--flame);}
+  /* live open/closed chip (filled by site.js) */
+  .open-now{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:.12em;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:3px 11px;margin-left:4px;text-transform:uppercase;white-space:nowrap;}
+  .open-now.is-open{color:#BFF3D8;border-color:rgba(47,208,123,.4);background:rgba(47,208,123,.13);}
+  .open-now .on-short{display:none;}
+  /* tablet: the top bar gets tight, so shorten it there only */
+  @media(max-width:900px){.topline .open-now .on-full{display:none;}.topline .open-now .on-short{display:inline;}}
+  /* phone: the top bar can't hold it at all — the hero and menu carry it instead */
+  @media(max-width:640px){.topline .open-now{display:none;}}
+  .hero-proof .open-now,#mnav .open-now{font-size:11px;letter-spacing:.08em;padding:4px 12px;}
+  .hero-proof{flex-wrap:wrap;}
+  .hero-proof .open-now{flex:0 0 auto;margin:2px 0 0;}
+  .hero-proof>span:nth-child(2){white-space:nowrap;}
+  #mnav .mstatus{padding:14px 4px 4px;}
+  .open-now:before{content:"";width:8px;height:8px;border-radius:50%;background:#9AA9B8;flex:none;}
+  .open-now.is-open:before{background:#2FD07B;box-shadow:0 0 0 3px rgba(47,208,123,.25);}
   .rev-acts{display:flex;gap:12px;flex-wrap:wrap;}
   .rev-acts .btn svg{margin-right:2px;}
   @media(max-width:640px){.rev-acts{width:100%;flex-direction:column;}.rev-acts .btn{width:100%;justify-content:center;}}

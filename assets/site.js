@@ -22,6 +22,42 @@ if (track) {
   track.parentNode.appendChild(clone);
 }
 
+// live open/closed status — Mon–Fri 8–8, Sat 9–4, Sun closed (shop's local time,
+// not the visitor's, so a traveler doesn't see the wrong answer)
+(() => {
+  const slots = document.querySelectorAll('[data-open-now]');
+  if (!slots.length) return;
+  const HOURS = {1:[8,20],2:[8,20],3:[8,20],4:[8,20],5:[8,20],6:[9,16]}; // 0 = Sunday, closed
+  let now;
+  try {
+    const p = new Intl.DateTimeFormat('en-US', {timeZone:'America/Chicago', weekday:'short', hour:'numeric', minute:'numeric', hour12:false})
+      .formatToParts(new Date());
+    const get = (t) => p.find(x => x.type === t).value;
+    const days = {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+    now = {day: days[get('weekday')], h: +get('hour') % 24, m: +get('minute')};
+  } catch (e) { return; }               // no reliable clock → say nothing
+  const today = HOURS[now.day];
+  const mins = now.h * 60 + now.m;
+  const open = today && mins >= today[0] * 60 && mins < today[1] * 60;
+  const t12 = (h) => (h % 12 || 12) + (h < 12 ? ' AM' : ' PM');
+  let next = null;
+  for (let i = 1; i <= 7 && !next; i++) {
+    const d = HOURS[(now.day + i) % 7];
+    if (d) next = (i === 1 ? 'tomorrow' : 'Monday') + ' at ' + t12(d[0]);
+  }
+  const label = open
+    ? 'Open now · until ' + t12(today[1])
+    : (today && mins < today[0] * 60 ? 'Opens at ' + t12(today[0]) : 'Closed · opens ' + next);
+  const short = open ? 'Open now' : 'Closed';   // the bar is tight on phones
+  slots.forEach(el => {
+    el.innerHTML = '<span class="on-full"></span><span class="on-short"></span>';
+    el.querySelector('.on-full').textContent = label;
+    el.querySelector('.on-short').textContent = short;
+    el.classList.toggle('is-open', !!open);
+    el.hidden = false;
+  });
+})();
+
 // facebook reel: if the embed never arrives (content blocker, slow network),
 // stop spinning and hand the visitor a working link instead
 const reel = document.getElementById('reelFrame');

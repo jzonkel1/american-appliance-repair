@@ -163,7 +163,7 @@ def nav_html(active_file):
     m_services = "".join(f'<a href="{s["file"]}">{s["short"]}</a>' for s in SERVICES)
     m_areas = "".join(f'<a href="{f}">{n}</a>' for f, n in NAV_CITIES)
     return f'''<header class="nav" id="nav">
-  <div class="topline"><img src="assets/insignia.png" alt=""> Christian Veteran-Owned &amp; Operated<span class="tl-loc">&nbsp;· Corpus Christi, TX</span></div>
+  <div class="topline"><img src="assets/insignia.png" alt=""> Christian Veteran-Owned &amp; Operated<span class="tl-loc">&nbsp;· Corpus Christi, TX</span><span class="open-now" data-open-now hidden></span></div>
   <div class="wrap">
     <a class="logo" href="index.html"><img src="assets/logo-mark.png" alt="American Appliance Repair, LLC"><span class="lt"><b>American Appliance</b><small>Repair, LLC</small></span></a>
     <nav class="navlinks">
@@ -222,6 +222,7 @@ def nav_html(active_file):
     </div>
   </div>
   <div id="mnav">
+    <div class="mstatus"><span class="open-now" data-open-now hidden></span></div>
     <button class="mgroup" type="button">Services<span class="mcar">▼</span></button>
     <div class="msub">{m_services}<a href="maintenance.html">Care Membership</a></div>
     <a href="index.html#parts">Parts Store</a>
