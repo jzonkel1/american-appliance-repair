@@ -203,6 +203,17 @@ def nav_html(active_file):
       <a href="about.html">About</a>
       <a href="warranty.html">Warranty</a>
       <a href="faq.html">FAQ</a>
+      <div class="has-dd dd-end">
+        <a href="about.html">More <span class="car">▼</span></a>
+        <div class="dd"><div class="dd-card">
+          <a href="financing.html"><span class="di"></span><span>Financing<span class="sub">Buy now, pay on your terms</span></span></a>
+          <a href="maintenance.html"><span class="di"></span><span>Care Membership<span class="sub">From $19.95/mo</span></span></a>
+          <a href="emergency-appliance-repair.html"><span class="di"></span><span>Emergency Service<span class="sub">After-hours &amp; urgent calls</span></span></a>
+          <a href="reviews.html"><span class="di"></span><span>Reviews<span class="sub">4.8★ from 176 neighbors</span></span></a>
+          <a href="gallery.html"><span class="di"></span><span>Photo Gallery<span class="sub">The shop, trucks &amp; team</span></span></a>
+          <a href="blog.html"><span class="di"></span><span>Blog<span class="sub">Honest appliance advice</span></span></a>
+        </div></div>
+      </div>
     </nav>
     <div class="cta">
       <button class="btn btn-white book hcp-button" onClick="HCPWidget.openModal()">Book Online</button>

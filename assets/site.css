@@ -63,6 +63,9 @@
   .has-dd:hover .car{transform:rotate(180deg);}
   .dd{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(10px);padding-top:16px;opacity:0;pointer-events:none;transition:opacity .22s ease,transform .22s ease;z-index:90;}
   .has-dd:hover .dd,.has-dd:focus-within .dd{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+  /* last dropdown in the bar hangs from its right edge so it can't clip offscreen */
+  .has-dd.dd-end .dd{left:auto;right:0;transform:translateX(0) translateY(10px);}
+  .has-dd.dd-end:hover .dd,.has-dd.dd-end:focus-within .dd{transform:translateX(0) translateY(0);}
   .dd-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 26px 60px -14px rgba(16,30,48,.35);padding:12px;min-width:270px;}
   .dd-card.two{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px;min-width:470px;}
   .dd-card a{display:flex;align-items:center;gap:11px;padding:10px 13px;border-radius:10px;color:var(--ink);font-size:14px;font-weight:600;text-shadow:none;white-space:nowrap;transition:.15s;}
