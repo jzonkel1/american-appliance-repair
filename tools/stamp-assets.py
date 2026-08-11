@@ -15,8 +15,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
 def digest(rel):
+    # normalise line endings before hashing: git checks these files out with CRLF
+    # on Windows and LF on the Linux Actions runner, and a platform-dependent
+    # stamp would make every drip run rewrite all 37 pages (and collide with
+    # local edits) even though nothing actually changed.
     with io.open(os.path.join(ROOT, rel), "rb") as f:
-        return hashlib.md5(f.read()).hexdigest()[:8]
+        data = f.read().replace(b"\r\n", b"\n")
+    return hashlib.md5(data).hexdigest()[:8]
 
 STAMPS = {"assets/site.css": digest("assets/site.css"),
           "assets/site.js": digest("assets/site.js")}

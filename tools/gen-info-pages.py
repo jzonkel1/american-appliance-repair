@@ -257,7 +257,7 @@ PAGES.append(dict(file="emergency-appliance-repair.html",
 # ---------------- AMERICAN POWER ----------------
 PAGES.append(dict(file="american-power.html",
  title="American Power — Solar, Battery Backup & EV Charging | Corpus Christi, TX",
- meta="American Power is the renewable energy division of American Appliance Repair — residential & commercial solar, battery backup and EV charging across the Coastal Bend, in partnership with Powur. $0 down. Free energy analysis: (361) 673-0937.",
+ meta="American Power is the renewable energy division of American Appliance Repair — residential & commercial solar, battery backup and EV charging across the Coastal Bend. $0 down. Free energy analysis: (361) 673-0937.",
  noindex=False,
  hero_img="solar-home.jpg",
  crumb="American Power",
@@ -272,7 +272,7 @@ PAGES.append(dict(file="american-power.html",
       <span class="eyebrow rv"><img src="assets/insignia.png" alt=""> Renewable Energy Division</span>
       <h2 class="sec rv">The newest member<br>of the family</h2>
       <p class="lede rv" style="margin-bottom:18px;">American Power brings the same veteran-owned, faith-led standard you know from our repair trucks to your energy bill — solar, battery backup and EV charging for homes and businesses across the Coastal Bend.</p>
-      <p class="rv" style="margin-bottom:14px;">We work in partnership with <b>Powur</b>, one of the nation's leading solar platforms — so you get proven equipment and professional installation, with a local, familiar face handling it from first conversation to switch-on.</p>
+      <p class="rv" style="margin-bottom:14px;">We work in partnership with an <b>established Texas-based solar company</b> — so you get proven equipment and professional installation, with a local, familiar face handling it from first conversation to switch-on.</p>
       <p class="rv">It starts with a <b>free custom energy analysis</b> built around your home and your actual usage — no pressure, no obligation, just the honest math on what your roof could be doing for you.</p>
     </div>
     <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);"><img src="assets/solar-home.jpg" alt="Home with rooftop solar panels — American Power solar installation"></div>
@@ -292,7 +292,7 @@ PAGES.append(dict(file="american-power.html",
       <div class="si rv"><span class="ck">✓</span><span><b>Start saving immediately</b> — lower bills from the moment it's on</span></div>
       <div class="si rv"><span class="ck">✓</span><span><b>Residential &amp; commercial</b> — plus battery backup &amp; EV charging</span></div>
     </div>
-    <div class="pw rv">In partnership with Powur · A division of American Appliance Repair, LLC</div>
+    <div class="pw rv">A division of American Appliance Repair, LLC</div>
   </div>
 </section>
 
@@ -321,7 +321,7 @@ PAGES.append(dict(file="american-power.html",
     <div class="steps">
       <div class="step rv"><div class="n">1</div><h3>Free Energy Analysis</h3><p>We look at your bill and your usage and give you the honest math — no pressure, no obligation.</p></div>
       <div class="step rv"><div class="n">2</div><h3>Custom Proposal</h3><p>A system designed around your home — $0 down, no upfront cost, no hidden fees.</p></div>
-      <div class="step rv"><div class="n">3</div><h3>Install &amp; Switch On</h3><p>Professional installation through our Powur partnership — and your savings start the moment it's live.</p></div>
+      <div class="step rv"><div class="n">3</div><h3>Install &amp; Switch On</h3><p>Professional installation through our trusted install partner — and your savings start the moment it's live.</p></div>
     </div>
   </div>
 </section>
