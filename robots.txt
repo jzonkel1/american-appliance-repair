@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /tools/
+Disallow: /thank-you.html
 
 Sitemap: https://americanappliancerepaircc.com/sitemap.xml

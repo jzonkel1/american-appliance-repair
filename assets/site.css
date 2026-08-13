@@ -321,6 +321,8 @@
   #mnav .mstatus{padding:14px 4px 4px;}
   .open-now:before{content:"";width:8px;height:8px;border-radius:50%;background:#9AA9B8;flex:none;}
   .open-now.is-open:before{background:#2FD07B;box-shadow:0 0 0 3px rgba(47,208,123,.25);}
+  /* Netlify honeypot — must stay in the DOM but never be seen or tabbed into */
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
   .rev-acts{display:flex;gap:12px;flex-wrap:wrap;}
   .rev-acts .btn svg{margin-right:2px;}
   @media(max-width:640px){.rev-acts{width:100%;flex-direction:column;}.rev-acts .btn{width:100%;justify-content:center;}}

@@ -350,6 +350,7 @@ def build(p):
 <script>document.documentElement.className += ' js';</script>
 <title>{p["title"]}</title>
 <meta name="description" content="{p["meta"]}">
+{'<meta name="robots" content="noindex,follow">' if p.get("noindex") else ''}
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=2">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=2">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=2">
@@ -387,6 +388,65 @@ def build(p):
 </body>
 </html>
 '''
+
+# ---------------- THANK YOU (Netlify form redirect target) ----------------
+PAGES.append(dict(file="thank-you.html",
+ title="Request Received | American Appliance Repair, Corpus Christi TX",
+ meta="Thanks — your appliance repair request came through. We'll call you back to confirm a time.",
+ noindex=True,
+ hero_img="AAR_Appliance_Service_IMG-2.jpg",
+ crumb="Request Received",
+ h1="Got it.<br><span style=\"color:#FFB25E;\">We'll call you shortly.</span>",
+ lede="Your request is in — a real person here in Corpus Christi will call to confirm a time.",
+ body=f'''
+<section style="background:var(--paper);">
+  <div class="wrap" style="max-width:760px;text-align:center;">
+    <div class="sec-head rv" style="text-align:center;margin-left:auto;margin-right:auto;">
+      <span class="eyebrow" style="justify-content:center;"><img src="assets/insignia.png" alt=""> Request Received</span>
+      <h2 class="sec">Thanks — we've got your request</h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto;">We'll reach out to confirm a time that works for you. During business hours that's usually quick; if you sent this after hours, you'll hear from us when we open.</p>
+    </div>
+    <div class="sympt-grid" style="grid-template-columns:1fr 1fr;text-align:left;">
+      <div class="sy rv"><span class="ck">✓</span><span><b>Need it handled right now?</b> Call <a href="tel:+13616730937" style="color:var(--flame-deep);font-weight:800;">(361) 673-0937</a> — after-hours service is available.</span></div>
+      <div class="sy rv"><span class="ck">✓</span><span><b>Have photos?</b> Text them to (361) 673-0937 — a shot of the model tag speeds things up.</span></div>
+      <div class="sy rv"><span class="ck">✓</span><span><b>Approve the repair</b> and your trip &amp; diagnostic fee is on us.</span></div>
+      <div class="sy rv"><span class="ck">✓</span><span><b>Every repair</b> carries our <a href="warranty.html" style="color:var(--flame-deep);font-weight:800;">6-month parts &amp; labor warranty</a>.</span></div>
+    </div>
+    <div class="svc-cta rv" style="margin-top:34px;">
+      <a href="index.html" class="btn btn-navy">Back to the homepage</a>
+      <div class="note">While you wait — <a href="gallery.html" style="color:var(--flame-deep);font-weight:700;">see the shop</a> or <a href="blog.html" style="color:var(--flame-deep);font-weight:700;">read the blog</a>.</div>
+    </div>
+  </div>
+</section>
+{cta_band("A real person in Corpus Christi answers — not a call center.")}
+'''))
+
+# ---------------- 404 ----------------
+PAGES.append(dict(file="404.html",
+ title="Page Not Found | American Appliance Repair, Corpus Christi TX",
+ meta="That page doesn't exist. Find appliance repair, parts and appliance sales in Corpus Christi — or call (361) 673-0937.",
+ noindex=True,
+ hero_img="AAR_BG_IMG-2.jpg",
+ crumb="Page Not Found",
+ h1="That page moved<br><span style=\"color:#FFB25E;\">or never existed</span>",
+ lede="Let's get you where you were headed — or just call us, that works too.",
+ body=f'''
+<section style="background:var(--paper);">
+  <div class="wrap" style="max-width:860px;">
+    <div class="sec-head rv"><span class="eyebrow"><img src="assets/insignia.png" alt=""> Try One Of These</span>
+    <h2 class="sec">Where did you want to go?</h2></div>
+    <div class="sympt-grid" style="grid-template-columns:1fr 1fr;">
+      <a class="sy rv" href="index.html#services" style="font-weight:700;color:var(--ink);"><span class="ck">→</span><span><b>Appliance repair</b> — every major brand</span></a>
+      <a class="sy rv" href="index.html#parts" style="font-weight:700;color:var(--ink);"><span class="ck">→</span><span><b>Parts store</b> — OEM &amp; aftermarket</span></a>
+      <a class="sy rv" href="appliances-4u.html" style="font-weight:700;color:var(--ink);"><span class="ck">→</span><span><b>Appliances 4U</b> showroom</span></a>
+      <a class="sy rv" href="american-power.html" style="font-weight:700;color:var(--ink);"><span class="ck">→</span><span><b>American Power</b> — solar</span></a>
+      <a class="sy rv" href="service-areas.html" style="font-weight:700;color:var(--ink);"><span class="ck">→</span><span><b>Service area</b> — pick your city</span></a>
+      <a class="sy rv" href="faq.html" style="font-weight:700;color:var(--ink);"><span class="ck">→</span><span><b>FAQ</b> — costs, warranty, hours</span></a>
+    </div>
+  </div>
+</section>
+{cta_band("Can't find it? Call us — we'll point you the right way.")}
+'''))
 
 for p in PAGES:
     io.open(os.path.join(ROOT, p["file"]), "w", encoding="utf-8").write(build(p))

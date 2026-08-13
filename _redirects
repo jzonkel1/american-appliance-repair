@@ -10,3 +10,6 @@
 /service-area/ /service-areas.html 301
 /about-us/ /about.html 301
 /contact-us/ /#contact 301
+/blog/ /blog.html 301
+/gallery/ /gallery.html 301
+/tools/* /404.html 404

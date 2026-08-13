@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=7573713e">
+<link rel="stylesheet" href="assets/site.css?v=bf292094">
 <link rel="canonical" href="https://americanappliancerepaircc.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="American Appliance Repair, LLC">
@@ -501,7 +501,9 @@
       </div>
       <div class="rv" style="margin-top:26px;"><button class="btn btn-flame hcp-button" onClick="HCPWidget.openModal()">Book Online — Pick Your Time</button></div>
     </div>
-    <form class="form qw rv" id="qw" onsubmit="event.preventDefault();var b=this.querySelector('button[type=submit]');b.textContent='✓ Request Sent — Demo Only';b.style.background='#1E9E54';">
+    <form class="form qw rv" id="qw" name="repair-request" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="repair-request">
+      <p class="hp"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <h3>Request an appliance repair</h3>
       <div class="sm">A few quick taps — we'll call you back to confirm a time.</div>
       <div class="qw-prog"><span class="bar" id="qwBar"></span></div>

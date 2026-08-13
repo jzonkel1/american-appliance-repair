@@ -243,7 +243,7 @@ for p in PAGES:
     print("wrote", p["file"])
 
 # ---------------- sitemap / robots / redirects ----------------
-skip = {"privacy-policy.html", "terms-of-service.html"}
+skip = {"privacy-policy.html", "terms-of-service.html", "thank-you.html", "404.html"}
 pages = sorted(os.path.basename(f) for f in glob.glob(os.path.join(ROOT, "*.html")))
 urls = []
 for f in pages:
@@ -254,7 +254,11 @@ for f in pages:
 io.open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n")
 io.open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(
-    f"User-agent: *\nAllow: /\n\nSitemap: {gsp.BASE}/sitemap.xml\n")
+    "User-agent: *\n"
+    "Allow: /\n"
+    "Disallow: /tools/\n"
+    "Disallow: /thank-you.html\n\n"
+    f"Sitemap: {gsp.BASE}/sitemap.xml\n")
 # Netlify-style redirects mapping old WP URLs -> new pages (for domain cutover)
 io.open(os.path.join(ROOT, "_redirects"), "w", encoding="utf-8").write("""/services/refrigerator-repair-in-corpus-christi/ /refrigerator-ice-machine-repair.html 301
 /services/washer-repair-in-corpus-christi/ /washer-repair.html 301
@@ -268,5 +272,64 @@ io.open(os.path.join(ROOT, "_redirects"), "w", encoding="utf-8").write("""/servi
 /service-area/ /service-areas.html 301
 /about-us/ /about.html 301
 /contact-us/ /#contact 301
+/blog/ /blog.html 301
+/gallery/ /gallery.html 301
+/tools/* /404.html 404
 """)
 print("sitemap.xml, robots.txt, _redirects written —", len(urls), "urls")
+
+# ---------------- llms.txt ----------------
+# Plain-language map of the site for AI assistants that cite local businesses.
+B = gsp.BASE
+io.open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write(f"""# American Appliance Repair, LLC
+
+> Christian, veteran-owned appliance repair, parts and appliance sales in Corpus Christi, Texas.
+> Founded 2021 by Rafael, a U.S. Army veteran (13 years of service). Repair shop, parts store and
+> appliance showroom under one roof at 3701 Apollo Rd. 4.8 stars across 176 Google reviews.
+
+## Key facts
+- Service phone: (361) 673-0937 · Parts & Sales: (361) 400-9513
+- Address: 3701 Apollo Rd, Corpus Christi, TX 78413
+- Hours: Mon-Fri 8 AM - 8 PM, Sat 9 AM - 4 PM, Sun closed. After-hours & emergency service available.
+- Often same-day service. Approve the repair and the trip & diagnostic fee is waived.
+- Every repair carries a 6-month warranty on parts replaced and labor.
+- Extended warranties available for $99/year, even on appliances bought elsewhere.
+- Repairs all major brands, residential and commercial (including restaurant ice machines
+  and commercial laundry equipment).
+- Authorized dealer for Frigidaire and Electrolux. Parts backed by a Marcone partnership.
+- Serves Corpus Christi, Portland, Port Aransas, Rockport, Ingleside, Aransas Pass, Robstown,
+  Kingsville, Alice, Sinton and Mathis, Texas.
+
+## Services
+- [Refrigerator & ice machine repair]({B}/refrigerator-ice-machine-repair.html)
+- [Washer repair]({B}/washer-repair.html)
+- [Dryer repair]({B}/dryer-repair.html)
+- [Dishwasher repair]({B}/dishwasher-repair.html)
+- [Oven repair]({B}/oven-repair.html)
+- [Stove repair]({B}/stove-repair.html)
+- [Vent hood repair]({B}/vent-hood-repair.html)
+- [Garbage disposal repair]({B}/garbage-disposal-repair.html)
+- [Emergency & after-hours appliance repair]({B}/emergency-appliance-repair.html)
+- [Home Appliance Care Membership]({B}/maintenance.html): preventive maintenance from $19.95/month,
+  25% off eligible repair labor, 10% off eligible parts, priority scheduling.
+
+## Divisions
+- [Appliance repair]({B}/#services): residential & commercial service and repair.
+- [Parts store]({B}/#parts): OEM and aftermarket parts, retail and wholesale. We ship. Walk-in counter.
+- [American Appliances 4U]({B}/appliances-4u.html): new, scratch-&-dent and quality used appliances.
+  New units carry a 12-month warranty, pre-owned 30 days. Financing, delivery, installation,
+  haul-away, trade-ins.
+- [American Power]({B}/american-power.html): renewable energy division. Residential and commercial
+  solar and battery backup, $0 down, free custom energy analysis.
+
+## Company
+- [About]({B}/about.html) · [Reviews]({B}/reviews.html) · [Warranty]({B}/warranty.html)
+- [Financing]({B}/financing.html) · [Service area]({B}/service-areas.html) · [FAQ]({B}/faq.html)
+- [Photo gallery]({B}/gallery.html) · [Blog]({B}/blog.html)
+
+## Notes for citation
+- Trip fees vary by city and are quoted up front when booking; no public price list.
+- "Often same-day" is accurate; same-day service is not guaranteed.
+- The online parts store is not open yet; parts are sold by phone and at the counter.
+""")
+print("llms.txt written")
