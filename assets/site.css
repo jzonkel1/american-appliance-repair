@@ -108,7 +108,11 @@
 
   /* ---------- FULL-BLEED HERO ---------- */
   .hero{position:relative;min-height:min(86vh,800px);display:flex;align-items:center;padding:175px 0 110px;overflow:hidden;}
-  .hero .bg{position:absolute;inset:0;background:url("american-Appliance-repair-service-website02.png") center/cover no-repeat;}
+  .hero .bg{position:absolute;inset:0;background:url("american-Appliance-repair-service-website02.png") center/cover no-repeat;
+    transform:scale(1);will-change:transform;animation:heroZoom 30s cubic-bezier(.22,.61,.36,1) forwards;backface-visibility:hidden;}
+  /* slow push-in on the hero photo — one long settle, then it stops */
+  @keyframes heroZoom{to{transform:scale(1.085);}}
+  @media(prefers-reduced-motion:reduce){.hero .bg{animation:none;transform:none;}}
   .hero .shade{position:absolute;inset:0;background:
       linear-gradient(100deg, rgba(0,4,34,.9) 0%, rgba(0,4,34,.78) 34%, rgba(0,4,34,.42) 62%, rgba(0,4,34,.22) 100%),
       linear-gradient(0deg, rgba(0,4,34,.62) 0%, transparent 34%);}
