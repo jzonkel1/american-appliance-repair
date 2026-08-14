@@ -222,7 +222,6 @@ def nav_html(active_file):
     </div>
   </div>
   <div id="mnav">
-    <div class="mstatus"><span class="open-now" data-open-now hidden></span></div>
     <button class="mgroup" type="button">Services<span class="mcar">▼</span></button>
     <div class="msub">{m_services}<a href="maintenance.html">Care Membership</a></div>
     <a href="index.html#parts">Parts Store</a>

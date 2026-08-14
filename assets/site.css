@@ -323,11 +323,10 @@
   @media(max-width:900px){.topline .open-now .on-full{display:none;}.topline .open-now .on-short{display:inline;}}
   /* phone: the top bar can't hold it at all — the hero and menu carry it instead */
   @media(max-width:640px){.topline .open-now{display:none;}}
-  .hero-proof .open-now,#mnav .open-now{font-size:11px;letter-spacing:.08em;padding:4px 12px;}
+  .hero-proof .open-now{font-size:11px;letter-spacing:.08em;padding:4px 12px;}
   .hero-proof{flex-wrap:wrap;}
   .hero-proof .open-now{flex:0 0 auto;margin:2px 0 0;}
   .hero-proof>span:nth-child(2){white-space:nowrap;}
-  #mnav .mstatus{padding:14px 4px 4px;}
   .open-now:before{content:"";width:8px;height:8px;border-radius:50%;background:#9AA9B8;flex:none;}
   .open-now.is-open:before{background:#2FD07B;box-shadow:0 0 0 3px rgba(47,208,123,.25);}
   /* Netlify honeypot — must stay in the DOM but never be seen or tabbed into */
