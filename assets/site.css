@@ -258,7 +258,12 @@
 
   /* ---------- American Power / solar band ---------- */
   .solar-band{background:linear-gradient(160deg,#0d1c30,var(--navy) 70%);color:#fff;position:relative;overflow:hidden;}
-  .solar-band:before{content:"";position:absolute;top:-220px;right:-140px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.16),transparent 65%);}
+  .solar-band:before{content:"";position:absolute;top:-220px;right:-140px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.16),transparent 65%);z-index:1;}
+  /* photo-backed variant: real rooftops under a heavy navy wash, so the band
+     reads as a place instead of a flat blue rectangle */
+  .solar-band.has-photo .sb-bg{position:absolute;inset:0;background-size:cover;background-position:center 62%;opacity:.62;}
+  .solar-band.has-photo .sb-shade{position:absolute;inset:0;background:linear-gradient(120deg,rgba(9,18,32,.9) 0%,rgba(11,22,38,.8) 44%,rgba(13,28,48,.58) 100%);}
+  @media(max-width:900px){.solar-band.has-photo .sb-shade{background:linear-gradient(180deg,rgba(9,18,32,.9) 0%,rgba(11,22,38,.92) 55%,rgba(13,28,48,.88) 100%);}}
   .solar-band .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;position:relative;}
   .solar-band h2{color:#fff;}
   .solar-band h2 .fl{color:#FFB25E;}

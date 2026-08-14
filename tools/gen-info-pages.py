@@ -275,12 +275,14 @@ PAGES.append(dict(file="american-power.html",
       <p class="rv" style="margin-bottom:14px;">We work in partnership with an <b>established Texas-based solar company</b> — so you get proven equipment and professional installation, with a local, familiar face handling it from first conversation to switch-on.</p>
       <p class="rv">It starts with a <b>free custom energy analysis</b> built around your home and your actual usage — no pressure, no obligation, just the honest math on what your roof could be doing for you.</p>
     </div>
-    <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);"><img src="assets/solar-home.jpg" alt="Home with rooftop solar panels — American Power solar installation"></div>
+    <div class="rv" style="border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);"><img src="assets/solar-home-sunset.jpg" alt="Modern Texas home with rooftop solar panels at sunset"></div>
   </div>
 </section>
 
 <!-- value props -->
-<section class="solar-band">
+<section class="solar-band has-photo">
+  <div class="sb-bg" style="background-image:url('assets/solar-neighborhood.jpg');"></div>
+  <div class="sb-shade"></div>
   <div class="wrap" style="display:block;">
     <img class="ap-logo rv" src="assets/american-power-logo.png?v=4" alt="American Power — Own Your Power">
     <h2 class="sec rv" style="color:#fff;">Why go solar with <span class="fl">American Power</span></h2>
