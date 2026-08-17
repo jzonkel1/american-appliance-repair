@@ -409,6 +409,7 @@ PAGES.append(dict(file="thank-you.html",
  h1="Got it.<br><span style=\"color:#FFB25E;\">We'll call you shortly.</span>",
  lede="Your request is in — a real person here in Corpus Christi will call to confirm a time.",
  body=f'''
+<script>gtag('event', 'quote_request');</script>
 <section style="background:var(--paper);">
   <div class="wrap" style="max-width:760px;text-align:center;">
     <div class="sec-head rv" style="text-align:center;margin-left:auto;margin-right:auto;">
