@@ -108,7 +108,7 @@ def build(c):
 <!-- trust strip -->
 <div class="trust-wrap">
   <div class="trust rv in">
-    <div class="tcell"><span class="big">4.8</span><div class="t"><b>Google Rating</b><span class="stars">★★★★★</span> 176 reviews</div></div>
+    <div class="tcell"><span class="big">4.8</span><div class="t"><b>Google Rating</b><span class="stars">★★★★★</span> 194 reviews</div></div>
     <div class="tcell"><img src="assets/award-best.png" alt="Best of 2026 Award Winner — BusinessRate"><div class="t"><b>Best of 2026</b>BusinessRate · powered by Google Reviews</div></div>
     <div class="tcell"><img src="assets/veteran-badge.png" alt="Military Veteran Owned"><div class="t"><b>Veteran-Owned</b>Military discounts honored</div></div>
     <div class="tcell"><span class="big" style="color:var(--flame);">6</span><div class="t"><b>6-Month Warranty</b>Parts &amp; labor, every repair</div></div>

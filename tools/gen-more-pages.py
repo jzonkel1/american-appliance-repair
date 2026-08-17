@@ -65,15 +65,15 @@ PAGES.append(dict(file="appliances-4u.html",
 
 PAGES.append(dict(file="reviews.html",
  title="Reviews — 4.8★ on Google | American Appliance Repair, Corpus Christi",
- meta="American Appliance Repair reviews: 4.8 stars across 176 Google reviews from Corpus Christi & the Coastal Bend. Real customers, real repairs — read them all.",
+ meta="American Appliance Repair reviews: 4.8 stars across 194 Google reviews from Corpus Christi & the Coastal Bend. Real customers, real repairs — read them all.",
  hero="americanappliancerepairteam.jpg", crumb="Reviews",
  h1='4.8 stars.<br><span style="color:#FFB25E;">Your neighbors said it, not us.</span>',
- lede="176 Google reviews and counting from Corpus Christi & the Coastal Bend — here's what real customers say about our work.",
+ lede="194 Google reviews and counting from Corpus Christi & the Coastal Bend — here's what real customers say about our work.",
  body=f'''
 <section style="background:var(--cool);"><div class="wrap">
 <div class="rev-top rv"><div><span class="eyebrow"><img src="assets/insignia.png" alt=""> What Your Neighbors Say</span>
 <div class="rev-score" style="margin-top:14px;"><div class="big">4.8</div>
-<div class="meta"><span class="stars">★★★★★</span><a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener">176 Google reviews</a> · Corpus Christi &amp; the Coastal Bend</div></div></div>
+<div class="meta"><span class="stars">★★★★★</span><a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener">194 Google reviews</a> · Corpus Christi &amp; the Coastal Bend</div></div></div>
 <div class="rev-acts"><a href="https://search.google.com/local/writereview?placeid=ChIJsdAL8HFfaIYRbToTbtoxJ_k" target="_blank" rel="noopener" class="btn btn-flame" style="padding:12px 24px;font-size:14.5px;">Leave us a review</a><a href="https://share.google/RAXAsmJPynMQHcw33" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:12px 24px;font-size:14.5px;">Read them all on Google</a></div></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;">
 {"".join(rev(k) for k in gsp.REVIEWS)}
@@ -285,7 +285,7 @@ io.open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write(f"""# Ameri
 
 > Christian, veteran-owned appliance repair, parts and appliance sales in Corpus Christi, Texas.
 > Founded 2021 by Rafael, a U.S. Army veteran (13 years of service). Repair shop, parts store and
-> appliance showroom under one roof at 3701 Apollo Rd. 4.8 stars across 176 Google reviews.
+> appliance showroom under one roof at 3701 Apollo Rd. 4.8 stars across 194 Google reviews.
 
 ## Key facts
 - Service phone: (361) 673-0937 · Parts & Sales: (361) 400-9513

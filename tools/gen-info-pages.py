@@ -82,7 +82,7 @@ PAGES.append(dict(file="about.html",
       <div class="rv" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:26px;">
         <img src="assets/award-best.png" alt="BusinessRate Best of 2026 Award Winner" style="height:84px;width:auto;">
         <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 20px;"><span style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);">Google Rating</span><span style="display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:19px;color:var(--ink);">4.8 <span style="color:var(--gold);font-size:15px;">★★★★★</span></span></div>
-        <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 20px;"><span style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);">Real Reviews</span><span style="display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:19px;color:var(--ink);">176 on Google</span></div>
+        <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 20px;"><span style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);">Real Reviews</span><span style="display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:19px;color:var(--ink);">194 on Google</span></div>
       </div>
       <div class="rv" style="margin-top:26px;"><a class="btn btn-flame" href="reviews.html">Read the Reviews</a></div>
     </div>
