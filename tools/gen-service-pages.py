@@ -263,8 +263,7 @@ FOOTER = '''<footer>
   </div>
   <div class="wrap fbot">
     <span>© 2026 American Appliance Repair, LLC · Corpus Christi, TX</span>
-    <span><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a></span>
-    <span>Website by <a href="https://zonkelmedia.com" target="_blank" rel="noopener">Zonkel Media</a></span>
+    <span class="fbot-r"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a><a href="https://zonkelmedia.com" target="_blank" rel="noopener" class="fbot-credit">Website by Zonkel Media</a></span>
   </div>
 </footer>'''
 

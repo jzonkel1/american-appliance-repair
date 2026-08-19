@@ -425,8 +425,11 @@
   .soc-fb{background:#1877F2;}
   .soc-ig{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);}
   .soc a:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 7px 18px rgba(0,0,0,.45);}
-  .fbot{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#5F7995;}
-  .fbot a{display:inline;color:#93A8BD;}
+  .fbot{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;gap:14px 24px;flex-wrap:wrap;font-size:12.5px;color:#5F7995;}
+  .fbot a{display:inline;color:#93A8BD;transition:color .18s;}
+  .fbot a:hover{color:#fff;}
+  .fbot-r{display:flex;align-items:center;gap:24px;}
+  .fbot-credit{padding-left:24px;border-left:1px solid rgba(255,255,255,.12);}
 
   /* ---------- responsive ---------- */
   @media(max-width:1020px){
@@ -616,5 +619,6 @@
     footer .flogo img{margin-left:auto;margin-right:auto;height:110px;}
     footer .verse{margin-left:auto;margin-right:auto;}
     .soc{justify-content:center;}
-    .fbot{justify-content:center;}
+    .fbot{flex-direction:column;justify-content:center;text-align:center;gap:12px;}
+    .fbot-r{flex-wrap:wrap;justify-content:center;}
   }
