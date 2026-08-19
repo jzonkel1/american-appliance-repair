@@ -327,8 +327,8 @@ io.open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write(f"""# Ameri
 - [American Appliances 4U]({B}/appliances-4u.html): new, scratch-&-dent and quality used appliances.
   New units carry a 12-month warranty, pre-owned 30 days. Financing, delivery, installation,
   haul-away, trade-ins.
-- [American Power]({B}/american-power.html): renewable energy division. Residential and commercial
-  solar and battery backup, $0 down, free custom energy analysis.
+- [American Power]({B}/american-power.html): renewable energy division. Residential solar,
+  battery backup and EV charging, $0 down, free custom energy analysis.
 
 ## Company
 - [About]({B}/about.html) · [Reviews]({B}/reviews.html) · [Warranty]({B}/warranty.html)
