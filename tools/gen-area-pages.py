@@ -89,9 +89,8 @@ def build(c):
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=2">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-normal-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/publicsans-normal-latin.woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 {gsp.head_seo(f"appliance-repair-{c['slug']}.html", f"Appliance Repair in {c['name']}, TX", f"Appliance repair in {c['name']}, TX — veteran-owned, often same-day, 6-month warranty.")}
 </head>
