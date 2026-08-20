@@ -622,3 +622,57 @@
     .fbot{flex-direction:column;justify-content:center;text-align:center;gap:12px;}
     .fbot-r{flex-wrap:wrap;justify-content:center;}
   }
+  /* Long phone-number CTAs (e.g. "Free Energy Analysis — (361) 425-7797") were
+     wrapping to two lines on phones. Keep them on one line by scaling the
+     button down with the viewport instead of letting the label break. */
+  @media(max-width:640px){
+    .hero .ctas .btn,.page-hero .ctas .btn,.cta-band .ctas .btn,
+    .hero .ctas .btn.hcp-button,.page-hero .ctas .btn.hcp-button,.cta-band .ctas .btn.hcp-button{
+      white-space:nowrap !important;
+      font-size:clamp(12px,3.2vw,16px) !important;
+      padding:15px clamp(10px,3.2vw,30px) !important;
+      gap:8px !important;
+    }
+    .hero .ctas .btn svg,.page-hero .ctas .btn svg,.cta-band .ctas .btn svg{width:16px;height:16px;}
+  }
+
+  /* ── Kingdom Business LIVE band ──────────────────────────
+     Hidden until index.html's data-yt-channel holds a real channel ID. */
+  .kbl{background:linear-gradient(168deg,#0d1c30 0%,var(--navy) 60%,#08131f 100%);
+    color:#fff;padding:64px 0;position:relative;overflow:hidden;
+    border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);}
+  .kbl:before{content:'';position:absolute;top:-140px;right:-120px;width:420px;height:420px;
+    border-radius:50%;background:rgba(232,115,12,.14);filter:blur(70px);pointer-events:none;}
+  .kbl-grid{position:relative;display:grid;grid-template-columns:0.85fr 1.15fr;gap:48px;align-items:center;}
+  .kbl-copy .eyebrow{color:#FFB25E;display:inline-flex;align-items:center;gap:9px;}
+  .kbl-dot{width:9px;height:9px;border-radius:50%;background:var(--flame);
+    box-shadow:0 0 0 0 rgba(232,115,12,.65);animation:kblPulse 2.2s infinite;}
+  @keyframes kblPulse{
+    70%{box-shadow:0 0 0 11px rgba(232,115,12,0);}
+    100%{box-shadow:0 0 0 0 rgba(232,115,12,0);}
+  }
+  .kbl .sec{color:#fff;margin-top:10px;}
+  .kbl-live{color:var(--flame);}
+  .kbl .lede{color:#D9E2EC;max-width:46ch;margin-top:14px;}
+  .kbl-note{margin-top:14px;font-size:14px;color:rgba(255,255,255,.62);}
+  .kbl .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+  .kbl-embed{position:relative;width:100%;aspect-ratio:16/9;border-radius:var(--r-md);
+    overflow:hidden;background:#000;box-shadow:0 26px 60px -22px rgba(0,0,0,.75);
+    border:1px solid rgba(255,255,255,.12);}
+  .kbl-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  @media(max-width:900px){
+    .kbl{padding:44px 0;}
+    .kbl-grid{grid-template-columns:1fr;gap:24px;text-align:center;}
+    .kbl .lede{margin-left:auto;margin-right:auto;}
+    .kbl .ctas{justify-content:center;}
+  }
+  /* On phones the copy block was pushing the player most of a screen down, so
+     the type and buttons tighten up and the secondary note drops away. */
+  @media(max-width:640px){
+    .kbl .sec{font-size:clamp(26px,7.4vw,34px);}
+    .kbl .lede{font-size:16px;line-height:1.5;max-width:34ch;}
+    .kbl-note{display:none;}
+    .kbl .ctas{gap:10px;margin-top:20px;}
+    .kbl .ctas .btn{width:100%;}
+  }
+  @media(prefers-reduced-motion:reduce){ .kbl-dot{animation:none;} }

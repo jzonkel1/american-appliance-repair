@@ -149,7 +149,7 @@ PAGES.append(dict(file="service-areas.html",
 {city_cards}
 </div>
 <div style="margin-top:44px;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--line);aspect-ratio:16/7;" class="rv">
-<iframe title="American Appliance Repair service area map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d451812.7630225273!2d-97.3558544!3d27.78553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1620fefb6ee9b4b%3A0x30b4cb4318530b87!2sAmerican%20Appliance%20Repair!5e0!3m2!1sen!2sus!4v1704480450355!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="width:100%;height:100%;border:0;display:block;"></iframe>
+<iframe title="American Appliance Repair service area map" src="https://maps.google.com/maps?q=3701%20Apollo%20Rd%2C%20Corpus%20Christi%2C%20TX%2078413&z=9&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="width:100%;height:100%;border:0;display:block;"></iframe>
 </div>
 </div></section>
 {cta("Not sure if we reach you?", "Call — if we can get a truck to you, we will, and we'll quote the trip up front.")}

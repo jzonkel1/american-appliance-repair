@@ -196,6 +196,53 @@
   </div>
 </div>
 
+<!-- Kingdom Business LIVE -->
+<!-- Set data-yt-channel to the channel ID (starts with UC..., 24 chars) and this
+     section turns itself on. Until then it stays hidden, so nothing broken ships.
+     The embed plays the channel's uploads playlist, which is newest-first — so it
+     always shows the most recent episode with no weekly maintenance. -->
+<section class="kbl" id="kingdom-business-live" data-yt-channel="REPLACE_WITH_YOUTUBE_CHANNEL_ID" hidden>
+  <div class="wrap kbl-grid">
+    <div class="kbl-copy rv">
+      <span class="eyebrow"><span class="kbl-dot" aria-hidden="true"></span> American Alliance Group</span>
+      <h2 class="sec">Kingdom Business <span class="kbl-live">LIVE</span></h2>
+      <p class="lede">Kingdom purpose. Business impact. Every week we sit down with Coastal Bend
+        business owners about faith, grit and building something that lasts.</p>
+      <p class="kbl-note">New episode every week — the player always shows the latest one.</p>
+      <div class="ctas">
+        <a class="btn btn-flame" data-yt-link="live" href="#" target="_blank" rel="noopener">Watch the Latest Episode</a>
+        <a class="btn btn-white" data-yt-link="sub" href="#" target="_blank" rel="noopener">Subscribe on YouTube</a>
+      </div>
+    </div>
+    <div class="kbl-player rv">
+      <div class="kbl-embed" data-kbl-embed></div>
+    </div>
+  </div>
+</section>
+<script>
+(function () {
+  var sec = document.getElementById('kingdom-business-live');
+  if (!sec) return;
+  var ch = (sec.getAttribute('data-yt-channel') || '').trim();
+  // Not configured yet (or a bad ID) -> leave the section hidden.
+  if (!/^UC[A-Za-z0-9_-]{22}$/.test(ch)) return;
+  var uploads = 'UU' + ch.slice(2);
+  var frame = document.createElement('iframe');
+  frame.src = 'https://www.youtube-nocookie.com/embed/videoseries?list=' + uploads + '&rel=0';
+  frame.title = 'Kingdom Business LIVE - latest episode';
+  frame.loading = 'lazy';
+  frame.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  frame.allowFullscreen = true;
+  sec.querySelector('[data-kbl-embed]').appendChild(frame);
+  Array.prototype.forEach.call(sec.querySelectorAll('[data-yt-link]'), function (a) {
+    a.href = a.getAttribute('data-yt-link') === 'sub'
+      ? 'https://www.youtube.com/channel/' + ch + '?sub_confirmation=1'
+      : 'https://www.youtube.com/channel/' + ch + '/live';
+  });
+  sec.hidden = false;
+})();
+</script>
+
 <!-- services -->
 <section class="services" id="services">
   <div class="wrap">
@@ -472,7 +519,7 @@
       </div>
     </div>
     <div class="map rv">
-      <iframe title="American Appliance Repair service area map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d451812.7630225273!2d-97.3558544!3d27.78553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1620fefb6ee9b4b%3A0x30b4cb4318530b87!2sAmerican%20Appliance%20Repair!5e0!3m2!1sen!2sus!4v1704480450355!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <iframe title="American Appliance Repair service area map" src="https://maps.google.com/maps?q=3701%20Apollo%20Rd%2C%20Corpus%20Christi%2C%20TX%2078413&amp;z=9&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
 </section>
