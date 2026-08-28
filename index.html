@@ -200,7 +200,7 @@
      section turns itself on. Until then it stays hidden, so nothing broken ships.
      The embed plays the channel's uploads playlist, which is newest-first — so it
      always shows the most recent episode with no weekly maintenance. -->
-<section class="kbl" id="kingdom-business-live" data-yt-channel="REPLACE_WITH_YOUTUBE_CHANNEL_ID" hidden>
+<section class="kbl" id="kingdom-business-live" data-yt-channel="UCAU3dk016BEEz9Qs8MVlRbw" hidden>
   <div class="wrap kbl-grid">
     <div class="kbl-copy rv">
       <span class="eyebrow"><span class="kbl-dot" aria-hidden="true"></span> American Alliance Group</span>
@@ -236,7 +236,7 @@
   Array.prototype.forEach.call(sec.querySelectorAll('[data-yt-link]'), function (a) {
     a.href = a.getAttribute('data-yt-link') === 'sub'
       ? 'https://www.youtube.com/channel/' + ch + '?sub_confirmation=1'
-      : 'https://www.youtube.com/channel/' + ch + '/live';
+      : 'https://www.youtube.com/playlist?list=' + uploads;
   });
   sec.hidden = false;
 })();
