@@ -229,9 +229,7 @@ if (window.matchMedia('(max-width:640px)').matches) {
     }
   }, {passive: true});
 
-  // Netlify only redirects here after a submission it accepted, so a view of
-  // this page is a completed quote request rather than just an attempt.
-  if (/thank-you/.test(location.pathname)) {
-    send('quote_request', {page_path: location.pathname});
-  }
+  // NOTE: quote_request is NOT fired here. thank-you.html already fires it
+  // inline (see the bottom of that page); firing it again would double-count
+  // every form submission.
 })();
