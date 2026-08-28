@@ -198,3 +198,40 @@ if (window.matchMedia('(max-width:640px)').matches) {
     tick();
   }
 }
+
+// --- GA4 conversion events -------------------------------------------------
+// A phone call is the real lead for this business, and GA4 does not track
+// tel: clicks on its own — enhanced measurement only covers outbound http(s)
+// links. Without this, calls and bookings are invisible in Analytics.
+// Delegated from document so it also covers the mobile call bar and the HCP
+// buttons, which are both injected after load.
+(() => {
+  const send = (name, params) => {
+    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+  };
+
+  document.addEventListener('click', (e) => {
+    const t = e.target;
+    if (!t || !t.closest) return;
+
+    const call = t.closest('a[href^="tel:"]');
+    if (call) {
+      send('click_to_call', {
+        phone_number: call.getAttribute('href').replace(/^tel:/, ''),
+        link_text: (call.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60),
+        page_path: location.pathname
+      });
+      return;
+    }
+
+    if (t.closest('.hcp-button, .mc-book')) {
+      send('book_online', {page_path: location.pathname});
+    }
+  }, {passive: true});
+
+  // Netlify only redirects here after a submission it accepted, so a view of
+  // this page is a completed quote request rather than just an attempt.
+  if (/thank-you/.test(location.pathname)) {
+    send('quote_request', {page_path: location.pathname});
+  }
+})();
