@@ -182,7 +182,19 @@ if (window.matchMedia('(max-width:640px)').matches) {
   bar.className = 'mcall';
   bar.innerHTML = '<a class="mc-call" href="tel:+13616730937">Call (361) 673-0937</a><button class="mc-book" onclick="if(window.HCPWidget)HCPWidget.openModal()">Book Online</button>';
   document.body.appendChild(bar);
-  const tick = () => bar.classList.toggle('on', window.scrollY > window.innerHeight * 0.7);
-  window.addEventListener('scroll', tick, {passive:true});
-  tick();
+  if ('IntersectionObserver' in window) {
+    // Sentinel at 70vh rather than reading scrollY/innerHeight on every scroll,
+    // which forced a synchronous layout of the whole page (see the nav above).
+    const barMark = document.createElement('div');
+    barMark.setAttribute('aria-hidden','true');
+    barMark.style.cssText = 'position:absolute;top:70vh;left:0;width:1px;height:1px;visibility:hidden;pointer-events:none;';
+    document.body.appendChild(barMark);
+    new IntersectionObserver((es)=>{
+      bar.classList.toggle('on', !es[0].isIntersecting);
+    },{threshold:0}).observe(barMark);
+  } else {
+    const tick = () => bar.classList.toggle('on', window.scrollY > window.innerHeight * 0.7);
+    window.addEventListener('scroll', tick, {passive:true});
+    tick();
+  }
 }
