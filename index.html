@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preload" as="image" href="assets/american-Appliance-repair-service-website02.png">
+<link rel="preload" as="image" href="assets/american-Appliance-repair-service-website02.webp" type="image/webp">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW7D249HKK"></script>
 <script>
@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=2">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-normal-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/publicsans-normal-latin.woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=7c660f3e">
+<link rel="stylesheet" href="assets/site.css?v=1ecc4891">
 <link rel="canonical" href="https://americanappliancerepaircc.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="American Appliance Repair, LLC">
@@ -226,13 +226,25 @@
   // Not configured yet (or a bad ID) -> leave the section hidden.
   if (!/^UC[A-Za-z0-9_-]{22}$/.test(ch)) return;
   var uploads = 'UU' + ch.slice(2);
-  var frame = document.createElement('iframe');
-  frame.src = 'https://www.youtube-nocookie.com/embed/videoseries?list=' + uploads + '&rel=0';
-  frame.title = 'Kingdom Business LIVE - latest episode';
-  frame.loading = 'lazy';
-  frame.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-  frame.allowFullscreen = true;
-  sec.querySelector('[data-kbl-embed]').appendChild(frame);
+  var box = sec.querySelector('[data-kbl-embed]');
+  // Click-to-load: a YouTube iframe is a heavy third-party load, so show a poster
+  // and only build the real player once someone asks to watch.
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'kbl-facade';
+  btn.setAttribute('aria-label', 'Play the latest episode of Kingdom Business LIVE');
+  btn.innerHTML = '<img src="assets/rafaelcordero.jpg" alt="" width="1200" height="1201" loading="lazy" decoding="async">'
+                + '<span class="kbl-play" aria-hidden="true"></span>'
+                + '<b>Watch the latest episode</b>';
+  btn.addEventListener('click', function () {
+    var frame = document.createElement('iframe');
+    frame.src = 'https://www.youtube-nocookie.com/embed/videoseries?list=' + uploads + '&rel=0&autoplay=1';
+    frame.title = 'Kingdom Business LIVE - latest episode';
+    frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    frame.allowFullscreen = true;
+    box.replaceChildren(frame);
+  }, {once: true});
+  box.appendChild(btn);
   Array.prototype.forEach.call(sec.querySelectorAll('[data-yt-link]'), function (a) {
     a.href = a.getAttribute('data-yt-link') === 'sub'
       ? 'https://www.youtube.com/channel/' + ch + '?sub_confirmation=1'
@@ -645,7 +657,7 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=01b51010"></script>
+<script src="assets/site.js?v=af316bba"></script>
 <script async src="https://online-booking.housecallpro.com/script.js?token=fddc363afc284aaaa03239c46fb59c0b&orgName=American-Appliance-Repair"></script>
 </body>
 </html>

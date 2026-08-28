@@ -99,7 +99,7 @@ def build(c):
 {gsp.nav_html("")}
 
 <section class="page-hero">
-  <div class="bg" style="background-image:url('assets/american-Appliance-repair-service-website02.png');"></div>
+  <div class="bg" style="background-image:url('assets/american-Appliance-repair-service-website02.webp');"></div>
   <div class="shade"></div>
   <div class="wrap">
     <div class="crumb h-in"><a href="index.html">Home</a><span class="sep">›</span><a href="index.html#area">Service Area</a><span class="sep">›</span><span>{c["name"]}</span></div>

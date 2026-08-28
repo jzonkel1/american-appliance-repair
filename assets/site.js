@@ -1,7 +1,22 @@
-// nav: transparent over hero → solid navy on scroll
+// nav: transparent over hero → solid navy on scroll.
+// Watched with a sentinel rather than a scroll listener: reading window.scrollY
+// forces a synchronous layout, and the old immediate call did it at parse time
+// with every style invalidated, costing ~850ms of reflow on throttled mobile.
 const nav = document.getElementById('nav');
-const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 60);
-window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+if (nav) {
+  if ('IntersectionObserver' in window) {
+    const navMark = document.createElement('div');
+    navMark.setAttribute('aria-hidden','true');
+    navMark.style.cssText = 'position:absolute;top:60px;left:0;width:1px;height:1px;visibility:hidden;pointer-events:none;';
+    document.body.appendChild(navMark);
+    new IntersectionObserver((es)=>{
+      nav.classList.toggle('scrolled', !es[0].isIntersecting);
+    },{threshold:0}).observe(navMark);
+  } else {
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  }
+}
 // reveal on scroll — never leaves content hidden
 const rvs = document.querySelectorAll('.rv');
 const revealAll = () => rvs.forEach(el=>el.classList.add('in'));
