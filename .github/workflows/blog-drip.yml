@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Refresh the podcast poster to the newest episode
+        run: python tools/fetch-kbl-poster.py
       - name: Regenerate blog and sitemap
         run: |
           python tools/gen-blog.py
@@ -30,4 +32,4 @@ jobs:
           git config user.name "zonkel-blog-bot"
           git config user.email "jeffrey@zonkelmedia.com"
           git add -A
-          git diff --cached --quiet || { git commit -m "Blog drip: publish scheduled post(s)"; git push; }
+          git diff --cached --quiet || { git commit -m "Scheduled update: blog posts and/or podcast poster"; git push; }
