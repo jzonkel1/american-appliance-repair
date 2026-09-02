@@ -143,6 +143,18 @@ if (qw) {
     });
   });
   back.addEventListener('click', () => show(Math.max(cur - 1, 0)));
+  // Lock the step area to the tallest step. Otherwise the card changes height
+  // between steps and the browser's scroll anchoring shifts the page, so the
+  // headline the visitor's eyes are anchored to jumps around. Runs once,
+  // before first paint (script sits at the end of body).
+  let qwMax = 0;
+  steps.forEach(s => {
+    const prev = s.style.cssText;
+    s.style.cssText = 'display:block;visibility:hidden;';
+    qwMax = Math.max(qwMax, s.offsetHeight);
+    s.style.cssText = prev;
+  });
+  if (qwMax) steps.forEach(s => { s.style.minHeight = qwMax + 'px'; });
   show(0);
 }
 
