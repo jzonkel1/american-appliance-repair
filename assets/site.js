@@ -55,17 +55,19 @@ if (track) {
   const mins = now.h * 60 + now.m;
   const open = today && mins >= today[0] * 60 && mins < today[1] * 60;
   const t12 = (h) => (h % 12 || 12) + (h < 12 ? ' AM' : ' PM');
-  let next = null;
+  let next = null, nextH = null;
   for (let i = 1; i <= 7 && !next; i++) {
     const d = HOURS[(now.day + i) % 7];
-    if (d) next = (i === 1 ? 'tomorrow' : 'Monday') + ' at ' + t12(d[0]);
+    if (d) { nextH = d[0]; next = (i === 1 ? 'tomorrow' : 'Monday') + ' at ' + t12(d[0]); }
   }
+  // Positive framing on purpose: "Back tomorrow at 8 AM", never "Closed".
+  const preOpen = today && mins < today[0] * 60;
   const label = open
-    ? 'Open now · until ' + t12(today[1])
-    : (today && mins < today[0] * 60 ? 'Opens at ' + t12(today[0]) : 'Closed · opens ' + next);
-  const short = open ? 'Open now' : 'Closed';   // the bar is tight on phones
+    ? 'Open until ' + t12(today[1])
+    : (preOpen ? 'Opens at ' + t12(today[0]) : 'Back ' + next);
+  const short = open ? 'Open now' : 'Opens ' + t12(preOpen ? today[0] : nextH);   // the bar is tight on phones
   slots.forEach(el => {
-    el.innerHTML = '<span class="on-full"></span><span class="on-short"></span>';
+    el.innerHTML = '<span class="on-dot" aria-hidden="true"></span><span class="on-full"></span><span class="on-short"></span>';
     el.querySelector('.on-full').textContent = label;
     el.querySelector('.on-short').textContent = short;
     el.classList.toggle('is-open', !!open);
