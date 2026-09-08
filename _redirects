@@ -13,3 +13,12 @@
 /blog/ /blog.html 301
 /gallery/ /gallery.html 301
 /tools/* /404.html 404
+
+# americanpowerstx.com -> the American Power page. The domain is added as an
+# alias on this Netlify site; these host-scoped rules only fire for it, so the
+# main site is unaffected. Namecheap's own URL-forwarding server was timing out
+# and can never serve HTTPS, which is why the redirect lives here instead.
+https://americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!
+https://www.americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!
+http://americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!
+http://www.americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!

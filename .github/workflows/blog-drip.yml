@@ -1,12 +1,14 @@
 name: Blog drip — publish scheduled posts
 
-# Every Monday at 9 AM Central (14:00 UTC), regenerate the blog. Posts in
+# Every day at 9 AM Central (14:00 UTC): refresh the podcast poster to the newest
+# episode and regenerate the blog. Posts in
 # tools/gen-blog.py whose pub date has arrived get written and pushed live;
-# future-dated posts stay in the queue. Also runnable manually from the
+# future-dated posts stay in the queue (gating is by date, so a daily run never
+# publishes early). Also runnable manually from the
 # Actions tab (workflow_dispatch).
 on:
   schedule:
-    - cron: '0 14 * * 1'
+    - cron: '0 14 * * *'
   workflow_dispatch:
 
 permissions:

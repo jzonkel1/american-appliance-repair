@@ -266,7 +266,9 @@ io.open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(
     "Disallow: /tools/\n"
     "Disallow: /thank-you.html\n\n"
     f"Sitemap: {gsp.BASE}/sitemap.xml\n")
-# Netlify-style redirects mapping old WP URLs -> new pages (for domain cutover)
+# Netlify-style redirects: old WP URLs -> new pages (domain cutover), plus the
+# americanpowerstx.com alias. THIS is the source of _redirects; never hand-edit
+# the file (the weekly bot regenerates it and would wipe hand edits).
 io.open(os.path.join(ROOT, "_redirects"), "w", encoding="utf-8").write("""/services/refrigerator-repair-in-corpus-christi/ /refrigerator-ice-machine-repair.html 301
 /services/washer-repair-in-corpus-christi/ /washer-repair.html 301
 /services/dryer-repair-in-corpus-christi/ /dryer-repair.html 301
@@ -282,6 +284,15 @@ io.open(os.path.join(ROOT, "_redirects"), "w", encoding="utf-8").write("""/servi
 /blog/ /blog.html 301
 /gallery/ /gallery.html 301
 /tools/* /404.html 404
+
+# americanpowerstx.com -> the American Power page. The domain is added as an
+# alias on this Netlify site; these host-scoped rules only fire for it, so the
+# main site is unaffected. Namecheap's own URL-forwarding server was timing out
+# and can never serve HTTPS, which is why the redirect lives here instead.
+https://americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!
+https://www.americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!
+http://americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!
+http://www.americanpowerstx.com/* https://americanappliancerepaircc.com/american-power.html 301!
 """)
 print("sitemap.xml, robots.txt, _redirects written —", len(urls), "urls")
 

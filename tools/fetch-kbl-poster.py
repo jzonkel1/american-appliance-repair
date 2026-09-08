@@ -7,8 +7,9 @@ drifts out of sync with the player (which always plays the newest upload).
 
 Reads the channel ID straight out of index.html so there is only ever one place
 to change it. Uses the uploads playlist page rather than the Data API: no key,
-no quota. Writes assets/kbl-poster.jpg only when the bytes actually change, so
-a no-op run leaves the tree clean.
+no quota. Writes assets/kbl-poster.jpg only when the bytes actually change, and stamps
+the poster URL in index.html with the video id (?v=) so browsers stop serving
+the week-long cached copy; a no-op run leaves the tree clean.
 
 Non-fatal by design: YouTube markup shifts around, and a missing poster should
 never break a deploy. On any failure it warns and exits 0, leaving the previous
@@ -74,11 +75,20 @@ def main():
 
     if POSTER.exists() and POSTER.read_bytes() == data:
         print(f"[kbl-poster] already current ({vid}, {len(data) // 1024} KB)")
-        return
+    else:
+        POSTER.parent.mkdir(parents=True, exist_ok=True)
+        POSTER.write_bytes(data)
+        print(f"[kbl-poster] updated to {vid} ({len(data) // 1024} KB)")
 
-    POSTER.parent.mkdir(parents=True, exist_ok=True)
-    POSTER.write_bytes(data)
-    print(f"[kbl-poster] updated to {vid} ({len(data) // 1024} KB)")
+    # Cache-bust the facade image. assets/* is cached for a week (netlify.toml)
+    # and the file name never changes, so without a stamp anyone who visited in
+    # the last 7 days keeps seeing the previous episode's poster. The video id
+    # is the natural cache key: it changes exactly when the poster does.
+    stamped, n = re.subn(r'assets/kbl-poster\.jpg(?:\?v=[A-Za-z0-9_-]+)?',
+                         f'assets/kbl-poster.jpg?v={vid}', html)
+    if n and stamped != html:
+        INDEX.write_text(stamped, encoding="utf-8", newline="")
+        print(f"[kbl-poster] index.html poster stamped ?v={vid}")
 
 
 if __name__ == "__main__":
