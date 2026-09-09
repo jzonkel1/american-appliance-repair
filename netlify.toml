@@ -3,6 +3,11 @@
   publish = "."
   command = ""
 
+# americanpowerstx.com share-preview fix; see netlify/edge-functions/ap-domain.js.
+[[edge_functions]]
+  path = "/"
+  function = "ap-domain"
+
 # HTML is always revalidated so a content change is visible immediately.
 # (assets/site.css and site.js carry a content-hash ?v= stamp, so they can be
 # cached hard without ever going stale — see tools/stamp-assets.py.)
