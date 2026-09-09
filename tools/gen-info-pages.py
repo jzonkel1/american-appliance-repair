@@ -256,6 +256,7 @@ PAGES.append(dict(file="emergency-appliance-repair.html",
 
 # ---------------- AMERICAN POWER ----------------
 PAGES.append(dict(file="american-power.html",
+ og=dict(og_image="assets/og-american-power.jpg", og_alt="American Power — solar, battery backup &amp; EV charging in Corpus Christi, TX. (361) 425-7797"),
  title="American Power — Solar, Battery Backup & EV Charging | Corpus Christi, TX",
  meta="American Power is the renewable energy division of American Appliance Repair — residential solar, battery backup and EV charging across the Coastal Bend. $0 down. Free energy analysis: (361) 425-7797.",
  noindex=False,
@@ -368,7 +369,7 @@ def build(p):
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-normal-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/publicsans-normal-latin.woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
-{gsp.head_seo(p["file"], p["title"], p["meta"])}
+{gsp.head_seo(p["file"], p["title"], p["meta"], **p.get("og", {}))}
 </head>
 <body>
 

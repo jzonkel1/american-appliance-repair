@@ -5,7 +5,7 @@ import io, os
 
 
 BASE = "https://americanappliancerepaircc.com"
-def head_seo(fname, title, desc):
+def head_seo(fname, title, desc, og_image="assets/og-cover.jpg", og_alt="American Appliance Repair — appliance repair, parts &amp; sales in Corpus Christi, TX. (361) 673-0937"):
     url = BASE + "/" if fname == "index.html" else f"{BASE}/{fname}"
     t = title.replace('"', "&quot;"); d = desc.replace('"', "&quot;")
     return f"""<link rel="canonical" href="{url}">
@@ -14,12 +14,12 @@ def head_seo(fname, title, desc):
 <meta property="og:title" content="{t}">
 <meta property="og:description" content="{d}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{BASE}/assets/og-cover.jpg">
+<meta property="og:image" content="{BASE}/{og_image}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="American Appliance Repair — appliance repair, parts &amp; sales in Corpus Christi, TX. (361) 673-0937">
+<meta property="og:image:alt" content="{og_alt}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{BASE}/assets/og-cover.jpg">
+<meta name="twitter:image" content="{BASE}/{og_image}">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"American Appliance Repair, LLC","image":"{BASE}/assets/logo.png","url":"{BASE}/","telephone":"+13616730937","address":{{"@type":"PostalAddress","streetAddress":"3701 Apollo Rd","addressLocality":"Corpus Christi","addressRegion":"TX","postalCode":"78413","addressCountry":"US"}},"geo":{{"@type":"GeoCoordinates","latitude":27.696714,"longitude":-97.421773}},"areaServed":[{{"@type":"City","name":"Corpus Christi"}},{{"@type":"City","name":"Portland"}},{{"@type":"City","name":"Port Aransas"}},{{"@type":"City","name":"Rockport"}},{{"@type":"City","name":"Ingleside"}},{{"@type":"City","name":"Aransas Pass"}},{{"@type":"City","name":"Robstown"}},{{"@type":"City","name":"Kingsville"}},{{"@type":"City","name":"Alice"}},{{"@type":"City","name":"Sinton"}},{{"@type":"City","name":"Mathis"}}],"openingHoursSpecification":[{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"}},{{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"16:00"}}],"sameAs":["https://www.facebook.com/p/American-Appliance-Repair-61554373376502/","https://www.instagram.com/american__appliance_repair/"]}}</script>"""
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
