@@ -285,7 +285,7 @@ PAGES.append(dict(file="american-power.html",
   <div class="sb-bg" style="background-image:url('assets/solar-neighborhood.jpg');"></div>
   <div class="sb-shade"></div>
   <div class="wrap" style="display:block;">
-    <img class="ap-logo rv" src="assets/american-power-logo.png?v=5" alt="American Power — Own Your Power">
+    <img class="ap-logo rv" src="assets/american-power-logo.png?v=6" alt="American Power — Own Your Power">
     <h2 class="sec rv" style="color:#fff;">Why go solar with <span class="fl">American Power</span></h2>
     <div class="solar-list" style="max-width:900px;">
       <div class="si rv"><span class="ck">✓</span><span><b>$0 down</b> — go solar and start saving immediately</span></div>
