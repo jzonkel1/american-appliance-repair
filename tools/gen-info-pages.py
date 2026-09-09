@@ -256,7 +256,7 @@ PAGES.append(dict(file="emergency-appliance-repair.html",
 
 # ---------------- AMERICAN POWER ----------------
 PAGES.append(dict(file="american-power.html",
- og=dict(og_image="assets/og-american-power.jpg", og_alt="American Power — solar, battery backup &amp; EV charging in Corpus Christi, TX. (361) 425-7797"),
+ og=dict(og_image="assets/og-american-power.jpg?v=1bdfdfd6", og_alt="American Power — solar, battery backup &amp; EV charging in Corpus Christi, TX. (361) 425-7797"),
  title="American Power — Solar, Battery Backup & EV Charging | Corpus Christi, TX",
  meta="American Power is the renewable energy division of American Appliance Repair — residential solar, battery backup and EV charging across the Coastal Bend. $0 down. Free energy analysis: (361) 425-7797.",
  noindex=False,

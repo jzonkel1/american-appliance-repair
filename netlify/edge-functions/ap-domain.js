@@ -10,7 +10,7 @@
 // the main site falls straight through. The _redirects rule still covers every
 // other path on the alias.
 const TARGET = "https://americanappliancerepaircc.com/american-power.html";
-const IMG = "https://americanappliancerepaircc.com/assets/og-american-power.jpg";
+const IMG = "https://americanappliancerepaircc.com/assets/og-american-power.jpg?v=1bdfdfd6";
 const TITLE = "American Power \u2014 Solar, Battery Backup & EV Charging | Corpus Christi, TX";
 const DESC = "American Power is the renewable energy division of American Appliance Repair \u2014 residential solar, battery backup and EV charging across the Coastal Bend. $0 down. Free energy analysis: (361) 425-7797.";
 const BOT = /facebookexternalhit|facebot|twitterbot|linkedinbot|slackbot|slack-imgproxy|whatsapp|discordbot|telegrambot|pinterest|skypeuripreview|embedly|quora link preview|outbrain|vkshare|redditbot|applebot|snapchat|iframely|bingpreview/i;
